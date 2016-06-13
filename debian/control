@@ -1,4 +1,4 @@
-Source: gnome-software-screenshot-data
+Source: eos-gnome-software-screenshot-data
 Section: x11
 Priority: optional
 Maintainer: Niv Sardi <xaiki@endlessm.com>
@@ -8,7 +8,7 @@ Homepage: <insert the upstream URL, if relevant>
 #Vcs-Git: git://anonscm.debian.org/collab-maint/gnome-software-screenshot-data.git
 #Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/gnome-software-screenshot-data.git
 
-Package: gnome-software-screenshot-data
+Package: eos-gnome-software-screenshot-data
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: screenshots for endless' apps

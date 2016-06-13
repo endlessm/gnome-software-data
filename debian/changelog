@@ -1,5 +1,5 @@
-gnome-software-screenshot-data (0.0.1-20160613-1-1) unstable; urgency=medium
+eos-gnome-software-screenshot-data (0.0.1-20160613-1-1) unstable; urgency=medium
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release
 
  -- Niv Sardi <xaiki@endlessm.com>  Mon, 13 Jun 2016 10:36:40 -0300
