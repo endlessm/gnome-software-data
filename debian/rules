@@ -3,7 +3,7 @@
 # output every command that modifies files on the build system.
 #export DH_VERBOSE = 1
 
-pkgname = $(shell grep -e 'Package' debian/control | awk '{print $$2}')
+pkgname = $(shell grep -e 'Package' debian/control | cut -d' ' -f2)
 install_path = /var/cache/gnome-software
 
 %:
