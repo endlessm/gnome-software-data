@@ -38,8 +38,9 @@ eos-gnome-software-screenshot-data (20160613-1) UNRELEASED; urgency=medium
   * eos rebuild
   * eos rebuild
   * eos rebuild
+  * eos rebuild
 
- -- Niv Sardi <xaiki@debian.org>  Mon, 13 Jun 2016 15:03:41 -0300
+ -- Niv Sardi <xaiki@debian.org>  Mon, 13 Jun 2016 15:03:52 -0300
 
 eos-gnome-software-screenshot-data (0.0.1-20160613-1-1) unstable; urgency=medium
 
