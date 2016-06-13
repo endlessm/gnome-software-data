@@ -13,10 +13,15 @@
 # package maintainers to append LDFLAGS
 #export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
+pkgname = $(shell grep -e 'Package' debian/control | awk '{print $$2}')
+install_path = /var/cache/gnome-software
 
 %:
 	dh $@ 
 
+override_dh_install:
+	mkdir -p debian/${pkgname}/${install_path}
+	cp -a screenshots/* debian/${pkgname}/${install_path}
 
 # dh_make generated override targets
 # This is example for Cmake (See https://bugs.debian.org/641051 )

@@ -10,6 +10,6 @@ Homepage: <insert the upstream URL, if relevant>
 
 Package: eos-gnome-software-screenshot-data
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, gnome-software
 Description: screenshots for endless' apps
  This package contains screenshots to fill gnome-software's cache
