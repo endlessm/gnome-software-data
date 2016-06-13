@@ -1,0 +1,15 @@
+Source: gnome-software-screenshot-data
+Section: x11
+Priority: optional
+Maintainer: Niv Sardi <xaiki@endlessm.com>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.8
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://anonscm.debian.org/collab-maint/gnome-software-screenshot-data.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/gnome-software-screenshot-data.git
+
+Package: gnome-software-screenshot-data
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: screenshots for endless' apps
+ This package contains screenshots to fill gnome-software's cache
