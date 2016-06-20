@@ -1,5 +1,6 @@
-eos-gnome-software-screenshot-data (20160613-1) UNRELEASED; urgency=medium
+eos-gnome-software-screenshot-data (20160620-1) UNRELEASED; urgency=medium
 
+  [ Niv Sardi ]
   * eos rebuild
   * eos rebuild
   * eos rebuild
@@ -133,7 +134,11 @@ eos-gnome-software-screenshot-data (20160613-1) UNRELEASED; urgency=medium
   * eos rebuild
   * eos rebuild
 
- -- Niv Sardi <xaiki@debian.org>  Mon, 13 Jun 2016 18:46:56 -0300
+  [ umask=0022 ]
+  * eos rebuild
+  * eos rebuild
+
+ -- umask=0022 <uploader@ostree>  Mon, 20 Jun 2016 10:32:28 -0700
 
 eos-gnome-software-screenshot-data (0.0.1-20160613-1-1) unstable; urgency=medium
 
