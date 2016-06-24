@@ -1,4 +1,4 @@
-eos-gnome-software-screenshot-data (20160622-1) UNRELEASED; urgency=medium
+eos-gnome-software-screenshot-data (20160624-1) UNRELEASED; urgency=medium
 
   [ Niv Sardi ]
   * eos rebuild
@@ -142,8 +142,9 @@ eos-gnome-software-screenshot-data (20160622-1) UNRELEASED; urgency=medium
   * eos rebuild
   * eos rebuild
   * eos rebuild
+  * eos rebuild
 
- -- Jenkins <jenkins@endlessm.com>  Wed, 22 Jun 2016 12:44:12 -0700
+ -- Jenkins <jenkins@endlessm.com>  Fri, 24 Jun 2016 15:16:53 -0700
 
 eos-gnome-software-screenshot-data (0.0.1-20160613-1-1) unstable; urgency=medium
 
