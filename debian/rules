@@ -10,6 +10,8 @@ install_path = /var/cache/gnome-software
 	dh $@ 
 
 override_dh_install:
-	mkdir -p debian/${pkgname}/${install_path}
-	cp -a screenshots/* debian/${pkgname}/${install_path}
+	mkdir -p debian/${pkgname}/${install_path}/screenshots
+	mkdir -p debian/${pkgname}/${install_path}/eos-popular-app-thumbnails
+	cp -a screenshots/* debian/${pkgname}/${install_path}/screenshots
+	cp -a thumbnails/* debian/${pkgname}/${install_path}/eos-popular-app-thumbnails
 
