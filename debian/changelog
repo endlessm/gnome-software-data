@@ -250,8 +250,9 @@ eos-gnome-software-screenshot-data (20160705-1) UNRELEASED; urgency=medium
   [ xaiki ]
   * eos rebuild
   * eos rebuild
+  * eos rebuild
 
- -- xaiki <xaiki@endless>  Tue, 05 Jul 2016 11:49:48 -0300
+ -- xaiki <xaiki@endless>  Tue, 05 Jul 2016 13:37:06 -0300
 
 eos-gnome-software-screenshot-data (0.0.1-20160613-1-1) unstable; urgency=medium
 
