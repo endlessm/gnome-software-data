@@ -1,4 +1,4 @@
-eos-gnome-software-screenshot-data (20160705-1) UNRELEASED; urgency=medium
+eos-gnome-software-screenshot-data (20160707-1) UNRELEASED; urgency=medium
 
   [ Niv Sardi ]
   * eos rebuild
@@ -252,7 +252,10 @@ eos-gnome-software-screenshot-data (20160705-1) UNRELEASED; urgency=medium
   * eos rebuild
   * eos rebuild
 
- -- xaiki <xaiki@endless>  Tue, 05 Jul 2016 13:37:06 -0300
+  [ Sam Spilsbury ]
+  * eos rebuild
+
+ -- Sam Spilsbury <sam@endlessm.com>  Thu, 07 Jul 2016 11:50:23 -0700
 
 eos-gnome-software-screenshot-data (0.0.1-20160613-1-1) unstable; urgency=medium
 
