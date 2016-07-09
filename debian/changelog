@@ -1,4 +1,10 @@
-eos-gnome-software-screenshot-data (20160707-1) UNRELEASED; urgency=medium
+eos-gnome-software-screenshot-data (20161007) eos; urgency=medium
+
+  * Move to native version number
+
+ -- Sam Spilsbury <sam@endlessm.com>  Sat, 09 Jul 2016 05:27:36 -0700
+
+eos-gnome-software-screenshot-data (20160707-1) eos; urgency=medium
 
   [ Niv Sardi ]
   * eos rebuild
