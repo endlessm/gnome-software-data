@@ -1,3 +1,9 @@
+eos-gnome-software-screenshot-data (20160712) UNRELEASED; urgency=medium
+
+  * eos rebuild
+
+ -- Jenkins <jenkins@endlessm.com>  Tue, 12 Jul 2016 10:19:36 -0700
+
 eos-gnome-software-screenshot-data (20160709) eos; urgency=medium
 
   * Move to native version number
