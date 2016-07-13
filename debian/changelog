@@ -6,8 +6,9 @@ eos-gnome-software-screenshot-data (20160713) UNRELEASED; urgency=medium
 
   [ Mario ]
   * eos rebuild
+  * eos rebuild
 
- -- Mario <mario@endless>  Wed, 13 Jul 2016 10:41:51 +0000
+ -- Mario <mario@endless>  Wed, 13 Jul 2016 10:44:33 +0000
 
 eos-gnome-software-screenshot-data (20160709) eos; urgency=medium
 
