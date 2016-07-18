@@ -309,8 +309,9 @@ eos-gnome-software-screenshot-data (20160718) UNRELEASED; urgency=medium
 
   [ Sam Spilsbury ]
   * eos rebuild
+  * eos rebuild
 
- -- Sam Spilsbury <sam@endlessm.com>  Mon, 18 Jul 2016 15:02:40 -0700
+ -- Sam Spilsbury <sam@endlessm.com>  Mon, 18 Jul 2016 15:02:50 -0700
 
 eos-gnome-software-screenshot-data (20160709) eos; urgency=medium
 
