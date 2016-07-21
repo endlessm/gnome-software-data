@@ -479,7 +479,10 @@ eos-gnome-software-screenshot-data (20160720) UNRELEASED; urgency=medium
   [ Cosimo Cecchi ]
   * eos rebuild
 
- -- Cosimo Cecchi <cosimo@endlessm.com>  Wed, 20 Jul 2016 18:58:14 -0700
+  [ Jenkins ]
+  * eos rebuild
+
+ -- Jenkins <jenkins@endlessm.com>  Wed, 20 Jul 2016 22:23:16 -0700
 
 eos-gnome-software-screenshot-data (20160709) eos; urgency=medium
 
