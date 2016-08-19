@@ -795,8 +795,9 @@ eos-gnome-software-screenshot-data (20160819) UNRELEASED; urgency=medium
 
   [ Mario ]
   * eos rebuild
+  * eos rebuild
 
- -- Mario <mario@endless>  Fri, 19 Aug 2016 14:56:41 +0000
+ -- Mario <mario@endless>  Fri, 19 Aug 2016 14:56:45 +0000
 
 eos-gnome-software-screenshot-data (20160709) eos; urgency=medium
 
