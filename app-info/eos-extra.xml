@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components version="0.8" origin="eos-extra-app-info">
+  <component type="desktop">
+    <id>org.tuxpaint.Tuxpaint.desktop</id>
+    <categories>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.frozenbubble.FrozenBubble.desktop</id>
+    <categories>
+      <category>Family</category>
+    </categories>
+  </component>
+</components>
