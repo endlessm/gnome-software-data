@@ -1,15 +1,262 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <components version="0.8" origin="eos-extra-app-info">
   <component type="desktop">
-    <id>org.tuxpaint.Tuxpaint.desktop</id>
+    <id>brasero.desktop</id>
+    <categories>
+      <category>Utility</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>cheese.desktop</id>
+    <categories>
+      <category>Education</category>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>com.dropbox.Client.desktop</id>
+    <categories>
+      <category>Office</category>
+      <category>Education</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>com.microsoft.Skype.desktop</id>
+    <categories>
+      <category>AudioVideo</category>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>evolution.desktop</id>
+    <categories>
+      <category>Utility</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>gnome-calculator.desktop</id>
+    <categories>
+      <category>Education</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>io.github.Supertux.desktop</id>
     <categories>
       <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>libreoffice-calc.desktop</id>
+    <categories>
+      <category>Education</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>libreoffice-impress.desktop</id>
+    <categories>
+      <category>Education</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>libreoffice-writer.desktop</id>
+    <categories>
+      <category>Education</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>net.blockout.Blockout2.desktop</id>
+    <categories>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>net.gcompris.Gcompris.desktop</id>
+    <categories>
+      <category>Education</category>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>net.minetest.Minetest.desktop</id>
+    <categories>
+      <category>Education</category>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>net.sourceforge.Extremetuxracer.desktop</id>
+    <categories>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>net.sourceforge.Frostwire.desktop</id>
+    <categories>
+      <category>AudioVideo</category>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>net.sourceforge.Rili.desktop</id>
+    <categories>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>net.sourceforge.Supertuxkart.desktop</id>
+    <categories>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.debian.alioth.tux4kids.Tuxmath.desktop</id>
+    <categories>
+      <category>Game</category>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.debian.alioth.tux4kids.Tuxtype.desktop</id>
+    <categories>
+      <category>Game</category>
     </categories>
   </component>
   <component type="desktop">
     <id>org.frozenbubble.FrozenBubble.desktop</id>
     <categories>
       <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.gnome.Genius.desktop</id>
+    <categories>
+      <category>Education</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.gnome.Gnote.desktop</id>
+    <categories>
+      <category>Office</category>
+      <category>Family</category>
+      <category>Education</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.gnome.people.dscorgie.Labyrinth.desktop</id>
+    <categories>
+      <category>Education</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.gnome.Screenshot.desktop</id>
+    <categories>
+      <category>Education</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.gnome.Solitaire.desktop</id>
+    <categories>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.gnome.Totem.desktop</id>
+    <categories>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.kde.Katomic.desktop</id>
+    <categories>
+      <category>Education</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.kde.Khangman.desktop</id>
+    <categories>
+      <category>Education</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.kde.Ktuberling.desktop</id>
+    <categories>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.kde.Marble.desktop</id>
+    <categories>
+      <category>Reference</category>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.learningequality.KALite.desktop</id>
+    <categories>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.maemo.Numptyphysics.desktop</id>
+    <categories>
+      <category>Education</category>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.openscad.Openscad.desktop</id>
+    <categories>
+      <category>Office</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.squeakland.Etoys.desktop</id>
+    <categories>
+      <category>Game</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.squeakland.Scratch.desktop</id>
+    <categories>
+      <category>Game</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.stellarium.Stellarium.desktop</id>
+    <categories>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.sugarlabs.Turtleblocks.desktop</id>
+    <categories>
+      <category>Game</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>org.tuxpaint.Tuxpaint.desktop</id>
+    <categories>
+      <category>Graphics</category>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>rhythmbox.desktop</id>
+    <categories>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>shotwell.desktop</id>
+    <categories>
+      <category>Family</category>
+    </categories>
+  </component>
+  <component type="desktop">
+    <id>simple-scan.desktop</id>
+    <categories>
+      <category>Utility</category>
+      <category>Office</category>
     </categories>
   </component>
 </components>
