@@ -5,6 +5,9 @@
     <categories>
       <category>Utility</category>
     </categories>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/brasero/brasero-thumb.jpg</value>
+    </metadata>
   </component>
   <component type="desktop">
     <id>cheese.desktop</id>
@@ -12,6 +15,15 @@
       <category>Education</category>
       <category>Family</category>
     </categories>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/cheese/cheese-thumb.jpg</value>
+    </metadata>
+  </component>
+  <component type="desktop">
+    <id>chromium-browser.desktop</id>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/chromium-browser/chromium-browser-thumb.jpg</value>
+    </metadata>
   </component>
   <component type="desktop">
     <id>com.dropbox.Client.desktop</id>
@@ -32,12 +44,27 @@
     <categories>
       <category>Utility</category>
     </categories>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/evolution/evolution-thumb.jpg</value>
+    </metadata>
   </component>
   <component type="desktop">
     <id>gnome-calculator.desktop</id>
     <categories>
       <category>Education</category>
     </categories>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/gnome-calculator/gnome-calculator-thumb.jpg</value>
+    </metadata>
+  </component>
+  <component type="desktop">
+    <id>gnome-control-center.desktop</id>
+    <categories>
+      <category>Education</category>
+    </categories>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/gnome-control-center/gnome-control-center-thumb.jpg</value>
+    </metadata>
   </component>
   <component type="desktop">
     <id>io.github.Supertux.desktop</id>
@@ -50,18 +77,27 @@
     <categories>
       <category>Education</category>
     </categories>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/libreoffice-calc/libreoffice-calc-thumb.jpg</value>
+    </metadata>
   </component>
   <component type="desktop">
     <id>libreoffice-impress.desktop</id>
     <categories>
       <category>Education</category>
     </categories>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/libreoffice-impress/libreoffice-impress-thumb.jpg</value>
+    </metadata>
   </component>
   <component type="desktop">
     <id>libreoffice-writer.desktop</id>
     <categories>
       <category>Education</category>
     </categories>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/libreoffice-writer/libreoffice-writer-thumb.jpg</value>
+    </metadata>
   </component>
   <component type="desktop">
     <id>net.blockout.Blockout2.desktop</id>
@@ -128,6 +164,12 @@
     </categories>
   </component>
   <component type="desktop">
+    <id>org.gnome.gedit.desktop</id>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/org.gnome.gedit/org.gnome.gedit-thumb.jpg</value>
+    </metadata>
+  </component>
+  <component type="desktop">
     <id>org.gnome.Genius.desktop</id>
     <categories>
       <category>Education</category>
@@ -142,6 +184,12 @@
     </categories>
   </component>
   <component type="desktop">
+    <id>org.gnome.Nautilus.desktop</id>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/org.gnome.Nautilus/org.gnome.nautilus-thumb.jpg</value>
+    </metadata>
+  </component>
+  <component type="desktop">
     <id>org.gnome.people.dscorgie.Labyrinth.desktop</id>
     <categories>
       <category>Education</category>
@@ -152,6 +200,9 @@
     <categories>
       <category>Education</category>
     </categories>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/org.gnome.Screenshot/org.gnome.screenshot-thumb.jpg</value>
+    </metadata>
   </component>
   <component type="desktop">
     <id>org.gnome.Solitaire.desktop</id>
@@ -160,10 +211,19 @@
     </categories>
   </component>
   <component type="desktop">
+    <id>org.gnome.Terminal.desktop</id>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/org.gnome.Terminal/org.gnome.terminal-thumb.jpg</value>
+    </metadata>
+  </component>
+  <component type="desktop">
     <id>org.gnome.Totem.desktop</id>
     <categories>
       <category>Family</category>
     </categories>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/org.gnome.Totem/org.gnome.totem-thumb.jpg</value>
+    </metadata>
   </component>
   <component type="desktop">
     <id>org.kde.Katomic.desktop</id>
@@ -245,12 +305,18 @@
     <categories>
       <category>Family</category>
     </categories>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/rhythmbox/rhythmbox-thumb.jpg</value>
+    </metadata>
   </component>
   <component type="desktop">
     <id>shotwell.desktop</id>
     <categories>
       <category>Family</category>
     </categories>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/shotwell/shotwell-thumb.jpg</value>
+    </metadata>
   </component>
   <component type="desktop">
     <id>simple-scan.desktop</id>
@@ -258,5 +324,20 @@
       <category>Utility</category>
       <category>Office</category>
     </categories>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/simple-scan/simple-scan-thumb.jpg</value>
+    </metadata>
+  </component>
+  <component type="desktop">
+    <id>vinagre.desktop</id>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/vinagre/vinagre-thumb.jpg</value>
+    </metadata>
+  </component>
+  <component type="desktop">
+    <id>yelp.desktop</id>
+    <metadata>
+      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/yelp/yelp-thumb.jpg</value>
+    </metadata>
   </component>
 </components>
