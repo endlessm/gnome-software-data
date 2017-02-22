@@ -920,8 +920,9 @@ eos-gnome-software-screenshot-data (20170222) UNRELEASED; urgency=medium
   * eos rebuild
   * eos rebuild
   * eos rebuild
+  * eos rebuild
 
- -- Jenkins <jenkins@endlessm.com>  Wed, 22 Feb 2017 06:10:00 -0800
+ -- Jenkins <jenkins@endlessm.com>  Wed, 22 Feb 2017 06:10:07 -0800
 
 eos-gnome-software-screenshot-data (20160709) eos; urgency=medium
 
