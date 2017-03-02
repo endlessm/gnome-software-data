@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <components version="0.8" origin="eos-extra-app-info">
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>brasero.desktop</id>
     <categories>
       <category>Utility</category>
@@ -9,7 +9,7 @@
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/brasero/brasero-thumb.jpg</value>
     </metadata>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>cheese.desktop</id>
     <categories>
       <category>Education</category>
@@ -19,27 +19,27 @@
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/cheese/cheese-thumb.jpg</value>
     </metadata>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>chromium-browser.desktop</id>
     <metadata>
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/chromium-browser/chromium-browser-thumb.jpg</value>
     </metadata>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>com.dropbox.Client.desktop</id>
     <categories>
       <category>Office</category>
       <category>Education</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>com.microsoft.Skype.desktop</id>
     <categories>
       <category>AudioVideo</category>
       <category>Family</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>evolution.desktop</id>
     <categories>
       <category>Utility</category>
@@ -48,7 +48,7 @@
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/evolution/evolution-thumb.jpg</value>
     </metadata>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>gnome-calculator.desktop</id>
     <categories>
       <category>Education</category>
@@ -57,7 +57,7 @@
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/gnome-calculator/gnome-calculator-thumb.jpg</value>
     </metadata>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>gnome-control-center.desktop</id>
     <categories>
       <category>Education</category>
@@ -66,13 +66,13 @@
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/gnome-control-center/gnome-control-center-thumb.jpg</value>
     </metadata>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>io.github.Supertux.desktop</id>
     <categories>
       <category>Family</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>libreoffice-calc.desktop</id>
     <categories>
       <category>Education</category>
@@ -81,7 +81,7 @@
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/libreoffice-calc/libreoffice-calc-thumb.jpg</value>
     </metadata>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>libreoffice-impress.desktop</id>
     <categories>
       <category>Education</category>
@@ -90,7 +90,7 @@
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/libreoffice-impress/libreoffice-impress-thumb.jpg</value>
     </metadata>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>libreoffice-writer.desktop</id>
     <categories>
       <category>Education</category>
@@ -99,83 +99,83 @@
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/libreoffice-writer/libreoffice-writer-thumb.jpg</value>
     </metadata>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>net.blockout.Blockout2.desktop</id>
     <categories>
       <category>Family</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>net.gcompris.Gcompris.desktop</id>
     <categories>
       <category>Education</category>
       <category>Family</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>net.minetest.Minetest.desktop</id>
     <categories>
       <category>Education</category>
       <category>Family</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>net.sourceforge.Extremetuxracer.desktop</id>
     <categories>
       <category>Family</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>net.sourceforge.Frostwire.desktop</id>
     <categories>
       <category>AudioVideo</category>
       <category>Family</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>net.sourceforge.Rili.desktop</id>
     <categories>
       <category>Family</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>net.sourceforge.Supertuxkart.desktop</id>
     <categories>
       <category>Family</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.debian.alioth.tux4kids.Tuxmath.desktop</id>
     <categories>
       <category>Game</category>
       <category>Family</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.debian.alioth.tux4kids.Tuxtype.desktop</id>
     <categories>
       <category>Game</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.frozenbubble.FrozenBubble.desktop</id>
     <categories>
       <category>Family</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.gnome.gedit.desktop</id>
     <metadata>
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/org.gnome.gedit/org.gnome.gedit-thumb.jpg</value>
     </metadata>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.gnome.Genius.desktop</id>
     <categories>
       <category>Education</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.gnome.Gnote.desktop</id>
     <categories>
       <category>Office</category>
@@ -183,19 +183,19 @@
       <category>Education</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.gnome.Nautilus.desktop</id>
     <metadata>
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/org.gnome.Nautilus/org.gnome.nautilus-thumb.jpg</value>
     </metadata>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.gnome.people.dscorgie.Labyrinth.desktop</id>
     <categories>
       <category>Education</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.gnome.Screenshot.desktop</id>
     <categories>
       <category>Education</category>
@@ -204,19 +204,19 @@
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/org.gnome.Screenshot/org.gnome.screenshot-thumb.jpg</value>
     </metadata>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.gnome.Solitaire.desktop</id>
     <categories>
       <category>Family</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.gnome.Terminal.desktop</id>
     <metadata>
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/org.gnome.Terminal/org.gnome.terminal-thumb.jpg</value>
     </metadata>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.gnome.Totem.desktop</id>
     <categories>
       <category>Family</category>
@@ -225,82 +225,82 @@
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/org.gnome.Totem/org.gnome.totem-thumb.jpg</value>
     </metadata>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.kde.Katomic.desktop</id>
     <categories>
       <category>Education</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.kde.Khangman.desktop</id>
     <categories>
       <category>Education</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.kde.Ktuberling.desktop</id>
     <categories>
       <category>Family</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.kde.Marble.desktop</id>
     <categories>
       <category>Reference</category>
       <category>Family</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.learningequality.KALite.desktop</id>
     <categories>
       <category>Family</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.maemo.Numptyphysics.desktop</id>
     <categories>
       <category>Education</category>
       <category>Family</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.openscad.Openscad.desktop</id>
     <categories>
       <category>Office</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.squeakland.Etoys.desktop</id>
     <categories>
       <category>Game</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.squeakland.Scratch.desktop</id>
     <categories>
       <category>Game</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.stellarium.Stellarium.desktop</id>
     <categories>
       <category>Family</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.sugarlabs.Turtleblocks.desktop</id>
     <categories>
       <category>Game</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>org.tuxpaint.Tuxpaint.desktop</id>
     <categories>
       <category>Graphics</category>
       <category>Family</category>
     </categories>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>rhythmbox.desktop</id>
     <categories>
       <category>Family</category>
@@ -309,7 +309,7 @@
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/rhythmbox/rhythmbox-thumb.jpg</value>
     </metadata>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>shotwell.desktop</id>
     <categories>
       <category>Family</category>
@@ -318,7 +318,7 @@
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/shotwell/shotwell-thumb.jpg</value>
     </metadata>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>simple-scan.desktop</id>
     <categories>
       <category>Utility</category>
@@ -328,13 +328,13 @@
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/simple-scan/simple-scan-thumb.jpg</value>
     </metadata>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>vinagre.desktop</id>
     <metadata>
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/vinagre/vinagre-thumb.jpg</value>
     </metadata>
   </component>
-  <component type="desktop">
+  <component type="desktop" merge="append">
     <id>yelp.desktop</id>
     <metadata>
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/yelp/yelp-thumb.jpg</value>
