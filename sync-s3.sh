@@ -52,7 +52,7 @@ while true; do
 done
 
 # Check that the needed programs exist
-for prog in gzip aws; do
+for prog in gzip aws appstream-util; do
     if ! type -p $prog >/dev/null; then
         echo "Cannot find $prog program" >&2
         exit 1
@@ -60,10 +60,13 @@ for prog in gzip aws; do
 done
 
 # Create the eos-extra.xml.gz file if it doesn't exist or is older than
-# eos-extra.xml
+# eos-extra.xml. Validate it first.
 XML="$SRCDIR/app-info/eos-extra.xml"
 XML_GZ="$SRCDIR/s3/app-info/eos-extra.xml.gz"
 XML_GZ_CSUM="${XML_GZ}.sha256sum"
+
+appstream-util validate-strict --nonet "$XML"
+
 mkdir -p "$SRCDIR/s3/app-info"
 if [ ! -f "$XML_GZ" ] || [ "$XML" -nt "$XML_GZ" ]; then
     echo "Generating $XML_GZ"
