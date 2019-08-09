@@ -47,7 +47,7 @@
     <bundle type="flatpak"></bundle>
   </component>
   <component type="desktop" merge="append">
-    <id>com.microsoft.Skype.desktop</id>
+    <id>com.skype.Client.desktop</id>
     <categories>
       <category>AudioVideo</category>
       <category>Family</category>
@@ -142,13 +142,13 @@
     <bundle type="flatpak"></bundle>
   </component>
   <component type="desktop" merge="append">
-    <id>net.blockout.Blockout2.desktop</id>
+    <id>net.blockout.BlockOutII.desktop</id>
     <categories>
       <category>Family</category>
     </categories>
   </component>
   <component type="desktop" merge="append">
-    <id>net.gcompris.Gcompris.desktop</id>
+    <id>org.kde.gcompris.desktop</id>
     <categories>
       <category>Education</category>
       <category>Family</category>
@@ -179,20 +179,13 @@
     </categories>
   </component>
   <component type="desktop" merge="append">
-    <id>net.sourceforge.Frostwire.desktop</id>
-    <categories>
-      <category>AudioVideo</category>
-      <category>Family</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>net.sourceforge.Rili.desktop</id>
+    <id>net.sourceforge.Ri-li.desktop</id>
     <categories>
       <category>Family</category>
     </categories>
   </component>
   <component type="desktop" merge="append">
-    <id>net.sourceforge.Supertuxkart.desktop</id>
+    <id>net.supertuxkart.SuperTuxKart.desktop</id>
     <categories>
       <category>Family</category>
     </categories>
@@ -205,20 +198,20 @@
     <bundle type="flatpak"></bundle>
   </component>
   <component type="desktop" merge="append">
-    <id>org.debian.alioth.tux4kids.Tuxmath.desktop</id>
+    <id>com.tux4kids.tuxmath.desktop</id>
     <categories>
       <category>Game</category>
       <category>Family</category>
     </categories>
   </component>
   <component type="desktop" merge="append">
-    <id>org.debian.alioth.tux4kids.Tuxtype.desktop</id>
+    <id>com.tux4kids.tuxtype.desktop</id>
     <categories>
       <category>Game</category>
     </categories>
   </component>
   <component type="desktop" merge="append">
-    <id>org.frozenbubble.FrozenBubble.desktop</id>
+    <id>org.frozen_bubble.frozen-bubble.desktop</id>
     <categories>
       <category>Family</category>
     </categories>
@@ -264,7 +257,7 @@
     </metadata>
   </component>
   <component type="desktop" merge="append">
-    <id>org.gnome.people.dscorgie.Labyrinth.desktop</id>
+    <id>com.github.labyrinth_team.labyrinth.desktop</id>
     <categories>
       <category>Education</category>
     </categories>
@@ -321,13 +314,13 @@
     <bundle type="flatpak"></bundle>
   </component>
   <component type="desktop" merge="append">
-    <id>org.kde.Katomic.desktop</id>
+    <id>org.kde.katomic.desktop</id>
     <categories>
       <category>Education</category>
     </categories>
   </component>
   <component type="desktop" merge="append">
-    <id>org.kde.Khangman.desktop</id>
+    <id>org.kde.khangman.desktop</id>
     <categories>
       <category>Education</category>
     </categories>
@@ -340,15 +333,8 @@
     <bundle type="flatpak"></bundle>
   </component>
   <component type="desktop" merge="append">
-    <id>org.kde.Ktuberling.desktop</id>
+    <id>org.kde.ktuberling.desktop</id>
     <categories>
-      <category>Family</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.kde.Marble.desktop</id>
-    <categories>
-      <category>Reference</category>
       <category>Family</category>
     </categories>
   </component>
@@ -359,7 +345,7 @@
     </categories>
   </component>
   <component type="desktop" merge="append">
-    <id>org.maemo.Numptyphysics.desktop</id>
+    <id>io.thp.numptyphysics.desktop</id>
     <categories>
       <category>Education</category>
       <category>Family</category>
@@ -373,7 +359,7 @@
     <bundle type="flatpak"></bundle>
   </component>
   <component type="desktop" merge="append">
-    <id>org.openscad.Openscad.desktop</id>
+    <id>org.openscad.OpenSCAD.desktop</id>
     <categories>
       <category>Office</category>
     </categories>
@@ -385,7 +371,7 @@
     </categories>
   </component>
   <component type="desktop" merge="append">
-    <id>org.squeakland.Scratch.desktop</id>
+    <id>edu.mit.Scratch.desktop</id>
     <categories>
       <category>Game</category>
     </categories>
@@ -397,7 +383,7 @@
     </categories>
   </component>
   <component type="desktop" merge="append">
-    <id>org.sugarlabs.Turtleblocks.desktop</id>
+    <id>org.laptop.TurtleArtActivity.desktop</id>
     <categories>
       <category>Game</category>
     </categories>
