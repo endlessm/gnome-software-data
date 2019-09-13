@@ -30,7 +30,7 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>com.dropbox.Client.desktop</id>
@@ -44,7 +44,7 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>com.skype.Client.desktop</id>
@@ -58,14 +58,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>com.valvesoftware.Steam</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>evolution.desktop</id>
@@ -99,7 +99,7 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>io.github.Supertux.desktop</id>
@@ -139,7 +139,7 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>net.blockout.BlockOutII.desktop</id>
@@ -163,14 +163,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>net.scribus.Scribus</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>net.sourceforge.Extremetuxracer.desktop</id>
@@ -195,7 +195,7 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>com.tux4kids.tuxmath.desktop</id>
@@ -221,14 +221,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>org.gnome.Chess</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>org.gnome.gedit.desktop</id>
@@ -282,7 +282,7 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>org.gnome.Terminal.desktop</id>
@@ -304,14 +304,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>org.kde.gcompris</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>org.kde.katomic.desktop</id>
@@ -330,7 +330,7 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>org.kde.ktuberling.desktop</id>
@@ -356,7 +356,7 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>org.openscad.OpenSCAD.desktop</id>
@@ -393,7 +393,7 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>org.tuxpaint.Tuxpaint</id>
@@ -404,14 +404,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>org.videolan.VLC</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"></bundle>
+    <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
     <id>rhythmbox.desktop</id>
