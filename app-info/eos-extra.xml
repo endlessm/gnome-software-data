@@ -13,7 +13,6 @@
     <id>cheese.desktop</id>
     <categories>
       <category>Education</category>
-      <category>Family</category>
     </categories>
     <metadata>
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/cheese/cheese-thumb.jpg</value>
@@ -50,7 +49,6 @@
     <id>com.skype.Client.desktop</id>
     <categories>
       <category>AudioVideo</category>
-      <category>Family</category>
     </categories>
   </component>
   <component type="desktop" merge="append">
@@ -102,12 +100,6 @@
     <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
-    <id>io.github.Supertux.desktop</id>
-    <categories>
-      <category>Family</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
     <id>libreoffice-calc.desktop</id>
     <categories>
       <category>Education</category>
@@ -142,23 +134,15 @@
     <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
-    <id>net.blockout.BlockOutII.desktop</id>
-    <categories>
-      <category>Family</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
     <id>org.kde.gcompris.desktop</id>
     <categories>
       <category>Education</category>
-      <category>Family</category>
     </categories>
   </component>
   <component type="desktop" merge="append">
     <id>net.minetest.Minetest</id>
     <categories>
       <category>Education</category>
-      <category>Family</category>
     </categories>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
@@ -173,24 +157,6 @@
     <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
-    <id>net.sourceforge.Extremetuxracer.desktop</id>
-    <categories>
-      <category>Family</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>net.sourceforge.Ri-li.desktop</id>
-    <categories>
-      <category>Family</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>net.supertuxkart.SuperTuxKart.desktop</id>
-    <categories>
-      <category>Family</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
     <id>org.audacityteam.Audacity</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
@@ -201,19 +167,12 @@
     <id>com.tux4kids.tuxmath.desktop</id>
     <categories>
       <category>Game</category>
-      <category>Family</category>
     </categories>
   </component>
   <component type="desktop" merge="append">
     <id>com.tux4kids.tuxtype.desktop</id>
     <categories>
       <category>Game</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.frozen_bubble.frozen-bubble.desktop</id>
-    <categories>
-      <category>Family</category>
     </categories>
   </component>
   <component type="desktop" merge="append">
@@ -246,7 +205,6 @@
     <id>org.gnome.Gnote.desktop</id>
     <categories>
       <category>Office</category>
-      <category>Family</category>
       <category>Education</category>
     </categories>
   </component>
@@ -272,12 +230,6 @@
     </metadata>
   </component>
   <component type="desktop" merge="append">
-    <id>org.gnome.Solitaire.desktop</id>
-    <categories>
-      <category>Family</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
     <id>org.gnome.SwellFoop</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
@@ -292,9 +244,6 @@
   </component>
   <component type="desktop" merge="append">
     <id>org.gnome.Totem.desktop</id>
-    <categories>
-      <category>Family</category>
-    </categories>
     <metadata>
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/org.gnome.Totem/org.gnome.totem-thumb.jpg</value>
     </metadata>
@@ -333,22 +282,9 @@
     <bundle type="flatpak"/>
   </component>
   <component type="desktop" merge="append">
-    <id>org.kde.ktuberling.desktop</id>
-    <categories>
-      <category>Family</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.learningequality.KALite.desktop</id>
-    <categories>
-      <category>Family</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
     <id>io.thp.numptyphysics.desktop</id>
     <categories>
       <category>Education</category>
-      <category>Family</category>
     </categories>
   </component>
   <component type="desktop" merge="append">
@@ -377,12 +313,6 @@
     </categories>
   </component>
   <component type="desktop" merge="append">
-    <id>org.stellarium.Stellarium.desktop</id>
-    <categories>
-      <category>Family</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
     <id>org.laptop.TurtleArtActivity.desktop</id>
     <categories>
       <category>Game</category>
@@ -399,7 +329,6 @@
     <id>org.tuxpaint.Tuxpaint</id>
     <categories>
       <category>Graphics</category>
-      <category>Family</category>
     </categories>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
@@ -415,18 +344,12 @@
   </component>
   <component type="desktop" merge="append">
     <id>rhythmbox.desktop</id>
-    <categories>
-      <category>Family</category>
-    </categories>
     <metadata>
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/rhythmbox/rhythmbox-thumb.jpg</value>
     </metadata>
   </component>
   <component type="desktop" merge="append">
     <id>shotwell.desktop</id>
-    <categories>
-      <category>Family</category>
-    </categories>
     <metadata>
       <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/shotwell/shotwell-thumb.jpg</value>
     </metadata>
