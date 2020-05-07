@@ -288,7 +288,7 @@
     </categories>
   </component>
   <component type="desktop" merge="append">
-    <id>org.mozilla.Firefox</id>
+    <id>org.mozilla.firefox</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
