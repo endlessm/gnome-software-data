@@ -1837,4 +1837,11 @@
     </kudos>
     <bundle type="flatpak"/>
   </component>
+  <component type="desktop" merge="append">
+    <id>us.zoom.Zoom</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak"/>
+  </component>
 </components>
