@@ -43,7 +43,7 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/com.google.Chrome/x86_64/eos3</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>com.skype.Client.desktop</id>
