@@ -8,11 +8,11 @@ do
 	cells=($row)
 	app_id=${cells[0]}
 	ref=${cells[1]}
-	cat <<< '<component type="desktop" merge="append">'
-	cat <<< '<id>'$app_id'</id>'
-	cat <<< '<kudos>'
-	cat <<< '<kudo>GnomeSoftware::popular</kudo>'
-	cat <<< '</kudos>'
-	cat <<< '<bundle type="flatpak">'$ref'</bundle>'
-	cat <<< '</component>'
+	cat <<< '  <component type="desktop" merge="append">'
+	cat <<< '    <id>'$app_id'</id>'
+	cat <<< '    <kudos>'
+	cat <<< '      <kudo>GnomeSoftware::popular</kudo>'
+	cat <<< '    </kudos>'
+	cat <<< '    <bundle type="flatpak">'$ref'</bundle>'
+	cat <<< '  </component>'
 done
