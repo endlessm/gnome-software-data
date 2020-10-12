@@ -29,7 +29,7 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/com.calibre_ebook.calibre/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>com.dropbox.Client.desktop</id>
@@ -56,14 +56,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/com.transmissionbt.Transmission/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>com.valvesoftware.Steam</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/com.valvesoftware.Steam/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>evolution.desktop</id>
@@ -97,7 +97,7 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/io.github.mmstick.FontFinder/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>libreoffice-calc.desktop</id>
@@ -131,7 +131,7 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/org.libreoffice.LibreOffice/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>org.kde.gcompris.desktop</id>
@@ -147,21 +147,21 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/net.minetest.Minetest/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>net.scribus.Scribus</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/net.scribus.Scribus/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>org.audacityteam.Audacity</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/org.audacityteam.Audacity/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>com.tux4kids.tuxmath.desktop</id>
@@ -180,14 +180,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/org.gimp.GIMP/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>org.gnome.Chess</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/org.gnome.Chess/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>org.gnome.gedit.desktop</id>
@@ -234,7 +234,7 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/org.gnome.SwellFoop/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>org.gnome.Terminal.desktop</id>
@@ -253,14 +253,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/org.inkscape.Inkscape/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>org.kde.gcompris</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/org.kde.gcompris/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>org.kde.katomic.desktop</id>
@@ -279,7 +279,7 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/org.kde.krita/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>io.thp.numptyphysics.desktop</id>
@@ -292,7 +292,7 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/org.mozilla.firefox/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>org.openscad.OpenSCAD.desktop</id>
@@ -323,7 +323,7 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/org.telegram.desktop/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>org.tuxpaint.Tuxpaint</id>
@@ -333,14 +333,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/org.tuxpaint.Tuxpaint/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>org.videolan.VLC</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/org.videolan.VLC/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>rhythmbox.desktop</id>
@@ -372,7 +372,7 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak"/>
+    <bundle type="flatpak">app/us.zoom.Zoom/x86_64/stable</bundle>
   </component>
   <component type="desktop" merge="append">
     <id>vinagre.desktop</id>
