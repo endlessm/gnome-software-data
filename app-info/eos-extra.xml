@@ -1,414 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <components version="0.8" origin="flathub">
   <component type="desktop" merge="append">
-    <id>brasero.desktop</id>
-    <categories>
-      <category>Utility</category>
-    </categories>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/brasero/brasero-thumb.jpg</value>
-    </metadata>
-  </component>
-  <component type="desktop" merge="append">
-    <id>cheese.desktop</id>
-    <categories>
-      <category>Education</category>
-    </categories>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/cheese/cheese-thumb.jpg</value>
-    </metadata>
-  </component>
-  <component type="desktop" merge="append">
-    <id>chromium-browser.desktop</id>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/chromium-browser/chromium-browser-thumb.jpg</value>
-    </metadata>
-  </component>
-  <component type="desktop" merge="append">
     <id>com.calibre_ebook.calibre</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
     <bundle type="flatpak">app/com.calibre_ebook.calibre/x86_64/stable</bundle>
   </component>
+
   <component type="desktop" merge="append">
-    <id>com.dropbox.Client.desktop</id>
-    <categories>
-      <category>Office</category>
-      <category>Education</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.google.Chrome</id>
+    <id>com.dropbox.Client</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak">app/com.google.Chrome/x86_64/eos3</bundle>
+    <bundle type="flatpak">app/com.dropbox.Client/x86_64/stable</bundle>
   </component>
-  <component type="desktop" merge="append">
-    <id>com.skype.Client.desktop</id>
-    <categories>
-      <category>AudioVideo</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.transmissionbt.Transmission</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.transmissionbt.Transmission/x86_64/stable</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.valvesoftware.Steam</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.valvesoftware.Steam/x86_64/stable</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>evolution.desktop</id>
-    <categories>
-      <category>Utility</category>
-    </categories>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/evolution/evolution-thumb.jpg</value>
-    </metadata>
-  </component>
-  <component type="desktop" merge="append">
-    <id>gnome-calculator.desktop</id>
-    <categories>
-      <category>Education</category>
-    </categories>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/gnome-calculator/gnome-calculator-thumb.jpg</value>
-    </metadata>
-  </component>
-  <component type="desktop" merge="append">
-    <id>gnome-control-center.desktop</id>
-    <categories>
-      <category>Education</category>
-    </categories>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/gnome-control-center/gnome-control-center-thumb.jpg</value>
-    </metadata>
-  </component>
-  <component type="desktop" merge="append">
-    <id>io.github.mmstick.FontFinder</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/io.github.mmstick.FontFinder/x86_64/stable</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>libreoffice-calc.desktop</id>
-    <categories>
-      <category>Education</category>
-    </categories>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/libreoffice-calc/libreoffice-calc-thumb.jpg</value>
-    </metadata>
-  </component>
-  <component type="desktop" merge="append">
-    <id>libreoffice-impress.desktop</id>
-    <categories>
-      <category>Education</category>
-    </categories>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/libreoffice-impress/libreoffice-impress-thumb.jpg</value>
-    </metadata>
-  </component>
-  <component type="desktop" merge="append">
-    <id>libreoffice-writer.desktop</id>
-    <categories>
-      <category>Education</category>
-    </categories>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/libreoffice-writer/libreoffice-writer-thumb.jpg</value>
-    </metadata>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.libreoffice.LibreOffice</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/org.libreoffice.LibreOffice/x86_64/stable</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.kde.gcompris.desktop</id>
-    <categories>
-      <category>Education</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>net.minetest.Minetest</id>
-    <categories>
-      <category>Education</category>
-    </categories>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/net.minetest.Minetest/x86_64/stable</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>net.scribus.Scribus</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/net.scribus.Scribus/x86_64/stable</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.audacityteam.Audacity</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/org.audacityteam.Audacity/x86_64/stable</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.tux4kids.tuxmath.desktop</id>
-    <categories>
-      <category>Game</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.tux4kids.tuxtype.desktop</id>
-    <categories>
-      <category>Game</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.gimp.GIMP</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/org.gimp.GIMP/x86_64/stable</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.gnome.Chess</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/org.gnome.Chess/x86_64/stable</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.gnome.gedit.desktop</id>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/org.gnome.gedit/org.gnome.gedit-thumb.jpg</value>
-    </metadata>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.gnome.Genius.desktop</id>
-    <categories>
-      <category>Education</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.gnome.Gnote.desktop</id>
-    <categories>
-      <category>Office</category>
-      <category>Education</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.gnome.Nautilus.desktop</id>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/org.gnome.Nautilus/org.gnome.nautilus-thumb.jpg</value>
-    </metadata>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.github.labyrinth_team.labyrinth.desktop</id>
-    <categories>
-      <category>Education</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.gnome.Screenshot.desktop</id>
-    <categories>
-      <category>Education</category>
-    </categories>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/org.gnome.Screenshot/org.gnome.screenshot-thumb.jpg</value>
-    </metadata>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.gnome.SwellFoop</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/org.gnome.SwellFoop/x86_64/stable</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.gnome.Terminal.desktop</id>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/org.gnome.Terminal/org.gnome.terminal-thumb.jpg</value>
-    </metadata>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.gnome.Totem.desktop</id>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/org.gnome.Totem/org.gnome.totem-thumb.jpg</value>
-    </metadata>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.inkscape.Inkscape</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/org.inkscape.Inkscape/x86_64/stable</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.kde.gcompris</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/org.kde.gcompris/x86_64/stable</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.kde.katomic.desktop</id>
-    <categories>
-      <category>Education</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.kde.khangman.desktop</id>
-    <categories>
-      <category>Education</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.kde.krita</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/org.kde.krita/x86_64/stable</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>io.thp.numptyphysics.desktop</id>
-    <categories>
-      <category>Education</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.mozilla.firefox</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/org.mozilla.firefox/x86_64/stable</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.openscad.OpenSCAD.desktop</id>
-    <categories>
-      <category>Office</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.squeakland.Etoys.desktop</id>
-    <categories>
-      <category>Game</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>edu.mit.Scratch.desktop</id>
-    <categories>
-      <category>Game</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.laptop.TurtleArtActivity.desktop</id>
-    <categories>
-      <category>Game</category>
-    </categories>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.telegram.desktop</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/org.telegram.desktop/x86_64/stable</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.tuxpaint.Tuxpaint</id>
-    <categories>
-      <category>Graphics</category>
-    </categories>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/org.tuxpaint.Tuxpaint/x86_64/stable</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>org.videolan.VLC</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/org.videolan.VLC/x86_64/stable</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>rhythmbox.desktop</id>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/rhythmbox/rhythmbox-thumb.jpg</value>
-    </metadata>
-  </component>
-  <component type="desktop" merge="append">
-    <id>shotwell.desktop</id>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/shotwell/shotwell-thumb.jpg</value>
-    </metadata>
-  </component>
-  <component type="desktop" merge="append">
-    <id>simple-scan.desktop</id>
-    <categories>
-      <category>Utility</category>
-      <category>Office</category>
-    </categories>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/simple-scan/simple-scan-thumb.jpg</value>
-    </metadata>
-  </component>
-  <component type="desktop" merge="append">
-    <id>us.zoom.Zoom</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/us.zoom.Zoom/x86_64/stable</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>vinagre.desktop</id>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/vinagre/vinagre-thumb.jpg</value>
-    </metadata>
-  </component>
-  <component type="desktop" merge="append">
-    <id>yelp.desktop</id>
-    <metadata>
-      <value key="GnomeSoftware::popular-background">https://d3lapyynmdp1i9.cloudfront.net/thumbnails/yelp/yelp-thumb.jpg</value>
-    </metadata>
-  </component>
-  <!-- Entries below this point generated by generate_endless_apps_popular_xml.sh script.
-       Refer to https://phabricator.endlessm.com/w/software/gnome-software/featured-apps/ -->
-  <component type="desktop" merge="append">
-    <id>com.endlessm.all_that_is_interesting.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.all_that_is_interesting.en/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.alodita.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.alodita.id/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.alodokter.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.alodokter.id/x86_64/eos3</bundle>
-  </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.animals.bn_BD</id>
     <kudos>
@@ -416,6 +23,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.animals.bn_BD/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.animals.en</id>
     <kudos>
@@ -423,6 +31,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.animals.en/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.animals.es</id>
     <kudos>
@@ -430,6 +39,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.animals.es/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.animals.es_GT</id>
     <kudos>
@@ -437,6 +47,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.animals.es_GT/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.animals.pt</id>
     <kudos>
@@ -444,6 +55,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.animals.pt/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.animals.th</id>
     <kudos>
@@ -451,6 +63,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.animals.th/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.animals.vi</id>
     <kudos>
@@ -458,6 +71,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.animals.vi/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.astronomy.en</id>
     <kudos>
@@ -465,6 +79,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.astronomy.en/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.astronomy.es</id>
     <kudos>
@@ -472,6 +87,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.astronomy.es/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.astronomy.id</id>
     <kudos>
@@ -479,6 +95,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.astronomy.id/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.astronomy.pt</id>
     <kudos>
@@ -486,6 +103,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.astronomy.pt/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.astronomy.vi</id>
     <kudos>
@@ -493,20 +111,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.astronomy.vi/x86_64/eos3</bundle>
   </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.bengali_curriculum.bn_BD</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.bengali_curriculum.bn_BD/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.beritagar.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.beritagar.id/x86_64/eos3</bundle>
-  </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.bible.en</id>
     <kudos>
@@ -514,6 +119,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.bible.en/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.bible.sw</id>
     <kudos>
@@ -521,13 +127,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.bible.sw/x86_64/eos3</bundle>
   </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.bibliotecas_embrapa.pt_BR</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.bibliotecas_embrapa.pt_BR/x86_64/eos3</bundle>
-  </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.biology.en</id>
     <kudos>
@@ -535,6 +135,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.biology.en/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.biology.es</id>
     <kudos>
@@ -542,6 +143,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.biology.es/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.biology.id</id>
     <kudos>
@@ -549,6 +151,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.biology.id/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.biology.pt</id>
     <kudos>
@@ -556,6 +159,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.biology.pt/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.biology.th</id>
     <kudos>
@@ -563,6 +167,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.biology.th/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.biology.vi</id>
     <kudos>
@@ -570,104 +175,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.biology.vi/x86_64/eos3</bundle>
   </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.bola_net.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.bola_net.id/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.bollywoodlife.en_IN</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.bollywoodlife.en_IN/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.bong_da.vi</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.bong_da.vi/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.celebrities.bn_BD</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.celebrities.bn_BD/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.celebrities.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.celebrities.en/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.celebrities.es</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.celebrities.es/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.celebrities.es_GT</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.celebrities.es_GT/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.celebrities.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.celebrities.id/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.celebrities.pt</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.celebrities.pt/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.celebrities.th</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.celebrities.th/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.celebrities.vi</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.celebrities.vi/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.childrens_collection.es</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.childrens_collection.es/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.chinese_curriculum_english.zh_CN</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.chinese_curriculum_english.zh_CN/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.chinese_curriculum_math.zh_CN</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.chinese_curriculum_math.zh_CN/x86_64/eos3</bundle>
-  </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.cooking.ar</id>
     <kudos>
@@ -675,6 +183,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.cooking.ar/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.cooking.bn_BD</id>
     <kudos>
@@ -682,6 +191,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.cooking.bn_BD/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.cooking.en</id>
     <kudos>
@@ -689,6 +199,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.cooking.en/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.cooking.es</id>
     <kudos>
@@ -696,6 +207,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.cooking.es/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.cooking.es_GT</id>
     <kudos>
@@ -703,6 +215,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.cooking.es_GT/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.cooking.pt</id>
     <kudos>
@@ -710,41 +223,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.cooking.pt/x86_64/eos3</bundle>
   </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.creativity_center.es</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.creativity_center.es/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.cricbuzz.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.cricbuzz.en/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.detik_news.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.detik_news.id/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.diah_didis.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.diah_didis.id/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.dianarikasari.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.dianarikasari.id/x86_64/eos3</bundle>
-  </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.dinosaurs.en</id>
     <kudos>
@@ -752,6 +231,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.dinosaurs.en/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.dinosaurs.es</id>
     <kudos>
@@ -759,6 +239,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.dinosaurs.es/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.dinosaurs.pt</id>
     <kudos>
@@ -766,6 +247,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.dinosaurs.pt/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.dinosaurs.vi</id>
     <kudos>
@@ -773,27 +255,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.dinosaurs.vi/x86_64/eos3</bundle>
   </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.disabilities.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.disabilities.en/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.disabilities.es</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.disabilities.es/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.edu_collections.es_GT</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.edu_collections.es_GT/x86_64/eos3</bundle>
-  </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.encyclopedia.ar</id>
     <kudos>
@@ -801,6 +263,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.ar/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.encyclopedia.en</id>
     <kudos>
@@ -808,6 +271,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.en/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.encyclopedia.es</id>
     <kudos>
@@ -815,6 +279,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.es/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.encyclopedia.fr</id>
     <kudos>
@@ -822,6 +287,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.fr/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.encyclopedia.id</id>
     <kudos>
@@ -829,6 +295,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.id/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.encyclopedia.pt</id>
     <kudos>
@@ -836,6 +303,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.pt/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.encyclopedia.ru</id>
     <kudos>
@@ -843,6 +311,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.ru/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.encyclopedia.sw</id>
     <kudos>
@@ -850,6 +319,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.sw/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.encyclopedia.th</id>
     <kudos>
@@ -857,6 +327,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.th/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.encyclopedia.vi</id>
     <kudos>
@@ -864,48 +335,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.vi/x86_64/eos3</bundle>
   </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.extra.pt_BR</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.extra.pt_BR/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.farming.bn_BD</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.farming.bn_BD/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.farming.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.farming.en/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.farming.es_GT</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.farming.es_GT/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.farming.pt</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.farming.pt/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.farming.vi</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.farming.vi/x86_64/eos3</bundle>
-  </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.finance</id>
     <kudos>
@@ -913,97 +343,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.finance/x86_64/eos3</bundle>
   </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.geography.bn_BD</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.geography.bn_BD/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.geography.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.geography.en/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.geography.es</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.geography.es/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.geography.es_GT</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.geography.es_GT/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.geography.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.geography.id/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.geography.pt</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.geography.pt/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.geography.th</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.geography.th/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.geography.vi</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.geography.vi/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.girl_eat_world.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.girl_eat_world.en/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.gordelicias.pt_BR</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.gordelicias.pt_BR/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.green_curriculum.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.green_curriculum.en/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.guatemala.es_GT</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.guatemala.es_GT/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.handicrafts.es</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.handicrafts.es/x86_64/eos3</bundle>
-  </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.health.ar</id>
     <kudos>
@@ -1011,6 +351,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.health.ar/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.health.en</id>
     <kudos>
@@ -1018,6 +359,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.health.en/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.health.es</id>
     <kudos>
@@ -1025,27 +367,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.health.es/x86_64/eos3</bundle>
   </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.healthy_teeth.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.healthy_teeth.en/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.healthy_teeth.es</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.healthy_teeth.es/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.hipwee.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.hipwee.id/x86_64/eos3</bundle>
-  </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.history.bn_BD</id>
     <kudos>
@@ -1053,6 +375,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.history.bn_BD/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.history.en</id>
     <kudos>
@@ -1060,6 +383,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.history.en/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.history.es</id>
     <kudos>
@@ -1067,6 +391,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.history.es/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.history.es_GT</id>
     <kudos>
@@ -1074,6 +399,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.history.es_GT/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.history.id</id>
     <kudos>
@@ -1081,6 +407,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.history.id/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.history.pt</id>
     <kudos>
@@ -1088,6 +415,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.history.pt/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.history.th</id>
     <kudos>
@@ -1095,6 +423,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.history.th/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.history.vi</id>
     <kudos>
@@ -1102,6 +431,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.history.vi/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.howto.en</id>
     <kudos>
@@ -1109,6 +439,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.howto.en/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.howto.es</id>
     <kudos>
@@ -1116,6 +447,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.howto.es/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.howto.pt</id>
     <kudos>
@@ -1123,6 +455,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.howto.pt/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.ingles_con_rodrigo.es</id>
     <kudos>
@@ -1130,125 +463,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.ingles_con_rodrigo.es/x86_64/eos3</bundle>
   </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.inibudi_profesi.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.inibudi_profesi.id/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.inibudi_sd.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.inibudi_sd.id/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.inibudi_sma.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.inibudi_sma.id/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.inibudi_smp.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.inibudi_smp.id/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.inquirer.en_PH</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.inquirer.en_PH/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.iqro.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.iqro.id/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.just_lia.pt</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.just_lia.pt/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.kapan_lagi.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.kapan_lagi.id/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.khaosod.th</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.khaosod.th/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.khaosod_english.th</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.khaosod_english.th/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.library.pt</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.library.pt/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.mamomomomo.th</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.mamomomomo.th/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.manila_times.en_PH</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.manila_times.en_PH/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.marie_therese.fr</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.marie_therese.fr/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.marischkaprudence.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.marischkaprudence.id/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.maternity.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.maternity.en/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.maternity.es</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.maternity.es/x86_64/eos3</bundle>
-  </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.math.en</id>
     <kudos>
@@ -1256,6 +471,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.math.en/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.math.es</id>
     <kudos>
@@ -1263,6 +479,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.math.es/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.math.pt</id>
     <kudos>
@@ -1270,6 +487,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.math.pt/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.math.vi</id>
     <kudos>
@@ -1277,55 +495,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.math.vi/x86_64/eos3</bundle>
   </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.matichon.th</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.matichon.th/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.mayan_languages.es_GT</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.mayan_languages.es_GT/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.microenterprises.es_GT</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.microenterprises.es_GT/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.mpower_agriculture.bn_BD</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.mpower_agriculture.bn_BD/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.mpower_citizen_services.bn_BD</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.mpower_citizen_services.bn_BD/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.mpower_health.bn_BD</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.mpower_health.bn_BD/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.mpower_law_and_rights.bn_BD</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.mpower_law_and_rights.bn_BD/x86_64/eos3</bundle>
-  </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.myths.en</id>
     <kudos>
@@ -1333,6 +503,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.myths.en/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.myths.es</id>
     <kudos>
@@ -1340,6 +511,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.myths.es/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.myths.pt</id>
     <kudos>
@@ -1347,132 +519,15 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.myths.pt/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
-    <id>com.endlessm.nature_is_speaking.en</id>
+    <id>com.endlessm.photos</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak">app/com.endlessm.nature_is_speaking.en/x86_64/eos3</bundle>
+    <bundle type="flatpak">app/com.endlessm.photos/x86_64/stable</bundle>
   </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.ndtv_sports.en_IN</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.ndtv_sports.en_IN/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.okezone.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.okezone.id/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.pergidulu.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.pergidulu.id/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.phu_nu.vi</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.phu_nu.vi/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.physics.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.physics.en/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.physics.es</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.physics.es/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.physics.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.physics.id/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.physics.pt</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.physics.pt/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.physics.vi</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.physics.vi/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.pobpad.th</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.pobpad.th/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.prensa_libre.es_GT</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.prensa_libre.es_GT/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.primer.en_PH</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.primer.en_PH/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.programming</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.programming/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.programming_guide.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.programming_guide.en/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.programming_guide.es</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.programming_guide.es/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.quote_of_the_day.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.quote_of_the_day.en/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.rappler.en_PH</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.rappler.en_PH/x86_64/eos3</bundle>
-  </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.resume</id>
     <kudos>
@@ -1480,69 +535,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.resume/x86_64/eos3</bundle>
   </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.soccer.bn_BD</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.soccer.bn_BD/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.soccer.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.soccer.en/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.soccer.es</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.soccer.es/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.soccer.es_GT</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.soccer.es_GT/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.soccer.id</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.soccer.id/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.soccer.pt</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.soccer.pt/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.soccer.th</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.soccer.th/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.soccer.vi</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.soccer.vi/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.social_enterprises.es_GT</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.social_enterprises.es_GT/x86_64/eos3</bundle>
-  </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.socialsciences.en</id>
     <kudos>
@@ -1550,6 +543,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.socialsciences.en/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.socialsciences.es</id>
     <kudos>
@@ -1557,6 +551,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.socialsciences.es/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.socialsciences.es_GT</id>
     <kudos>
@@ -1564,6 +559,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.socialsciences.es_GT/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.socialsciences.id</id>
     <kudos>
@@ -1571,6 +567,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.socialsciences.id/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.socialsciences.pt</id>
     <kudos>
@@ -1578,6 +575,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.socialsciences.pt/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.socialsciences.th</id>
     <kudos>
@@ -1585,6 +583,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.socialsciences.th/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.socialsciences.vi</id>
     <kudos>
@@ -1592,41 +591,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.socialsciences.vi/x86_64/eos3</bundle>
   </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.textbooks.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.textbooks.en/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.thai_rath.th</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.thai_rath.th/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.thanh_nien.vi</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.thanh_nien.vi/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.times_of_india.en_IN</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.times_of_india.en_IN/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.translation</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.translation/x86_64/eos3</bundle>
-  </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.travel.bn_BD</id>
     <kudos>
@@ -1634,6 +599,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.travel.bn_BD/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.travel.en</id>
     <kudos>
@@ -1641,6 +607,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.travel.en/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.travel.es</id>
     <kudos>
@@ -1648,6 +615,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.travel.es/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.travel.es_GT</id>
     <kudos>
@@ -1655,6 +623,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.travel.es_GT/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.travel.pt</id>
     <kudos>
@@ -1662,6 +631,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.travel.pt/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.ubongo_kids_demo</id>
     <kudos>
@@ -1669,13 +639,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.ubongo_kids_demo/x86_64/eos3</bundle>
   </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.uefa.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.uefa.en/x86_64/eos3</bundle>
-  </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.video_animal_kingdom</id>
     <kudos>
@@ -1683,6 +647,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.video_animal_kingdom/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.video_animations</id>
     <kudos>
@@ -1690,6 +655,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.video_animations/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.video_kids</id>
     <kudos>
@@ -1697,6 +663,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.video_kids/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.video_movement</id>
     <kudos>
@@ -1704,55 +671,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.video_movement/x86_64/eos3</bundle>
   </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.vroom.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.vroom.en/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.vroom.es</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.vroom.es/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.vtv.vi</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.vtv.vi/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.water_and_sanitation.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.water_and_sanitation.en/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.water_and_sanitation.es</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.water_and_sanitation.es/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.wiki_art.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.wiki_art.en/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessm.word_of_the_day.en</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessm.word_of_the_day.en/x86_64/eos3</bundle>
-  </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.world_literature.en</id>
     <kudos>
@@ -1760,6 +679,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.world_literature.en/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessm.world_literature.es</id>
     <kudos>
@@ -1767,55 +687,47 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessm.world_literature.es/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
-    <id>com.endlessm.wowshack.id</id>
+    <id>com.endlessnetwork.MidnightmareTeddy</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak">app/com.endlessm.wowshack.id/x86_64/eos3</bundle>
+    <bundle type="flatpak">app/com.endlessnetwork.MidnightmareTeddy/x86_64/stable</bundle>
   </component>
+
   <component type="desktop" merge="append">
-    <id>com.endlessm.your_health.pt_BR</id>
+    <id>com.endlessnetwork.aqueducts</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak">app/com.endlessm.your_health.pt_BR/x86_64/eos3</bundle>
+    <bundle type="flatpak">app/com.endlessnetwork.aqueducts/x86_64/stable</bundle>
   </component>
+
   <component type="desktop" merge="append">
-    <id>com.endlessnetwork.arduinoprojects</id>
+    <id>com.endlessnetwork.dragonsapprentice</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak">app/com.endlessnetwork.arduinoprojects/x86_64/eos3</bundle>
+    <bundle type="flatpak">app/com.endlessnetwork.dragonsapprentice/x86_64/stable</bundle>
   </component>
+
   <component type="desktop" merge="append">
-    <id>com.endlessnetwork.blendertutorials</id>
+    <id>com.endlessnetwork.fablemaker</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak">app/com.endlessnetwork.blendertutorials/x86_64/eos3</bundle>
+    <bundle type="flatpak">app/com.endlessnetwork.fablemaker/x86_64/stable</bundle>
   </component>
+
   <component type="desktop" merge="append">
-    <id>com.endlessnetwork.csstutorials</id>
+    <id>com.endlessnetwork.frogsquash</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak">app/com.endlessnetwork.csstutorials/x86_64/eos3</bundle>
+    <bundle type="flatpak">app/com.endlessnetwork.frogsquash/x86_64/stable</bundle>
   </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessnetwork.drawingtutorials</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessnetwork.drawingtutorials/x86_64/eos3</bundle>
-  </component>
-  <component type="desktop" merge="append">
-    <id>com.endlessnetwork.guitartutorials</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <bundle type="flatpak">app/com.endlessnetwork.guitartutorials/x86_64/eos3</bundle>
-  </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessnetwork.htmltutorials</id>
     <kudos>
@@ -1823,13 +735,23 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessnetwork.htmltutorials/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
-    <id>com.endlessnetwork.raspberrypiprojects</id>
+    <id>com.endlessnetwork.missilemath</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak">app/com.endlessnetwork.raspberrypiprojects/x86_64/eos3</bundle>
+    <bundle type="flatpak">app/com.endlessnetwork.missilemath/x86_64/stable</bundle>
   </component>
+
+  <component type="desktop" merge="append">
+    <id>com.endlessnetwork.passage</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/com.endlessnetwork.passage/x86_64/stable</bundle>
+  </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessnetwork.sciencesnacks</id>
     <kudos>
@@ -1837,6 +759,7 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessnetwork.sciencesnacks/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
     <id>com.endlessnetwork.shortfilms</id>
     <kudos>
@@ -1844,11 +767,236 @@
     </kudos>
     <bundle type="flatpak">app/com.endlessnetwork.shortfilms/x86_64/eos3</bundle>
   </component>
+
   <component type="desktop" merge="append">
-    <id>com.endlessnetwork.videogamestutorials</id>
+    <id>com.endlessnetwork.tankwarriors</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak">app/com.endlessnetwork.videogamestutorials/x86_64/eos3</bundle>
+    <bundle type="flatpak">app/com.endlessnetwork.tankwarriors/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>com.endlessnetwork.whitehouse</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/com.endlessnetwork.whitehouse/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>com.google.Chrome</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/com.google.Chrome/x86_64/eos3</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>com.hack_computer.Clubhouse</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/com.hack_computer.Clubhouse/x86_64/eos3</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>com.microsoft.Teams</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/com.microsoft.Teams/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>com.skype.Client</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/com.skype.Client/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>com.spotify.Client</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/com.spotify.Client/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>com.transmissionbt.Transmission</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/com.transmissionbt.Transmission/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>com.tux4kids.tuxmath</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/com.tux4kids.tuxmath/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>com.tux4kids.tuxtype</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/com.tux4kids.tuxtype/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>com.unity.UnityHub</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/com.unity.UnityHub/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>com.valvesoftware.Steam</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/com.valvesoftware.Steam/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>edu.mit.Scratch</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/edu.mit.Scratch/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>io.thp.numptyphysics</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/io.thp.numptyphysics/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>net.minetest.Minetest</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/net.minetest.Minetest/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>net.scribus.Scribus</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/net.scribus.Scribus/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>org.audacityteam.Audacity</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/org.audacityteam.Audacity/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>org.blender.Blender</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/org.blender.Blender/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>org.gimp.GIMP</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/org.gimp.GIMP/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>org.gnome.Builder</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/org.gnome.Builder/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>org.inkscape.Inkscape</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/org.inkscape.Inkscape/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>org.kde.gcompris</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/org.kde.gcompris/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>org.kde.krita</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/org.kde.krita/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>org.kde.ktuberling</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/org.kde.ktuberling/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>org.laptop.TurtleArtActivity</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/org.laptop.TurtleArtActivity/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>org.mozilla.firefox</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/org.mozilla.firefox/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>org.tuxpaint.Tuxpaint</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/org.tuxpaint.Tuxpaint/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>org.videolan.VLC</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/org.videolan.VLC/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>us.zoom.Zoom</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <bundle type="flatpak">app/us.zoom.Zoom/x86_64/stable</bundle>
   </component>
 </components>
