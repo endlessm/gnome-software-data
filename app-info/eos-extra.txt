@@ -119,6 +119,7 @@ org.kde.gcompris
 org.kde.krita
 org.kde.ktuberling
 org.laptop.TurtleArtActivity
+org.learningequality.Kolibri
 org.mozilla.firefox
 org.tuxpaint.Tuxpaint
 org.videolan.VLC
