@@ -121,6 +121,7 @@ org.kde.ktuberling
 org.laptop.TurtleArtActivity
 org.learningequality.Kolibri
 org.mozilla.firefox
+org.telegram.desktop
 org.tuxpaint.Tuxpaint
 org.videolan.VLC
 us.zoom.Zoom
