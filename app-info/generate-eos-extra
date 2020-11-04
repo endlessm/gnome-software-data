@@ -76,8 +76,10 @@ def main():
         if appstream_id is None:
             raise ValueError(f"No AppStream ID for {flatpak_ref}")
 
-        # FIXME: this is wrong, but without it most of the apps don't appear!
-        if appstream_id.endswith(".desktop"):
+        # App ids are not supposed to have less than 3 fields, as per
+        # https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-id-generic
+        if (appstream_id.endswith(".desktop") and
+                len(appstream_id.split('.')) > 3):
             appstream_id = appstream_id[:-len(".desktop")]
 
         xmls.append(
