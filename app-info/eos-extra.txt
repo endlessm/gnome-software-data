@@ -112,6 +112,7 @@ net.minetest.Minetest
 net.scribus.Scribus
 org.audacityteam.Audacity
 org.blender.Blender
+org.chromium.Chromium
 org.gimp.GIMP
 org.gnome.Builder
 org.inkscape.Inkscape
