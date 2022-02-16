@@ -19,6 +19,7 @@
 
 import argparse
 import os
+import sys
 import gi
 
 gi.require_version("Flatpak", "1.0")
@@ -87,9 +88,10 @@ def main():
     ]
 
     for name in app_names:
-        flatpak_ref, appstream_id, categories = apps_by_name[name]
-        if appstream_id is None:
-            raise ValueError(f"No AppStream ID for {flatpak_ref}")
+        try:
+            flatpak_ref, appstream_id, categories = apps_by_name[name]
+        except KeyError:
+            sys.exit(f"No AppStream data for {name}")
 
         # App ids are not supposed to have less than 3 fields, as per
         # https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-id-generic
