@@ -82,6 +82,14 @@ def main():
                 len(appstream_id.split('.')) > 3):
             appstream_id = appstream_id[:-len(".desktop")]
 
+        # Add XML to include the app in the carousel on the overview page, the
+        # “Editor’s Choice” section on the overview page, the carousel on
+        # category pages, and the “Editor’s Choice” section on category pages.
+        #
+        # This will only work for apps which have a hi-res icon (defined in the
+        # main metainfo entry for that app).
+        #
+        # See https://gitlab.gnome.org/GNOME/gnome-software/-/blob/main/doc/vendor-customisation.md#user-content-featured-apps-and-editors-choice
         xmls.append(
             f"""
   <component type="desktop" merge="append">
@@ -89,6 +97,12 @@ def main():
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">{flatpak_ref}</bundle>
   </component>
 """
