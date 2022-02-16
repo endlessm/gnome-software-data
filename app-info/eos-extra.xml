@@ -5,6 +5,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Office</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.calibre_ebook.calibre/x86_64/stable</bundle>
   </component>
 
@@ -13,6 +20,16 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>FileTransfer</category>
+      <category>Network</category>
+      <category>Office</category>
+      <category>Utility</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.dropbox.Client/x86_64/stable</bundle>
   </component>
 
@@ -21,6 +38,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.animals.bn_BD/x86_64/eos3</bundle>
   </component>
 
@@ -29,6 +54,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.animals.en/x86_64/eos3</bundle>
   </component>
 
@@ -37,6 +70,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.animals.es/x86_64/eos3</bundle>
   </component>
 
@@ -45,6 +86,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.animals.es_GT/x86_64/eos3</bundle>
   </component>
 
@@ -53,6 +102,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.animals.pt/x86_64/eos3</bundle>
   </component>
 
@@ -61,6 +118,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.animals.th/x86_64/eos3</bundle>
   </component>
 
@@ -69,6 +134,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.animals.vi/x86_64/eos3</bundle>
   </component>
 
@@ -77,6 +150,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.astronomy.en/x86_64/eos3</bundle>
   </component>
 
@@ -85,6 +166,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.astronomy.es/x86_64/eos3</bundle>
   </component>
 
@@ -93,6 +182,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.astronomy.id/x86_64/eos3</bundle>
   </component>
 
@@ -101,6 +198,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.astronomy.pt/x86_64/eos3</bundle>
   </component>
 
@@ -109,6 +214,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.astronomy.vi/x86_64/eos3</bundle>
   </component>
 
@@ -117,6 +230,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.bible.en/x86_64/eos3</bundle>
   </component>
 
@@ -125,6 +245,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.bible.sw/x86_64/eos3</bundle>
   </component>
 
@@ -133,6 +260,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.biology.en/x86_64/eos3</bundle>
   </component>
 
@@ -141,6 +276,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.biology.es/x86_64/eos3</bundle>
   </component>
 
@@ -149,6 +292,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.biology.id/x86_64/eos3</bundle>
   </component>
 
@@ -157,6 +308,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.biology.pt/x86_64/eos3</bundle>
   </component>
 
@@ -165,6 +324,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.biology.th/x86_64/eos3</bundle>
   </component>
 
@@ -173,6 +340,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.biology.vi/x86_64/eos3</bundle>
   </component>
 
@@ -181,6 +356,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.cooking.ar/x86_64/eos3</bundle>
   </component>
 
@@ -189,6 +371,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.cooking.bn_BD/x86_64/eos3</bundle>
   </component>
 
@@ -197,6 +386,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.cooking.en/x86_64/eos3</bundle>
   </component>
 
@@ -205,6 +401,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.cooking.es/x86_64/eos3</bundle>
   </component>
 
@@ -213,6 +416,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.cooking.es_GT/x86_64/eos3</bundle>
   </component>
 
@@ -221,6 +431,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.cooking.pt/x86_64/eos3</bundle>
   </component>
 
@@ -229,6 +446,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.dinosaurs.en/x86_64/eos3</bundle>
   </component>
 
@@ -237,6 +462,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.dinosaurs.es/x86_64/eos3</bundle>
   </component>
 
@@ -245,6 +478,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.dinosaurs.pt/x86_64/eos3</bundle>
   </component>
 
@@ -253,6 +494,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.dinosaurs.vi/x86_64/eos3</bundle>
   </component>
 
@@ -261,6 +510,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.ar/x86_64/eos3</bundle>
   </component>
 
@@ -269,6 +526,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.en/x86_64/eos3</bundle>
   </component>
 
@@ -277,6 +542,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.es/x86_64/eos3</bundle>
   </component>
 
@@ -285,6 +558,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.fr/x86_64/eos3</bundle>
   </component>
 
@@ -293,6 +574,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.id/x86_64/eos3</bundle>
   </component>
 
@@ -301,6 +590,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.pt/x86_64/eos3</bundle>
   </component>
 
@@ -309,6 +606,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.ru/x86_64/eos3</bundle>
   </component>
 
@@ -317,6 +622,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.sw/x86_64/eos3</bundle>
   </component>
 
@@ -325,6 +638,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.th/x86_64/eos3</bundle>
   </component>
 
@@ -333,6 +654,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.encyclopedia.vi/x86_64/eos3</bundle>
   </component>
 
@@ -341,6 +670,15 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Family</category>
+      <category>Finance</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.finance/x86_64/eos3</bundle>
   </component>
 
@@ -349,6 +687,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.health.ar/x86_64/eos3</bundle>
   </component>
 
@@ -357,6 +702,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.health.en/x86_64/eos3</bundle>
   </component>
 
@@ -365,6 +717,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.health.es/x86_64/eos3</bundle>
   </component>
 
@@ -373,6 +732,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.history.bn_BD/x86_64/eos3</bundle>
   </component>
 
@@ -381,6 +748,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.history.en/x86_64/eos3</bundle>
   </component>
 
@@ -389,6 +764,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.history.es/x86_64/eos3</bundle>
   </component>
 
@@ -397,6 +780,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.history.es_GT/x86_64/eos3</bundle>
   </component>
 
@@ -405,6 +796,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.history.id/x86_64/eos3</bundle>
   </component>
 
@@ -413,6 +812,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.history.pt/x86_64/eos3</bundle>
   </component>
 
@@ -421,6 +828,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.history.th/x86_64/eos3</bundle>
   </component>
 
@@ -429,6 +844,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.history.vi/x86_64/eos3</bundle>
   </component>
 
@@ -437,6 +860,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.howto.en/x86_64/eos3</bundle>
   </component>
 
@@ -445,6 +875,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.howto.es/x86_64/eos3</bundle>
   </component>
 
@@ -453,6 +890,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.howto.pt/x86_64/eos3</bundle>
   </component>
 
@@ -461,6 +905,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.ingles_con_rodrigo.es/x86_64/eos3</bundle>
   </component>
 
@@ -469,6 +920,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.math.en/x86_64/eos3</bundle>
   </component>
 
@@ -477,6 +936,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.math.es/x86_64/eos3</bundle>
   </component>
 
@@ -485,6 +952,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.math.pt/x86_64/eos3</bundle>
   </component>
 
@@ -493,6 +968,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.math.vi/x86_64/eos3</bundle>
   </component>
 
@@ -501,6 +984,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.myths.en/x86_64/eos3</bundle>
   </component>
 
@@ -509,6 +1000,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.myths.es/x86_64/eos3</bundle>
   </component>
 
@@ -517,6 +1016,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.myths.pt/x86_64/eos3</bundle>
   </component>
 
@@ -525,6 +1032,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Graphics</category>
+      <category>Utility</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.photos/x86_64/stable</bundle>
   </component>
 
@@ -533,6 +1048,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Office</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.resume/x86_64/eos3</bundle>
   </component>
 
@@ -541,6 +1064,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.socialsciences.en/x86_64/eos3</bundle>
   </component>
 
@@ -549,6 +1080,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.socialsciences.es/x86_64/eos3</bundle>
   </component>
 
@@ -557,6 +1096,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.socialsciences.es_GT/x86_64/eos3</bundle>
   </component>
 
@@ -565,6 +1112,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.socialsciences.id/x86_64/eos3</bundle>
   </component>
 
@@ -573,6 +1128,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.socialsciences.pt/x86_64/eos3</bundle>
   </component>
 
@@ -581,6 +1144,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.socialsciences.th/x86_64/eos3</bundle>
   </component>
 
@@ -589,6 +1160,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.socialsciences.vi/x86_64/eos3</bundle>
   </component>
 
@@ -597,6 +1176,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.travel.bn_BD/x86_64/eos3</bundle>
   </component>
 
@@ -605,6 +1192,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.travel.en/x86_64/eos3</bundle>
   </component>
 
@@ -613,6 +1208,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.travel.es/x86_64/eos3</bundle>
   </component>
 
@@ -621,6 +1224,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.travel.es_GT/x86_64/eos3</bundle>
   </component>
 
@@ -629,6 +1240,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.travel.pt/x86_64/eos3</bundle>
   </component>
 
@@ -637,6 +1255,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.ubongo_kids_demo/x86_64/eos3</bundle>
   </component>
 
@@ -645,6 +1270,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.video_animal_kingdom/x86_64/eos3</bundle>
   </component>
 
@@ -653,6 +1285,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.video_animations/x86_64/eos3</bundle>
   </component>
 
@@ -661,6 +1300,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.video_kids/x86_64/eos3</bundle>
   </component>
 
@@ -669,6 +1315,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Reference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.video_movement/x86_64/eos3</bundle>
   </component>
 
@@ -677,6 +1330,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.world_literature.en/x86_64/eos3</bundle>
   </component>
 
@@ -685,6 +1345,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessm.world_literature.es/x86_64/eos3</bundle>
   </component>
 
@@ -693,6 +1360,15 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Game</category>
+      <category>LearnToCode</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessnetwork.MidnightmareTeddy/x86_64/stable</bundle>
   </component>
 
@@ -701,6 +1377,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Game</category>
+      <category>LearnToCode</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessnetwork.aqueducts/x86_64/stable</bundle>
   </component>
 
@@ -709,6 +1393,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Game</category>
+      <category>LearnToCode</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessnetwork.dragonsapprentice/x86_64/stable</bundle>
   </component>
 
@@ -717,6 +1409,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>LearnToCode</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessnetwork.fablemaker/x86_64/stable</bundle>
   </component>
 
@@ -725,6 +1424,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Game</category>
+      <category>LearnToCode</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessnetwork.frogsquash/x86_64/stable</bundle>
   </component>
 
@@ -733,6 +1440,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>LearnToCode</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessnetwork.htmltutorials/x86_64/eos3</bundle>
   </component>
 
@@ -741,6 +1456,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Game</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessnetwork.missilemath/x86_64/stable</bundle>
   </component>
 
@@ -749,6 +1471,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Game</category>
+      <category>LearnToCode</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessnetwork.passage/x86_64/stable</bundle>
   </component>
 
@@ -757,6 +1487,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessnetwork.sciencesnacks/x86_64/eos3</bundle>
   </component>
 
@@ -765,6 +1502,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessnetwork.shortfilms/x86_64/eos3</bundle>
   </component>
 
@@ -773,6 +1517,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Game</category>
+      <category>LearnToCode</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessnetwork.tankwarriors/x86_64/stable</bundle>
   </component>
 
@@ -781,6 +1533,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Game</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.endlessnetwork.whitehouse/x86_64/stable</bundle>
   </component>
 
@@ -789,6 +1548,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Network</category>
+      <category>WebBrowser</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.google.Chrome/x86_64/eos3</bundle>
   </component>
 
@@ -797,7 +1564,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
-    <bundle type="flatpak">app/com.hack_computer.Clubhouse/x86_64/eos3</bundle>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>LearnToCode</category>
+      <category>Featured</category>
+    </categories>
+    <bundle type="flatpak">app/com.hack_computer.Clubhouse/x86_64/stable</bundle>
   </component>
 
   <component type="desktop" merge="append">
@@ -805,6 +1579,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Network</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.microsoft.Teams/x86_64/stable</bundle>
   </component>
 
@@ -813,6 +1594,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Application</category>
+      <category>Network</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.skype.Client/x86_64/stable</bundle>
   </component>
 
@@ -821,6 +1610,15 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Audio</category>
+      <category>AudioVideo</category>
+      <category>Music</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.spotify.Client/x86_64/stable</bundle>
   </component>
 
@@ -829,6 +1627,15 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>FileTransfer</category>
+      <category>Network</category>
+      <category>P2P</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.transmissionbt.Transmission/x86_64/stable</bundle>
   </component>
 
@@ -837,6 +1644,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Math</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.tux4kids.tuxmath/x86_64/stable</bundle>
   </component>
 
@@ -845,6 +1660,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.tux4kids.tuxtype/x86_64/stable</bundle>
   </component>
 
@@ -853,6 +1675,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Development</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.unity.UnityHub/x86_64/stable</bundle>
   </component>
 
@@ -861,6 +1690,16 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>FileTransfer</category>
+      <category>Game</category>
+      <category>Network</category>
+      <category>PackageManager</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/com.valvesoftware.Steam/x86_64/stable</bundle>
   </component>
 
@@ -869,6 +1708,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Development</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/edu.mit.Scratch/x86_64/stable</bundle>
   </component>
 
@@ -877,6 +1723,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Game</category>
+      <category>LogicGame</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/io.thp.numptyphysics/x86_64/stable</bundle>
   </component>
 
@@ -885,6 +1739,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Game</category>
+      <category>Simulation</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/net.minetest.Minetest/x86_64/stable</bundle>
   </component>
 
@@ -893,6 +1755,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Graphics</category>
+      <category>Publishing</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/net.scribus.Scribus/x86_64/stable</bundle>
   </component>
 
@@ -901,6 +1771,15 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Audio</category>
+      <category>AudioVideo</category>
+      <category>AudioVideoEditing</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/org.audacityteam.Audacity/x86_64/stable</bundle>
   </component>
 
@@ -909,6 +1788,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>3DGraphics</category>
+      <category>Graphics</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/org.blender.Blender/x86_64/stable</bundle>
   </component>
 
@@ -917,6 +1804,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Network</category>
+      <category>WebBrowser</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/org.chromium.Chromium/x86_64/stable</bundle>
   </component>
 
@@ -925,6 +1820,15 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>2DGraphics</category>
+      <category>Graphics</category>
+      <category>RasterGraphics</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/org.gimp.GIMP/x86_64/stable</bundle>
   </component>
 
@@ -933,6 +1837,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Development</category>
+      <category>IDE</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/org.gnome.Builder/x86_64/stable</bundle>
   </component>
 
@@ -941,6 +1853,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Graphics</category>
+      <category>VectorGraphics</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/org.inkscape.Inkscape/x86_64/stable</bundle>
   </component>
 
@@ -949,6 +1869,15 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Game</category>
+      <category>KidsGame</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/org.kde.gcompris/x86_64/stable</bundle>
   </component>
 
@@ -957,6 +1886,15 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>2DGraphics</category>
+      <category>Graphics</category>
+      <category>RasterGraphics</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/org.kde.krita/x86_64/stable</bundle>
   </component>
 
@@ -965,6 +1903,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Game</category>
+      <category>KidsGame</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/org.kde.ktuberling/x86_64/stable</bundle>
   </component>
 
@@ -973,6 +1919,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Art</category>
+      <category>Education</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/org.laptop.TurtleArtActivity/x86_64/stable</bundle>
   </component>
 
@@ -981,6 +1935,13 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/org.learningequality.Kolibri/x86_64/stable</bundle>
   </component>
 
@@ -989,6 +1950,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Network</category>
+      <category>WebBrowser</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/org.mozilla.firefox/x86_64/stable</bundle>
   </component>
 
@@ -997,6 +1966,15 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Chat</category>
+      <category>InstantMessaging</category>
+      <category>Network</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/org.telegram.desktop/x86_64/stable</bundle>
   </component>
 
@@ -1005,6 +1983,14 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Art</category>
+      <category>Education</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/org.tuxpaint.Tuxpaint/x86_64/stable</bundle>
   </component>
 
@@ -1013,6 +1999,16 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>AudioVideo</category>
+      <category>Player</category>
+      <category>Recorder</category>
+      <category>Video</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/org.videolan.VLC/x86_64/stable</bundle>
   </component>
 
@@ -1021,6 +2017,16 @@
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
     </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>InstantMessaging</category>
+      <category>Network</category>
+      <category>Telephony</category>
+      <category>VideoConference</category>
+      <category>Featured</category>
+    </categories>
     <bundle type="flatpak">app/us.zoom.Zoom/x86_64/stable</bundle>
   </component>
 </components>
