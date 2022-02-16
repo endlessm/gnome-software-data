@@ -38,21 +38,28 @@ def remote_list_apps(installation, remote_name):
     if not store.from_file(appstream_xml_file, None, None):
         raise ValueError(f"Failed to load {appstream_xml_path}")
 
-    appstream_ids_by_ref = {}
+    apps_by_ref = {}
     for app in store.dup_apps():
         # if 'urtle' in app.get_id():
         #     import ipdb; ipdb.set_trace()
         b = app.get_bundles()[0]
         if b.get_kind() == AppStreamGlib.BundleKind.FLATPAK:
-            appstream_ids_by_ref[b.get_id()] = app.get_id()
+            apps_by_ref[b.get_id()] = app
 
     refs = installation.list_remote_refs_sync(remote_name)
     remote_refs_by_name = {}
     for ref in refs:
       if ref.get_kind() == Flatpak.RefKind.APP and ref.get_arch() == ARCH:
             formatted = ref.format_ref()
-            appstream_id = appstream_ids_by_ref.get(formatted)
-            remote_refs_by_name[ref.get_name()] = (formatted, appstream_id)
+            app = apps_by_ref.get(formatted)
+            if not app:
+                continue
+
+            remote_refs_by_name[ref.get_name()] = (
+                formatted,
+                app.get_id(),
+                app.get_categories(),
+            )
 
     return remote_refs_by_name
 
@@ -80,7 +87,7 @@ def main():
     ]
 
     for name in app_names:
-        flatpak_ref, appstream_id = apps_by_name[name]
+        flatpak_ref, appstream_id, categories = apps_by_name[name]
         if appstream_id is None:
             raise ValueError(f"No AppStream ID for {flatpak_ref}")
 
@@ -89,6 +96,12 @@ def main():
         if (appstream_id.endswith(".desktop") and
                 len(appstream_id.split('.')) > 3):
             appstream_id = appstream_id[:-len(".desktop")]
+
+        # FIXME: Build the existing list of categories for the app, as we cannot
+        # append a new category, only overwrite the whole list of categories.
+        # This is due to a tedious bug in gnome-software:
+        # https://gitlab.gnome.org/GNOME/gnome-software/-/issues/1649
+        existing_categories_xml = [f'<category>{c}</category>' for c in categories]
 
         # Add XML to include the app in the carousel on the overview page, the
         # “Editor’s Choice” section on the overview page, the carousel on
@@ -109,6 +122,7 @@ def main():
       <value key="GnomeSoftware::FeatureTile">True</value>
     </custom>
     <categories>
+      {(os.linesep + "      ").join(existing_categories_xml)}
       <category>Featured</category>
     </categories>
     <bundle type="flatpak">{flatpak_ref}</bundle>
