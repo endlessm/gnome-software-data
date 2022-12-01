@@ -96,6 +96,7 @@ com.endlessnetwork.shortfilms
 com.endlessnetwork.tankwarriors
 com.endlessnetwork.whitehouse
 com.gitlab.azymohliad.Qwertone
+com.google.AndroidStudio
 com.google.Chrome
 com.hack_computer.Clubhouse
 com.microsoft.Teams
@@ -107,6 +108,7 @@ com.tux4kids.tuxmath
 com.tux4kids.tuxtype
 com.unity.UnityHub
 com.valvesoftware.Steam
+com.visualstudio.code
 edu.mit.Scratch
 io.github.Figma_Linux.figma_linux
 io.lmms.LMMS
@@ -119,6 +121,7 @@ org.blender.Blender
 org.chromium.Chromium
 org.gimp.GIMP
 org.gnome.Builder
+org.gnome.gitlab.somas.Apostrophe
 org.inkscape.Inkscape
 org.kde.gcompris
 org.kde.krita
@@ -127,6 +130,7 @@ org.laptop.TurtleArtActivity
 org.learningequality.Kolibri
 org.libreoffice.LibreOffice
 org.mozilla.firefox
+org.squeakland.Etoys
 org.telegram.desktop
 org.tuxpaint.Tuxpaint
 org.videolan.VLC
