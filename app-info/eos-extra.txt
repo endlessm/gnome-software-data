@@ -95,6 +95,7 @@ com.endlessnetwork.sciencesnacks
 com.endlessnetwork.shortfilms
 com.endlessnetwork.tankwarriors
 com.endlessnetwork.whitehouse
+com.gitlab.azymohliad.Qwertone
 com.google.Chrome
 com.hack_computer.Clubhouse
 com.microsoft.Teams
@@ -106,9 +107,11 @@ com.tux4kids.tuxtype
 com.unity.UnityHub
 com.valvesoftware.Steam
 edu.mit.Scratch
+io.lmms.LMMS
 io.thp.numptyphysics
 net.minetest.Minetest
 net.scribus.Scribus
+org.ardour.Ardour
 org.audacityteam.Audacity
 org.blender.Blender
 org.chromium.Chromium
