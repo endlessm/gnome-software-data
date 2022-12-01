@@ -86,7 +86,6 @@ com.endlessm.world_literature.en
 com.endlessm.world_literature.es
 com.endlessnetwork.aqueducts
 com.endlessnetwork.dragonsapprentice
-com.endlessnetwork.fablemaker
 com.endlessnetwork.frogsquash
 com.endlessnetwork.htmltutorials
 com.endlessnetwork.MidnightmareTeddy
