@@ -96,6 +96,7 @@ com.endlessnetwork.shortfilms
 com.endlessnetwork.tankwarriors
 com.endlessnetwork.whitehouse
 com.github.birros.WebArchives
+com.github.fushinari.Wordbook
 com.gitlab.azymohliad.Qwertone
 com.google.AndroidStudio
 com.google.Chrome
@@ -133,6 +134,7 @@ org.learningequality.Kolibri
 org.libreoffice.LibreOffice
 org.mozilla.firefox
 org.squeakland.Etoys
+org.sugarlabs.Words
 org.telegram.desktop
 org.tuxpaint.Tuxpaint
 org.videolan.VLC
