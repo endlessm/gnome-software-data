@@ -95,6 +95,7 @@ com.endlessnetwork.sciencesnacks
 com.endlessnetwork.shortfilms
 com.endlessnetwork.tankwarriors
 com.endlessnetwork.whitehouse
+com.github.birros.WebArchives
 com.gitlab.azymohliad.Qwertone
 com.google.AndroidStudio
 com.google.Chrome
@@ -126,6 +127,7 @@ org.inkscape.Inkscape
 org.kde.gcompris
 org.kde.krita
 org.kde.ktuberling
+org.kiwix.desktop
 org.laptop.TurtleArtActivity
 org.learningequality.Kolibri
 org.libreoffice.LibreOffice
