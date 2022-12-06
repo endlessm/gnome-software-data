@@ -1,3 +1,4 @@
+cc.arduino.arduinoide
 com.calibre_ebook.calibre
 com.dropbox.Client
 com.endlessm.animals.bn_BD
