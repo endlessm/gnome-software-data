@@ -1381,6 +1381,7 @@
       <value key="GnomeSoftware::FeatureTile">True</value>
     </custom>
     <categories>
+      <category>Education</category>
       <category>Game</category>
       <category>LearnToCode</category>
       <category>Featured</category>
@@ -1397,6 +1398,7 @@
       <value key="GnomeSoftware::FeatureTile">True</value>
     </custom>
     <categories>
+      <category>Education</category>
       <category>Game</category>
       <category>LearnToCode</category>
       <category>Featured</category>
@@ -1413,6 +1415,8 @@
       <value key="GnomeSoftware::FeatureTile">True</value>
     </custom>
     <categories>
+      <category>Education</category>
+      <category>Game</category>
       <category>LearnToCode</category>
       <category>Featured</category>
     </categories>
@@ -1428,6 +1432,7 @@
       <value key="GnomeSoftware::FeatureTile">True</value>
     </custom>
     <categories>
+      <category>Education</category>
       <category>Game</category>
       <category>LearnToCode</category>
       <category>Featured</category>
@@ -1475,6 +1480,7 @@
       <value key="GnomeSoftware::FeatureTile">True</value>
     </custom>
     <categories>
+      <category>Education</category>
       <category>Game</category>
       <category>LearnToCode</category>
       <category>Featured</category>
@@ -1521,6 +1527,7 @@
       <value key="GnomeSoftware::FeatureTile">True</value>
     </custom>
     <categories>
+      <category>Education</category>
       <category>Game</category>
       <category>LearnToCode</category>
       <category>Featured</category>
@@ -1568,6 +1575,7 @@
       <value key="GnomeSoftware::FeatureTile">True</value>
     </custom>
     <categories>
+      <category>Education</category>
       <category>LearnToCode</category>
       <category>Featured</category>
     </categories>
