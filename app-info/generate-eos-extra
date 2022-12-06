@@ -79,7 +79,10 @@ def main():
     apps_by_name = {}
     apps_by_name.update(remote_list_apps(installation, "eos-apps"))
     # Prefer Flathub apps
-    apps_by_name.update(remote_list_apps(installation, "flathub"))
+    flathub_apps = remote_list_apps(installation, "flathub")
+    # ...except Chrome (https://phabricator.endlessm.com/T26944)
+    del flathub_apps["com.google.Chrome"]
+    apps_by_name.update(flathub_apps)
 
     xmls = [
         """
