@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <components version="0.8" origin="flathub">
   <component type="desktop" merge="append">
+    <id>cc.arduino.arduinoide</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Development</category>
+      <category>Electronics</category>
+      <category>IDE</category>
+      <category>Featured</category>
+    </categories>
+    <bundle type="flatpak">app/cc.arduino.arduinoide/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
     <id>com.calibre_ebook.calibre</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
@@ -1381,6 +1398,7 @@
       <value key="GnomeSoftware::FeatureTile">True</value>
     </custom>
     <categories>
+      <category>Education</category>
       <category>Game</category>
       <category>LearnToCode</category>
       <category>Featured</category>
@@ -1397,26 +1415,12 @@
       <value key="GnomeSoftware::FeatureTile">True</value>
     </custom>
     <categories>
+      <category>Education</category>
       <category>Game</category>
       <category>LearnToCode</category>
       <category>Featured</category>
     </categories>
     <bundle type="flatpak">app/com.endlessnetwork.dragonsapprentice/x86_64/stable</bundle>
-  </component>
-
-  <component type="desktop" merge="append">
-    <id>com.endlessnetwork.fablemaker</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <custom>
-      <value key="GnomeSoftware::FeatureTile">True</value>
-    </custom>
-    <categories>
-      <category>LearnToCode</category>
-      <category>Featured</category>
-    </categories>
-    <bundle type="flatpak">app/com.endlessnetwork.fablemaker/x86_64/stable</bundle>
   </component>
 
   <component type="desktop" merge="append">
@@ -1428,6 +1432,7 @@
       <value key="GnomeSoftware::FeatureTile">True</value>
     </custom>
     <categories>
+      <category>Education</category>
       <category>Game</category>
       <category>LearnToCode</category>
       <category>Featured</category>
@@ -1475,6 +1480,7 @@
       <value key="GnomeSoftware::FeatureTile">True</value>
     </custom>
     <categories>
+      <category>Education</category>
       <category>Game</category>
       <category>LearnToCode</category>
       <category>Featured</category>
@@ -1521,6 +1527,7 @@
       <value key="GnomeSoftware::FeatureTile">True</value>
     </custom>
     <categories>
+      <category>Education</category>
       <category>Game</category>
       <category>LearnToCode</category>
       <category>Featured</category>
@@ -1541,6 +1548,71 @@
       <category>Featured</category>
     </categories>
     <bundle type="flatpak">app/com.endlessnetwork.whitehouse/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>com.github.birros.WebArchives</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Archiving</category>
+      <category>Utility</category>
+      <category>Featured</category>
+    </categories>
+    <bundle type="flatpak">app/com.github.birros.WebArchives/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>com.github.fushinari.Wordbook</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Featured</category>
+    </categories>
+    <bundle type="flatpak">app/com.github.fushinari.Wordbook/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>com.gitlab.azymohliad.Qwertone</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Audio</category>
+      <category>AudioVideo</category>
+      <category>Education</category>
+      <category>Featured</category>
+    </categories>
+    <bundle type="flatpak">app/com.gitlab.azymohliad.Qwertone/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>com.google.AndroidStudio</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Development</category>
+      <category>IDE</category>
+      <category>Java</category>
+      <category>Featured</category>
+    </categories>
+    <bundle type="flatpak">app/com.google.AndroidStudio/x86_64/stable</bundle>
   </component>
 
   <component type="desktop" merge="append">
@@ -1568,6 +1640,7 @@
       <value key="GnomeSoftware::FeatureTile">True</value>
     </custom>
     <categories>
+      <category>Education</category>
       <category>LearnToCode</category>
       <category>Featured</category>
     </categories>
@@ -1603,6 +1676,22 @@
       <category>Featured</category>
     </categories>
     <bundle type="flatpak">app/com.skype.Client/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>com.slack.Slack</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>InstantMessaging</category>
+      <category>Network</category>
+      <category>Featured</category>
+    </categories>
+    <bundle type="flatpak">app/com.slack.Slack/x86_64/stable</bundle>
   </component>
 
   <component type="desktop" merge="append">
@@ -1704,6 +1793,23 @@
   </component>
 
   <component type="desktop" merge="append">
+    <id>com.visualstudio.code</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Development</category>
+      <category>IDE</category>
+      <category>TextEditor</category>
+      <category>Featured</category>
+    </categories>
+    <bundle type="flatpak">app/com.visualstudio.code/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
     <id>edu.mit.Scratch</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
@@ -1716,6 +1822,38 @@
       <category>Featured</category>
     </categories>
     <bundle type="flatpak">app/edu.mit.Scratch/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>io.github.Figma_Linux.figma_linux</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Graphics</category>
+      <category>Featured</category>
+    </categories>
+    <bundle type="flatpak">app/io.github.Figma_Linux.figma_linux/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>io.lmms.LMMS</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Audio</category>
+      <category>AudioVideo</category>
+      <category>Midi</category>
+      <category>Featured</category>
+    </categories>
+    <bundle type="flatpak">app/io.lmms.LMMS/x86_64/stable</bundle>
   </component>
 
   <component type="desktop" merge="append">
@@ -1764,6 +1902,22 @@
       <category>Featured</category>
     </categories>
     <bundle type="flatpak">app/net.scribus.Scribus/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>org.ardour.Ardour</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Audio</category>
+      <category>AudioVideo</category>
+      <category>Featured</category>
+    </categories>
+    <bundle type="flatpak">app/org.ardour.Ardour/x86_64/stable</bundle>
   </component>
 
   <component type="desktop" merge="append">
@@ -1849,6 +2003,21 @@
   </component>
 
   <component type="desktop" merge="append">
+    <id>org.gnome.gitlab.somas.Apostrophe</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Office</category>
+      <category>Featured</category>
+    </categories>
+    <bundle type="flatpak">app/org.gnome.gitlab.somas.Apostrophe/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
     <id>org.inkscape.Inkscape</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
@@ -1915,6 +2084,21 @@
   </component>
 
   <component type="desktop" merge="append">
+    <id>org.kiwix.desktop</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Featured</category>
+    </categories>
+    <bundle type="flatpak">app/org.kiwix.desktop/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
     <id>org.laptop.TurtleArtActivity</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
@@ -1946,6 +2130,21 @@
   </component>
 
   <component type="desktop" merge="append">
+    <id>org.libreoffice.LibreOffice</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Office</category>
+      <category>Featured</category>
+    </categories>
+    <bundle type="flatpak">app/org.libreoffice.LibreOffice/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
     <id>org.mozilla.firefox</id>
     <kudos>
       <kudo>GnomeSoftware::popular</kudo>
@@ -1959,6 +2158,36 @@
       <category>Featured</category>
     </categories>
     <bundle type="flatpak">app/org.mozilla.firefox/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>org.squeakland.Etoys</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Featured</category>
+    </categories>
+    <bundle type="flatpak">app/org.squeakland.Etoys/x86_64/stable</bundle>
+  </component>
+
+  <component type="desktop" merge="append">
+    <id>org.sugarlabs.Words</id>
+    <kudos>
+      <kudo>GnomeSoftware::popular</kudo>
+    </kudos>
+    <custom>
+      <value key="GnomeSoftware::FeatureTile">True</value>
+    </custom>
+    <categories>
+      <category>Education</category>
+      <category>Featured</category>
+    </categories>
+    <bundle type="flatpak">app/org.sugarlabs.Words/x86_64/stable</bundle>
   </component>
 
   <component type="desktop" merge="append">
