@@ -6,6 +6,32 @@
     <name>Endless</name>
     <id>org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec.desktop</id>
     <icon type="remote" width="512" height="512">https://uploads-community-endlessos-com.s3.dualstack.us-west-2.amazonaws.com/optimized/1X/8eff890b1bc1880b0077955aba6e2e76223a1365_2_512x512.jpg</icon>
+    <screenshots>
+      <screenshot type="default">
+        <image width="1358" height="1014">https://github.com/MichaelDrydenEndless/gnome-software-data/blob/649208578f7d38c77911b2b07435189f419aff93/s3/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot1.png</image>
+      </screenshot>
+      <screenshot type="default">
+        <image width="1358" height="1014">https://github.com/MichaelDrydenEndless/gnome-software-data/blob/649208578f7d38c77911b2b07435189f419aff93/s3/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot2.png</image>
+      </screenshot>
+      <screenshot type="default">
+        <image width="1358" height="1014">https://github.com/MichaelDrydenEndless/gnome-software-data/blob/649208578f7d38c77911b2b07435189f419aff93/s3/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot3.png</image>
+      </screenshot>
+      <screenshot type="default">
+        <image width="1358" height="1014">https://github.com/MichaelDrydenEndless/gnome-software-data/blob/649208578f7d38c77911b2b07435189f419aff93/s3/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot4.png</image>
+      </screenshot>
+      <screenshot type="default">
+        <image width="1358" height="1014">https://github.com/MichaelDrydenEndless/gnome-software-data/blob/649208578f7d38c77911b2b07435189f419aff93/s3/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot5.png</image>
+      </screenshot>
+      <screenshot type="default">
+        <image width="1358" height="1014">https://github.com/MichaelDrydenEndless/gnome-software-data/blob/649208578f7d38c77911b2b07435189f419aff93/s3/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot6.png</image>
+      </screenshot>
+      <screenshot type="default">
+        <image width="1358" height="1014">https://github.com/MichaelDrydenEndless/gnome-software-data/blob/649208578f7d38c77911b2b07435189f419aff93/s3/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot7.png</image>
+      </screenshot>
+      <screenshot type="default">
+        <image width="1358" height="1014">https://github.com/MichaelDrydenEndless/gnome-software-data/blob/649208578f7d38c77911b2b07435189f419aff93/s3/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot8.png</image>
+      </screenshot>
+    </screenshots>
     <categories>
       <category>Chat</category>
     </categories>
