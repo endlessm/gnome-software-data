@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop" merge="append">
+  <id>com.google.Chrome</id>
+  <kudos>
+    <kudo>GnomeSoftware::popular</kudo>
+  </kudos>
+  <custom>
+    <value key="GnomeSoftware::FeatureTile">True</value>
+  </custom>
+  <categories>
+    <category>Network</category>
+    <category>WebBrowser</category>
+    <category>Featured</category>
+  </categories>
+  <bundle type="flatpak">app/com.google.Chrome/x86_64/eos3</bundle>
+</component>

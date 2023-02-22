@@ -21,6 +21,7 @@ import argparse
 import os
 import sys
 import gi
+from textwrap import dedent
 
 gi.require_version("Flatpak", "1.0")
 gi.require_version("AppStreamGlib", "1.0")
@@ -68,11 +69,13 @@ def remote_list_apps(installation, remote_name):
 def main():
     # Provide some basic --help output
     parser = argparse.ArgumentParser(
-        description='Generate eos-extra.xml appstream from eos-extra.txt',
+        description='Generate appstream metainfo files from eos-extra.txt',
     )
     parser.parse_args()
 
-    with open(os.path.join(os.path.dirname(__file__), "eos-extra.txt")) as f:
+    appinfo_dir = os.path.dirname(__file__)
+    metainfo_dir = os.path.join(appinfo_dir, 'metainfo')
+    with open(os.path.join(appinfo_dir, "eos-extra.txt")) as f:
         app_names = sorted({x.strip() for x in f})
 
     installation = Flatpak.get_system_installations()[0]
@@ -83,12 +86,6 @@ def main():
     # ...except Chrome (https://phabricator.endlessm.com/T26944)
     del flathub_apps["com.google.Chrome"]
     apps_by_name.update(flathub_apps)
-
-    xmls = [
-        """
-<?xml version="1.0" encoding="UTF-8"?>
-<components version="0.8" origin="flathub">""".strip()
-    ]
 
     for name in app_names:
         try:
@@ -115,30 +112,31 @@ def main():
         # This will only work for apps which have a hi-res icon (defined in the
         # main metainfo entry for that app).
         #
-        # See https://gitlab.gnome.org/GNOME/gnome-software/-/blob/main/doc/vendor-customisation.md#user-content-featured-apps-and-editors-choice
-        xmls.append(
-            f"""
-  <component type="desktop" merge="append">
-    <id>{appstream_id}</id>
-    <kudos>
-      <kudo>GnomeSoftware::popular</kudo>
-    </kudos>
-    <custom>
-      <value key="GnomeSoftware::FeatureTile">True</value>
-    </custom>
-    <categories>
-      {(os.linesep + "      ").join(existing_categories_xml)}
-      <category>Featured</category>
-    </categories>
-    <bundle type="flatpak">{flatpak_ref}</bundle>
-  </component>
-"""
+        # See https://gitlab.gnome.org/GNOME/gnome-software/-/blob/main/doc/vendor-customisation.md#user-content-featured-apps-and-editors-choice  # noqa: E501
+        xml = dedent(f"""\
+        <?xml version="1.0" encoding="UTF-8"?>
+        <component type="desktop" merge="append">
+          <id>{appstream_id}</id>
+          <kudos>
+            <kudo>GnomeSoftware::popular</kudo>
+          </kudos>
+          <custom>
+            <value key="GnomeSoftware::FeatureTile">True</value>
+          </custom>
+          <categories>
+            {(os.linesep + "            ").join(existing_categories_xml)}
+            <category>Featured</category>
+          </categories>
+          <bundle type="flatpak">{flatpak_ref}</bundle>
+        </component>
+        """)
+
+        metainfo_path = os.path.join(
+            metainfo_dir,
+            f"{appstream_id}.metainfo.xml",
         )
-
-    xmls.append("""</components>""")
-
-    with open(os.path.join(os.path.dirname(__file__), "eos-extra.xml"), "w") as f:
-        f.write("".join(xmls))
+        with open(metainfo_path, "w") as f:
+            f.write(xml)
 
 
 if __name__ == "__main__":

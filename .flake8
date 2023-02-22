@@ -3,3 +3,9 @@
 # based on empirical research.
 # https://black.readthedocs.io/en/stable/the_black_code_style.html#line-length
 max-line-length = 88
+
+# Check python scripts without .py suffix
+filename =
+    *.py,
+    ./app-info/generate-eos-extra-appstream,
+    ./app-info/generate-eos-extra-metainfo

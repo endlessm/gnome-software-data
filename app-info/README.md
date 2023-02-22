@@ -17,5 +17,6 @@ configuration, using the upstream functionality.
 ## How to add a Flathub app (or non-com.endless* app) in the ‘Featured’ category?
 
 * Add the app to [eos-extra.txt](./eos-extra.txt)
-* Run [generate-eos-extra](./generate-eos-extra)
+* Run [generate-eos-extra-metainfo](./generate-eos-extra-metainfo)
+* Run [generate-eos-extra-appstream](./generate-eos-extra-appstream)
 * Commit the result and submit a pull request
