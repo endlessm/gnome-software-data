@@ -73,7 +73,13 @@ XML="$SRCDIR/app-info/eos-extra.xml"
 XML_GZ="$SRCDIR/s3/app-info/eos-extra.xml.gz"
 XML_GZ_CSUM="${XML_GZ}.sha256sum"
 
-appstream-util validate-strict --nonet "$XML"
+# FIXME: It would be preferable to use validate-strict, but currently
+# our appstream-util doesn't know about the launchable tag used in web
+# applications. Furthermore, it would probably be better to use
+# appstreamcli validate, but that doesn't seem to understand the
+# merge="append" entries and errors on missing tags that would come from
+# the upstream appstream.
+appstream-util validate --nonet "$XML"
 
 mkdir -p "$SRCDIR/s3/app-info"
 if [ ! -f "$XML_GZ" ] || [ "$XML" -nt "$XML_GZ" ]; then
