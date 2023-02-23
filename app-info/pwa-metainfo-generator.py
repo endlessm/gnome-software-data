@@ -29,7 +29,6 @@ Internet connection is required.
 
 import argparse
 import csv
-import sys
 import xml.etree.ElementTree as ET
 import requests
 import json
@@ -40,7 +39,8 @@ from bs4 import BeautifulSoup
 # w3c categories: https://github.com/w3c/manifest/wiki/Categories
 # appstream categories: https://specifications.freedesktop.org/menu-spec/latest/apa.html
 # left out due to no corresponding appstream category:
-# entertainment, food, government, kids, lifestyle, personalization, politics, shopping, travel
+# entertainment, food, government, kids, lifestyle, personalization, politics, shopping,
+# travel
 w3c_to_appstream_categories = {
     "books": "Literature",
     "business": "Office",
@@ -94,12 +94,14 @@ def get_manifest_for_url(url):
     manifest_response.raise_for_status()
     return json.loads(manifest_response.text)
 
-def copy_metainfo_from_manifest(url, app_component, manifest, categories, content_rating, adaptive, custom_summary):
+
+def copy_metainfo_from_manifest(url, app_component, manifest, categories,
+                                content_rating, adaptive, custom_summary):
     # Short name seems more suitable in practice
     try:
-      ET.SubElement(app_component, 'name').text = manifest['short_name']
+        ET.SubElement(app_component, 'name').text = manifest['short_name']
     except KeyError:
-      ET.SubElement(app_component, 'name').text = manifest['name']
+        ET.SubElement(app_component, 'name').text = manifest['name']
 
     # Generate a unique app ID that meets the spec requirements. A different
     # app ID will be used upon install that is determined by the backing browser
@@ -183,10 +185,12 @@ def copy_metainfo_from_manifest(url, app_component, manifest, categories, conten
 
     if len(summary) > 0:
         # appstreamcli validate recommends summary not ending with '.'
-        if summary.endswith('.'): summary = summary[:-1]
+        if summary.endswith('.'):
+            summary = summary[:-1]
         # ...and not containing newlines
         summary = summary.replace('\n', ' ').strip()
         ET.SubElement(app_component, 'summary').text = summary
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -228,7 +232,8 @@ def main():
             metadata_license = ET.SubElement(app_component, 'metadata_license')
             metadata_license.text = 'FSFAP'
 
-            print('Processing entry \'{}\' from file \'{}\''.format(url, input_filename))
+            print('Processing entry \'{}\' from file \'{}\''
+                  .format(url, input_filename))
             copy_metainfo_from_manifest(
                 url,
                 app_component,
@@ -244,5 +249,5 @@ def main():
     tree.write(out_filename, xml_declaration=True, encoding='utf-8', method='xml')
 
 
-if __name__=='__main__':
-        main()
+if __name__ == '__main__':
+    main()
