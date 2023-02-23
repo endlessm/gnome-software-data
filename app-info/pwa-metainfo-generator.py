@@ -29,6 +29,7 @@ Internet connection is required.
 
 import argparse
 import csv
+import os
 import xml.etree.ElementTree as ET
 import requests
 import json
@@ -95,6 +96,15 @@ def get_manifest_for_url(url):
     return json.loads(manifest_response.text)
 
 
+def get_app_id_for_url(url):
+    # Generate a unique app ID that meets the spec requirements. A different
+    # app ID will be used upon install that is determined by the backing browser
+    # Note, the algorithm used here is also used in the epiphany plugin, so it
+    # cannot be changed.
+    hashed_url = hashlib.sha1(url.encode("utf-8")).hexdigest()
+    return "org.gnome.Software.WebApp_" + hashed_url
+
+
 def copy_metainfo_from_manifest(url, app_component, manifest, categories,
                                 content_rating, adaptive, custom_summary):
     # Short name seems more suitable in practice
@@ -103,13 +113,8 @@ def copy_metainfo_from_manifest(url, app_component, manifest, categories,
     except KeyError:
         ET.SubElement(app_component, 'name').text = manifest['name']
 
-    # Generate a unique app ID that meets the spec requirements. A different
-    # app ID will be used upon install that is determined by the backing browser
-    # Note, the algorithm used here is also used in the epiphany plugin, so it
-    # cannot be changed.
-    hashed_url = hashlib.sha1(url.encode('utf-8')).hexdigest()
-    app_id = 'org.gnome.Software.WebApp_' + hashed_url + '.desktop'
-    ET.SubElement(app_component, 'id').text = app_id
+    app_id = get_app_id_for_url(url)
+    ET.SubElement(app_component, 'id').text = app_id + '.desktop'
 
     # Avoid using maskable icons if we can, they don't have nice rounded edges
     normal_icon_exists = False
@@ -204,17 +209,26 @@ def main():
         metavar="input.csv",
         help="CSV file, with one line per site",
     )
+    parser.add_argument(
+        "-O", "--output",
+        help=(
+            "metainfo output directory (default: metainfo subdirectory of the input "
+            "CSV file directory)"
+        ),
+    )
     args = parser.parse_args()
 
     input_filename = args.input.name
-    out_filename = args.input.name.replace(".csv", ".xml")
+    if args.output is None:
+        args.output = os.path.join(os.path.dirname(args.input.name), "metainfo")
+    os.makedirs(args.output, exist_ok=True)
     with args.input as input_csv:
         components = ET.Element('components')
         components.set('version', '0.15')
         reader = csv.DictReader(input_csv)
         for (i, app) in enumerate(reader):
             url = app["url"]
-            app_component = ET.SubElement(components, 'component')
+            app_component = ET.Element('component')
             app_component.set('type', 'web-application')
 
             launchable = ET.SubElement(app_component, 'launchable')
@@ -244,9 +258,18 @@ def main():
                 app["custom_summary"],
             )
 
-    tree = ET.ElementTree(components)
-    ET.indent(tree)
-    tree.write(out_filename, xml_declaration=True, encoding='utf-8', method='xml')
+            app_id = get_app_id_for_url(url)
+            out_filename = os.path.join(args.output, app_id + ".metainfo.xml")
+            print("Generating {} metainfo file {}".format(url, out_filename))
+            app_component.tail = "\n"
+            tree = ET.ElementTree(app_component)
+            ET.indent(tree)
+            tree.write(
+                out_filename,
+                xml_declaration=True,
+                encoding='utf-8',
+                method='xml',
+            )
 
 
 if __name__ == '__main__':
