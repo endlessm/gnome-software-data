@@ -21,6 +21,8 @@ supporting the follwing fields:
   A long description of the app. Some HTML markup is supported.
 - license (required, string):
   A SPDX license expression, such as AGPL-3.0-only.
+- developer_name (optional, string):
+  The developers or project responsible for the app.
 - categories (optional, sequence of strings):
   A sequence of category names, as defined by the desktop menu specification.
 - keywords (optional, sequence of strings):
@@ -173,6 +175,10 @@ def create_component_for_app(app):
     # metadata license is a required field but we don't have one, assume FSFAP?
     metadata_license = ET.SubElement(app_component, 'metadata_license')
     metadata_license.text = 'FSFAP'
+
+    developer_name = app.get('developer_name')
+    if developer_name:
+        ET.SubElement(app_component, 'developer_name').text = developer_name
 
     # Avoid using maskable icons if we can, they don't have nice rounded edges
     normal_icon_exists = False
