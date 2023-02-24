@@ -34,7 +34,7 @@ def main():
     appinfo_dir = os.path.dirname(__file__)
     metainfo_dir = os.path.join(appinfo_dir, 'metainfo')
 
-    catalog = ElementTree.Element("components", version="0.8", origin="flathub")
+    catalog = ElementTree.Element("components", version="0.8", origin="eos-extra")
     metainfo_paths = sorted(glob.iglob(os.path.join(metainfo_dir, "*.metainfo.xml")))
     for path in metainfo_paths:
         metainfo = ElementTree.parse(path).getroot()

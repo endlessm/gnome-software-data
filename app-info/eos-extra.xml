@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<components version="0.8" origin="flathub">
+<components version="0.8" origin="eos-extra">
   <component type="desktop" merge="append">
     <id>cc.arduino.arduinoide</id>
     <kudos>
