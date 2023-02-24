@@ -23,6 +23,21 @@ supporting the follwing fields:
   A SPDX license expression, such as AGPL-3.0-only.
 - developer_name (optional, string):
   The developers or project responsible for the app.
+- screenshots (optional, sequence of maps):
+  A sequence of screenshots. Each screenshot entry must have 'src', 'width'
+  and 'height' properties. Each entry may have an optional boolean 'default'
+  field. It is assumed false if not specified. If no screenshots have been set
+  as the default, the first screenshot will be the default. Each entry may also
+  have an optional 'caption' field. For example:
+    screenshots:
+      - src: https://example.com/screenshot1.jpg
+        default: true
+        width: 800
+        height: 600
+        caption: Super App's main window.
+      - src: https://example.com/screenshot2.jpg
+        width: 800
+        height: 600
 - categories (optional, sequence of strings):
   A sequence of category names, as defined by the desktop menu specification.
 - keywords (optional, sequence of strings):
@@ -196,18 +211,32 @@ def create_component_for_app(app):
         icon_element.set('width', size.split('x')[0])
         icon_element.set('height', size.split('x')[1])
 
-    if 'screenshots' in manifest:
+    screenshots = app.get('screenshots', manifest.get('screenshots'))
+    if screenshots:
         screenshots_element = ET.SubElement(app_component, 'screenshots')
-        for screenshot in manifest['screenshots']:
+
+        # Make sure at least one of the screenshots is the default.
+        has_default = any([s.get('default', False) for s in screenshots])
+        if not has_default:
+            # Make the first one the default.
+            screenshots[0]['default'] = True
+
+        for screenshot in screenshots:
             screenshot_element = ET.SubElement(screenshots_element, 'screenshot')
-            screenshot_element.set('type', 'default')
+            if screenshot.get('default', False):
+                screenshot_element.set('type', 'default')
             image_element = ET.SubElement(screenshot_element, 'image')
             image_element.text = urljoin(url, screenshot['src'])
-            size = screenshot['sizes'].split(' ')[-1]
-            image_element.set('width', size.split('x')[0])
-            image_element.set('height', size.split('x')[1])
-            if 'label' in screenshot:
-                ET.SubElement(screenshot_element, 'caption').text = screenshot['label']
+            if 'sizes' in screenshot:
+                size = screenshot['sizes'].split(' ')[-1]
+                image_element.set('width', size.split('x')[0])
+                image_element.set('height', size.split('x')[1])
+            else:
+                image_element.set('width', str(screenshot['width']))
+                image_element.set('height', str(screenshot['height']))
+            caption = screenshot.get('caption') or screenshot.get('label')
+            if caption:
+                ET.SubElement(screenshot_element, 'caption').text = caption
 
     categories_element = ET.SubElement(app_component, 'categories')
     user_categories = app.get('categories', [])
