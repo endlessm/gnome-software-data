@@ -3,22 +3,28 @@
 # Copyright 2021-2022 Matthew Leeds
 # SPDX-License-Identifier: GPL-2.0+
 
-"""
+"""\
 Generates AppStream metainfo for a set of Progressive Web Apps
 
-The CSV should begin with a header row, followed by one row per web app. The supported
-fields are as follows:
+The YAML should consists of a sequence of web apps. Each app is a map
+supporting the follwing fields:
 
-- url: The URL to the main page of the app
-- license: a SPDX license expression, such as AGPL-3.0-only
-- categories: semicolon-separated category names, as defined by the desktop menu
-              specification
-- content_rating: semicolon-separated OARS content ratings, such as
-                  social-audio=moderate;social-contacts=intense
-- is_adaptive: 'adaptive' if the app works well on phones;
-               'not-adaptive' if it does not;
-               or empty string to not provide this information
-- custom_summary: a custom summary to override the app's description of itself
+- url (required, string):
+  The URL to the main page of the app.
+- license (required, string):
+  A SPDX license expression, such as AGPL-3.0-only.
+- categories (optional, sequence of strings):
+  A sequence of category names, as defined by the desktop menu specification.
+- content_rating (optional, sequence of strings):
+  A sequence of OARS content ratings, for example:
+    content_rating:
+      - social-audio=moderate
+      - social-contacts=intense
+- adaptive (optional, boolean):
+  true if the app works well on phones, false if it does not. If the value is
+  not provided, no control or display recommendations will be added.
+- summary (optional, string):
+  A custom summary to override the app's description of itself.
 
 The output will be written to a file with the same name as the input but a .xml
 file ending.
@@ -28,7 +34,6 @@ Internet connection is required.
 """
 
 import argparse
-import csv
 import os
 import xml.etree.ElementTree as ET
 import requests
@@ -36,6 +41,7 @@ import json
 import hashlib
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup
+import yaml
 
 # w3c categories: https://github.com/w3c/manifest/wiki/Categories
 # appstream categories: https://specifications.freedesktop.org/menu-spec/latest/apa.html
@@ -166,7 +172,7 @@ def create_component_for_app(app):
                 ET.SubElement(screenshot_element, 'caption').text = screenshot['label']
 
     categories_element = ET.SubElement(app_component, 'categories')
-    user_categories = app["categories"].split(';')
+    user_categories = app.get('categories', [])
     for category in user_categories:
         if len(category) > 0:
             ET.SubElement(categories_element, 'category').text = category
@@ -179,36 +185,32 @@ def create_component_for_app(app):
             except KeyError:
                 pass
 
-    if len(app['content_rating']) > 0:
+    content_ratings = app.get('content_rating', [])
+    if len(content_ratings) > 0:
         ratings_element = ET.SubElement(app_component, 'content_rating')
         ratings_element.set('type', 'oars-1.1')
-        content_ratings = app['content_rating'].split(';')
         for rating in content_ratings:
             if len(rating) > 0:
                 rating_element = ET.SubElement(ratings_element, 'content_attribute')
                 rating_element.text = rating.split('=')[1]
                 rating_element.set('id', rating.split('=')[0])
 
-    if app['is_adaptive'] in ('adaptive', 'not-adaptive'):
+    adaptive = app.get('adaptive')
+    if adaptive is not None:
         recommends_element = ET.SubElement(app_component, 'recommends')
         ET.SubElement(recommends_element, 'control').text = 'pointing'
         ET.SubElement(recommends_element, 'control').text = 'keyboard'
-        if app['is_adaptive'] == 'adaptive':
+        if adaptive:
             ET.SubElement(recommends_element, 'control').text = 'touch'
         display_element = ET.SubElement(recommends_element, 'display_length')
         display_element.set('compare', 'ge')
-        if app['is_adaptive'] == 'adaptive':
+        if adaptive:
             display_element.text = 'small'
         else:
             display_element.text = 'medium'
 
-    summary = ''
-    if len(app['custom_summary']) > 0:
-        summary = app['custom_summary']
-    elif 'description' in manifest:
-        summary = manifest['description']
-
-    if len(summary) > 0:
+    summary = app.get('summary') or manifest.get('description')
+    if summary:
         # appstreamcli validate recommends summary not ending with '.'
         if summary.endswith('.'):
             summary = summary[:-1]
@@ -221,21 +223,21 @@ def create_component_for_app(app):
 
 def main():
     parser = argparse.ArgumentParser(
-        description=__doc__.split("\n")[1],
-        epilog="\n".join(__doc__.split("\n")[2:]),
+        description=__doc__.split("\n")[0],
+        epilog="\n".join(__doc__.split("\n")[1:]),
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument(
         "input",
         type=argparse.FileType("r"),
-        metavar="input.csv",
-        help="CSV file, with one line per site",
+        metavar="input.yaml",
+        help="YAML file, with one sequence element per site",
     )
     parser.add_argument(
         "-O", "--output",
         help=(
             "metainfo output directory (default: metainfo subdirectory of the input "
-            "CSV file directory)"
+            "YAML file directory)"
         ),
     )
     args = parser.parse_args()
@@ -244,28 +246,29 @@ def main():
     if args.output is None:
         args.output = os.path.join(os.path.dirname(args.input.name), "metainfo")
     os.makedirs(args.output, exist_ok=True)
-    with args.input as input_csv:
-        components = ET.Element('components')
-        components.set('version', '0.15')
-        reader = csv.DictReader(input_csv)
-        for app in reader:
-            url = app["url"]
-            print('Processing entry \'{}\' from file \'{}\''
-                  .format(url, input_filename))
-            app_component = create_component_for_app(app)
+    with args.input as input_yaml:
+        data = yaml.safe_load(input_yaml)
 
-            app_id = get_app_id_for_url(url)
-            out_filename = os.path.join(args.output, app_id + ".metainfo.xml")
-            print("Generating {} metainfo file {}".format(url, out_filename))
-            app_component.tail = "\n"
-            tree = ET.ElementTree(app_component)
-            ET.indent(tree)
-            tree.write(
-                out_filename,
-                xml_declaration=True,
-                encoding='utf-8',
-                method='xml',
-            )
+    components = ET.Element('components')
+    components.set('version', '0.15')
+    for app in data:
+        url = app["url"]
+        print('Processing entry \'{}\' from file \'{}\''
+              .format(url, input_filename))
+        app_component = create_component_for_app(app)
+
+        app_id = get_app_id_for_url(url)
+        out_filename = os.path.join(args.output, app_id + ".metainfo.xml")
+        print("Generating {} metainfo file {}".format(url, out_filename))
+        app_component.tail = "\n"
+        tree = ET.ElementTree(app_component)
+        ET.indent(tree)
+        tree.write(
+            out_filename,
+            xml_declaration=True,
+            encoding='utf-8',
+            method='xml',
+        )
 
 
 if __name__ == '__main__':
