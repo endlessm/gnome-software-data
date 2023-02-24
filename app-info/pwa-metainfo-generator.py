@@ -23,6 +23,8 @@ supporting the follwing fields:
   A SPDX license expression, such as AGPL-3.0-only.
 - categories (optional, sequence of strings):
   A sequence of category names, as defined by the desktop menu specification.
+- keywords (optional, sequence of strings):
+  A sequence of keywords to be used for searching.
 - content_rating (optional, sequence of strings):
   A sequence of OARS content ratings, for example:
     content_rating:
@@ -214,6 +216,12 @@ def create_component_for_app(app):
                     ET.SubElement(categories_element, 'category').text = mapped_category
             except KeyError:
                 pass
+
+    keywords = app.get('keywords')
+    if keywords:
+        keywords_element = ET.SubElement(app_component, 'keywords')
+        for keyword in keywords:
+            ET.SubElement(keywords_element, 'keyword').text = keyword
 
     content_ratings = app.get('content_rating', [])
     if len(content_ratings) > 0:
