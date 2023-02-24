@@ -11,6 +11,10 @@ supporting the follwing fields:
 
 - url (required, string):
   The URL to the main page of the app.
+- name_property (optional, string):
+  The manifest attribute to use for the app name. This can be either
+  'name' or 'short_name'. If left empty, 'short_name' will be preferred
+  if it's defined in the manifest.
 - summary (optional, string):
   A custom summary to override the app's description of itself.
 - license (required, string):
@@ -121,11 +125,16 @@ def create_component_for_app(app):
     app_id = get_app_id_for_url(url)
     ET.SubElement(app_component, 'id').text = app_id + '.desktop'
 
-    # Short name seems more suitable in practice
-    try:
-        ET.SubElement(app_component, 'name').text = manifest['short_name']
-    except KeyError:
-        ET.SubElement(app_component, 'name').text = manifest['name']
+    name_property = app.get('name_property')
+    if name_property is None:
+        # Short name seems more suitable in practice
+        name_property = 'short_name' if 'short_name' in manifest else 'name'
+    elif name_property not in ('name', 'short_name'):
+        raise ValueError(
+            "name_property must be set to 'name' or 'short_name', not {}"
+            .format(name_property)
+        )
+    ET.SubElement(app_component, 'name').text = manifest[name_property]
 
     launchable = ET.SubElement(app_component, 'launchable')
     launchable.set('type', 'url')
