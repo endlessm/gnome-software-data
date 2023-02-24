@@ -5,7 +5,8 @@ There are 2 flavors of data here:
 
 * AppStream XML in [eos-extra.xml](app-info/eos-extra.xml) to supplement
   the data that typically comes from Flatpak repositories. Currently
-  this is used to make specific apps featured in GNOME Software.
+  this is used to make specific apps featured in GNOME Software as well
+  as provide Progressive Web Applications.
 
 * Screenshots and thumbnails that are referenced from AppStream XML.
   Typically we do this for our own apps but occasionally for 3rd party

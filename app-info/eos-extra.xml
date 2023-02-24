@@ -1875,6 +1875,80 @@
     </categories>
     <bundle type="flatpak">app/org.gnome.Builder/x86_64/stable</bundle>
   </component>
+  <component type="web-application">
+    <id>org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec.desktop</id>
+    <name>Endless Community</name>
+    <launchable type="url">https://community.endlessos.com/</launchable>
+    <url type="homepage">https://community.endlessos.com/</url>
+    <summary>A forum to discuss, get help with, and give feedback on Endless OS</summary>
+    <description>
+      <p>The Endless Community forum is a place to share tips about using Endless
+OS, ask for advice or support when something doesn't work quite right, get
+announcements about upcoming releases, and give your feedback. Join the
+conversation with fellow community members and Endless OS Foundation
+staff.</p>
+    </description>
+    <project_license>GPL-2.0-or-later</project_license>
+    <metadata_license>FSFAP</metadata_license>
+    <developer_name>Endless</developer_name>
+    <icon type="remote" width="512" height="512">https://uploads-community-endlessos-com.s3.dualstack.us-west-2.amazonaws.com/optimized/1X/8eff890b1bc1880b0077955aba6e2e76223a1365_2_512x512.jpg</icon>
+    <screenshots>
+      <screenshot type="default">
+        <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot1.png</image>
+      </screenshot>
+      <screenshot>
+        <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot2.png</image>
+      </screenshot>
+      <screenshot>
+        <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot3.png</image>
+      </screenshot>
+      <screenshot>
+        <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot4.png</image>
+      </screenshot>
+      <screenshot>
+        <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot5.png</image>
+      </screenshot>
+      <screenshot>
+        <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot6.png</image>
+      </screenshot>
+      <screenshot>
+        <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot7.png</image>
+      </screenshot>
+      <screenshot>
+        <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot8.png</image>
+      </screenshot>
+      <screenshot>
+        <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot9.png</image>
+      </screenshot>
+      <screenshot>
+        <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot10.png</image>
+      </screenshot>
+      <screenshot>
+        <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot11.png</image>
+      </screenshot>
+      <screenshot>
+        <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot12.png</image>
+      </screenshot>
+    </screenshots>
+    <categories>
+      <category>Chat</category>
+    </categories>
+    <keywords>
+      <keyword>forum</keyword>
+      <keyword>support</keyword>
+    </keywords>
+    <content_rating type="oars-1.1">
+      <content_attribute id="social-info">moderate</content_attribute>
+      <content_attribute id="social-chat">moderate</content_attribute>
+      <content_attribute id="social-contacts">intense</content_attribute>
+    </content_rating>
+    <recommends>
+      <control>pointing</control>
+      <control>keyboard</control>
+      <control>touch</control>
+      <display_length compare="ge">small</display_length>
+    </recommends>
+  </component>
   <component type="desktop" merge="append">
     <id>org.gnome.gitlab.somas.Apostrophe</id>
     <kudos>

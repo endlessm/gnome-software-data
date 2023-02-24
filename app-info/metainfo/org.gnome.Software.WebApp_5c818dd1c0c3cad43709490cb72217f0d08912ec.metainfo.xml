@@ -6,7 +6,11 @@
   <url type="homepage">https://community.endlessos.com/</url>
   <summary>A forum to discuss, get help with, and give feedback on Endless OS</summary>
   <description>
-    <p>The Endless Community forum is a place to share tips about using Endless OS, ask for advice or support when something doesn't work quite right, get announcements about upcoming releases, and give your feedback. Join the conversation with fellow community members and Endless OS Foundation staff.</p>
+    <p>The Endless Community forum is a place to share tips about using Endless
+OS, ask for advice or support when something doesn't work quite right, get
+announcements about upcoming releases, and give your feedback. Join the
+conversation with fellow community members and Endless OS Foundation
+staff.</p>
   </description>
   <project_license>GPL-2.0-or-later</project_license>
   <metadata_license>FSFAP</metadata_license>
@@ -16,37 +20,37 @@
     <screenshot type="default">
       <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot1.png</image>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot2.png</image>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot3.png</image>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot4.png</image>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot5.png</image>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot6.png</image>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot7.png</image>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot8.png</image>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot9.png</image>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot10.png</image>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot11.png</image>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <image width="900" height="900">https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot12.png</image>
     </screenshot>
   </screenshots>
