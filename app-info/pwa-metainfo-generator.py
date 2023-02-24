@@ -105,8 +105,28 @@ def get_app_id_for_url(url):
     return "org.gnome.Software.WebApp_" + hashed_url
 
 
-def copy_metainfo_from_manifest(url, app_component, manifest, categories,
-                                content_rating, adaptive, custom_summary):
+def create_component_for_app(app):
+    app_component = ET.Element('component')
+    app_component.set('type', 'web-application')
+
+    url = app["url"]
+    manifest = get_manifest_for_url(url)
+
+    launchable = ET.SubElement(app_component, 'launchable')
+    launchable.set('type', 'url')
+    launchable.text = url
+
+    url_element = ET.SubElement(app_component, 'url')
+    url_element.set('type', 'homepage')
+    url_element.text = url
+
+    project_license = ET.SubElement(app_component, 'project_license')
+    project_license.text = app["license"]
+
+    # metadata license is a required field but we don't have one, assume FSFAP?
+    metadata_license = ET.SubElement(app_component, 'metadata_license')
+    metadata_license.text = 'FSFAP'
+
     # Short name seems more suitable in practice
     try:
         ET.SubElement(app_component, 'name').text = manifest['short_name']
@@ -146,7 +166,7 @@ def copy_metainfo_from_manifest(url, app_component, manifest, categories,
                 ET.SubElement(screenshot_element, 'caption').text = screenshot['label']
 
     categories_element = ET.SubElement(app_component, 'categories')
-    user_categories = categories.split(';')
+    user_categories = app["categories"].split(';')
     for category in user_categories:
         if len(category) > 0:
             ET.SubElement(categories_element, 'category').text = category
@@ -159,32 +179,32 @@ def copy_metainfo_from_manifest(url, app_component, manifest, categories,
             except KeyError:
                 pass
 
-    if len(content_rating) > 0:
+    if len(app['content_rating']) > 0:
         ratings_element = ET.SubElement(app_component, 'content_rating')
         ratings_element.set('type', 'oars-1.1')
-        content_ratings = content_rating.split(';')
+        content_ratings = app['content_rating'].split(';')
         for rating in content_ratings:
             if len(rating) > 0:
                 rating_element = ET.SubElement(ratings_element, 'content_attribute')
                 rating_element.text = rating.split('=')[1]
                 rating_element.set('id', rating.split('=')[0])
 
-    if adaptive in ('adaptive', 'not-adaptive'):
+    if app['is_adaptive'] in ('adaptive', 'not-adaptive'):
         recommends_element = ET.SubElement(app_component, 'recommends')
         ET.SubElement(recommends_element, 'control').text = 'pointing'
         ET.SubElement(recommends_element, 'control').text = 'keyboard'
-        if adaptive == 'adaptive':
+        if app['is_adaptive'] == 'adaptive':
             ET.SubElement(recommends_element, 'control').text = 'touch'
         display_element = ET.SubElement(recommends_element, 'display_length')
         display_element.set('compare', 'ge')
-        if adaptive == 'adaptive':
+        if app['is_adaptive'] == 'adaptive':
             display_element.text = 'small'
         else:
             display_element.text = 'medium'
 
     summary = ''
-    if len(custom_summary) > 0:
-        summary = custom_summary
+    if len(app['custom_summary']) > 0:
+        summary = app['custom_summary']
     elif 'description' in manifest:
         summary = manifest['description']
 
@@ -195,6 +215,8 @@ def copy_metainfo_from_manifest(url, app_component, manifest, categories,
         # ...and not containing newlines
         summary = summary.replace('\n', ' ').strip()
         ET.SubElement(app_component, 'summary').text = summary
+
+    return app_component
 
 
 def main():
@@ -226,37 +248,11 @@ def main():
         components = ET.Element('components')
         components.set('version', '0.15')
         reader = csv.DictReader(input_csv)
-        for (i, app) in enumerate(reader):
+        for app in reader:
             url = app["url"]
-            app_component = ET.Element('component')
-            app_component.set('type', 'web-application')
-
-            launchable = ET.SubElement(app_component, 'launchable')
-            launchable.set('type', 'url')
-            launchable.text = url
-
-            url_element = ET.SubElement(app_component, 'url')
-            url_element.set('type', 'homepage')
-            url_element.text = url
-
-            project_license = ET.SubElement(app_component, 'project_license')
-            project_license.text = app["license"]
-
-            # metadata license is a required field but we don't have one, assume FSFAP?
-            metadata_license = ET.SubElement(app_component, 'metadata_license')
-            metadata_license.text = 'FSFAP'
-
             print('Processing entry \'{}\' from file \'{}\''
                   .format(url, input_filename))
-            copy_metainfo_from_manifest(
-                url,
-                app_component,
-                get_manifest_for_url(app["url"]),
-                app["categories"],
-                app["content_rating"],
-                app["is_adaptive"],
-                app["custom_summary"],
-            )
+            app_component = create_component_for_app(app)
 
             app_id = get_app_id_for_url(url)
             out_filename = os.path.join(args.output, app_id + ".metainfo.xml")
