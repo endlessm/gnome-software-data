@@ -11,6 +11,8 @@ supporting the follwing fields:
 
 - url (required, string):
   The URL to the main page of the app.
+- summary (optional, string):
+  A custom summary to override the app's description of itself.
 - license (required, string):
   A SPDX license expression, such as AGPL-3.0-only.
 - categories (optional, sequence of strings):
@@ -23,8 +25,6 @@ supporting the follwing fields:
 - adaptive (optional, boolean):
   true if the app works well on phones, false if it does not. If the value is
   not provided, no control or display recommendations will be added.
-- summary (optional, string):
-  A custom summary to override the app's description of itself.
 
 The output will be written to a file with the same name as the input but a .xml
 file ending.
@@ -118,6 +118,15 @@ def create_component_for_app(app):
     url = app["url"]
     manifest = get_manifest_for_url(url)
 
+    app_id = get_app_id_for_url(url)
+    ET.SubElement(app_component, 'id').text = app_id + '.desktop'
+
+    # Short name seems more suitable in practice
+    try:
+        ET.SubElement(app_component, 'name').text = manifest['short_name']
+    except KeyError:
+        ET.SubElement(app_component, 'name').text = manifest['name']
+
     launchable = ET.SubElement(app_component, 'launchable')
     launchable.set('type', 'url')
     launchable.text = url
@@ -126,21 +135,21 @@ def create_component_for_app(app):
     url_element.set('type', 'homepage')
     url_element.text = url
 
+    summary = app.get('summary') or manifest.get('description')
+    if summary:
+        # appstreamcli validate recommends summary not ending with '.'
+        if summary.endswith('.'):
+            summary = summary[:-1]
+        # ...and not containing newlines
+        summary = summary.replace('\n', ' ').strip()
+        ET.SubElement(app_component, 'summary').text = summary
+
     project_license = ET.SubElement(app_component, 'project_license')
     project_license.text = app["license"]
 
     # metadata license is a required field but we don't have one, assume FSFAP?
     metadata_license = ET.SubElement(app_component, 'metadata_license')
     metadata_license.text = 'FSFAP'
-
-    # Short name seems more suitable in practice
-    try:
-        ET.SubElement(app_component, 'name').text = manifest['short_name']
-    except KeyError:
-        ET.SubElement(app_component, 'name').text = manifest['name']
-
-    app_id = get_app_id_for_url(url)
-    ET.SubElement(app_component, 'id').text = app_id + '.desktop'
 
     # Avoid using maskable icons if we can, they don't have nice rounded edges
     normal_icon_exists = False
@@ -208,15 +217,6 @@ def create_component_for_app(app):
             display_element.text = 'small'
         else:
             display_element.text = 'medium'
-
-    summary = app.get('summary') or manifest.get('description')
-    if summary:
-        # appstreamcli validate recommends summary not ending with '.'
-        if summary.endswith('.'):
-            summary = summary[:-1]
-        # ...and not containing newlines
-        summary = summary.replace('\n', ' ').strip()
-        ET.SubElement(app_component, 'summary').text = summary
 
     return app_component
 
