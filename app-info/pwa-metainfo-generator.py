@@ -17,6 +17,8 @@ supporting the follwing fields:
   if it's defined in the manifest.
 - summary (optional, string):
   A custom summary to override the app's description of itself.
+- description (required, string):
+  A long description of the app. Some HTML markup is supported.
 - license (required, string):
   A SPDX license expression, such as AGPL-3.0-only.
 - categories (optional, sequence of strings):
@@ -152,6 +154,16 @@ def create_component_for_app(app):
         # ...and not containing newlines
         summary = summary.replace('\n', ' ').strip()
         ET.SubElement(app_component, 'summary').text = summary
+
+    description = app['description']
+    description_element = ET.SubElement(app_component, 'description')
+    try:
+        # Try to parse the description as XML since it will look nicer.
+        description_xml = ET.fromstring(description)
+        description_element.append(description_xml)
+    except ET.ParseError:
+        # Fallback to just adding it as text in the description node.
+        description_element.text = description
 
     project_license = ET.SubElement(app_component, 'project_license')
     project_license.text = app["license"]
