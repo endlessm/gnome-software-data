@@ -1,4 +1,0 @@
-#+TITLE: a debian skeleton for gnome-software screenshots
-
-this is used to build debian packages of the latest gnome-software
-screenshot cache to ship with EOS.

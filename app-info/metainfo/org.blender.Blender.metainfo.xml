@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop" merge="append">
+  <id>org.blender.Blender</id>
+  <kudos>
+    <kudo>GnomeSoftware::popular</kudo>
+  </kudos>
+  <custom>
+    <value key="GnomeSoftware::FeatureTile">True</value>
+  </custom>
+  <categories>
+    <category>3DGraphics</category>
+    <category>Graphics</category>
+    <category>Featured</category>
+  </categories>
+  <bundle type="flatpak">app/org.blender.Blender/x86_64/stable</bundle>
+</component>

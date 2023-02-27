@@ -1,0 +1,61 @@
+# eos-extra PWA YAML configuration. See the documentation in
+# pwa-metainfo-generator.py for details on the fields.
+- url: https://community.endlessos.com/
+  name_property: name
+  summary: A forum to discuss, get help with, and give feedback on Endless OS
+  description: |
+    <p>The Endless Community forum is a place to share tips about using Endless
+    OS, ask for advice or support when something doesn't work quite right, get
+    announcements about upcoming releases, and give your feedback. Join the
+    conversation with fellow community members and Endless OS Foundation
+    staff.</p>
+  license: GPL-2.0-or-later
+  developer_name: Endless
+  categories:
+    - Chat
+  keywords:
+    - forum
+    - support
+  content_rating:
+    - social-info=moderate
+    - social-chat=moderate
+    - social-contacts=intense
+  adaptive: true
+  screenshots:
+    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot1.png
+      default: true
+      width: 900
+      height: 900
+    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot2.png
+      width: 900
+      height: 900
+    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot3.png
+      width: 900
+      height: 900
+    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot4.png
+      width: 900
+      height: 900
+    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot5.png
+      width: 900
+      height: 900
+    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot6.png
+      width: 900
+      height: 900
+    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot7.png
+      width: 900
+      height: 900
+    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot8.png
+      width: 900
+      height: 900
+    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot9.png
+      width: 900
+      height: 900
+    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot10.png
+      width: 900
+      height: 900
+    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot11.png
+      width: 900
+      height: 900
+    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot12.png
+      width: 900
+      height: 900

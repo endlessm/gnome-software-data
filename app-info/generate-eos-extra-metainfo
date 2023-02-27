@@ -1,0 +1,143 @@
+#!/usr/bin/python3
+# Copyright © 2020 Endless OS Foundation LLC
+#
+# Generator for external appstream XML
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public License
+# along with this library; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301 USA
+
+import argparse
+import os
+import sys
+import gi
+from textwrap import dedent
+
+gi.require_version("Flatpak", "1.0")
+gi.require_version("AppStreamGlib", "1.0")
+from gi.repository import Flatpak, AppStreamGlib, Gio  # noqa: 402
+
+
+ARCH = "x86_64"
+
+
+def remote_list_apps(installation, remote_name):
+    appstream_xml_path = os.path.join(
+        "/var/lib/flatpak/appstream", remote_name, ARCH, "active", "appstream.xml"
+    )
+    appstream_xml_file = Gio.File.new_for_path(appstream_xml_path)
+    store = AppStreamGlib.Store()
+    if not store.from_file(appstream_xml_file, None, None):
+        raise ValueError(f"Failed to load {appstream_xml_path}")
+
+    apps_by_ref = {}
+    for app in store.dup_apps():
+        # if 'urtle' in app.get_id():
+        #     import ipdb; ipdb.set_trace()
+        b = app.get_bundles()[0]
+        if b.get_kind() == AppStreamGlib.BundleKind.FLATPAK:
+            apps_by_ref[b.get_id()] = app
+
+    refs = installation.list_remote_refs_sync(remote_name)
+    remote_refs_by_name = {}
+    for ref in refs:
+        if ref.get_kind() == Flatpak.RefKind.APP and ref.get_arch() == ARCH:
+            formatted = ref.format_ref()
+            app = apps_by_ref.get(formatted)
+            if not app:
+                continue
+
+            remote_refs_by_name[ref.get_name()] = (
+                formatted,
+                app.get_id(),
+                app.get_categories(),
+            )
+
+    return remote_refs_by_name
+
+
+def main():
+    # Provide some basic --help output
+    parser = argparse.ArgumentParser(
+        description='Generate appstream metainfo files from eos-extra.txt',
+    )
+    parser.parse_args()
+
+    appinfo_dir = os.path.dirname(__file__)
+    metainfo_dir = os.path.join(appinfo_dir, 'metainfo')
+    with open(os.path.join(appinfo_dir, "eos-extra.txt")) as f:
+        app_names = sorted({x.strip() for x in f})
+
+    installation = Flatpak.get_system_installations()[0]
+    apps_by_name = {}
+    apps_by_name.update(remote_list_apps(installation, "eos-apps"))
+    # Prefer Flathub apps
+    flathub_apps = remote_list_apps(installation, "flathub")
+    # ...except Chrome (https://phabricator.endlessm.com/T26944)
+    del flathub_apps["com.google.Chrome"]
+    apps_by_name.update(flathub_apps)
+
+    for name in app_names:
+        try:
+            flatpak_ref, appstream_id, categories = apps_by_name[name]
+        except KeyError:
+            sys.exit(f"No AppStream data for {name}")
+
+        # App ids are not supposed to have less than 3 fields, as per
+        # https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-id-generic
+        if (appstream_id.endswith(".desktop") and
+                len(appstream_id.split('.')) > 3):
+            appstream_id = appstream_id[:-len(".desktop")]
+
+        # FIXME: Build the existing list of categories for the app, as we cannot
+        # append a new category, only overwrite the whole list of categories.
+        # This is due to a tedious bug in gnome-software:
+        # https://gitlab.gnome.org/GNOME/gnome-software/-/issues/1649
+        existing_categories_xml = [f'<category>{c}</category>' for c in categories]
+
+        # Add XML to include the app in the carousel on the overview page, the
+        # “Editor’s Choice” section on the overview page, the carousel on
+        # category pages, and the “Editor’s Choice” section on category pages.
+        #
+        # This will only work for apps which have a hi-res icon (defined in the
+        # main metainfo entry for that app).
+        #
+        # See https://gitlab.gnome.org/GNOME/gnome-software/-/blob/main/doc/vendor-customisation.md#user-content-featured-apps-and-editors-choice  # noqa: E501
+        xml = dedent(f"""\
+        <?xml version="1.0" encoding="UTF-8"?>
+        <component type="desktop" merge="append">
+          <id>{appstream_id}</id>
+          <kudos>
+            <kudo>GnomeSoftware::popular</kudo>
+          </kudos>
+          <custom>
+            <value key="GnomeSoftware::FeatureTile">True</value>
+          </custom>
+          <categories>
+            {(os.linesep + "            ").join(existing_categories_xml)}
+            <category>Featured</category>
+          </categories>
+          <bundle type="flatpak">{flatpak_ref}</bundle>
+        </component>
+        """)
+
+        metainfo_path = os.path.join(
+            metainfo_dir,
+            f"{appstream_id}.metainfo.xml",
+        )
+        with open(metainfo_path, "w") as f:
+            f.write(xml)
+
+
+if __name__ == "__main__":
+    main()

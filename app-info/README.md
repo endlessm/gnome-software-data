@@ -17,5 +17,17 @@ configuration, using the upstream functionality.
 ## How to add a Flathub app (or non-com.endless* app) in the ‘Featured’ category?
 
 * Add the app to [eos-extra.txt](./eos-extra.txt)
-* Run [generate-eos-extra](./generate-eos-extra)
+* Run [generate-eos-extra-metainfo](./generate-eos-extra-metainfo)
+* Run [generate-eos-extra-appstream](./generate-eos-extra-appstream)
+* Commit the result and submit a pull request
+
+## How to add a Progressive Web Application?
+
+* Add the website to [eos-extra-pwa.yaml](./eos-extra-pwa.yaml)
+* Run [pwa-metainfo-generator.py](./pwa-metainfo-generator.py)
+* If necessary, add screenshots in [s3/screenshots](../s3/screenshots)
+  in a subdirectory named by with the generated app ID. Use
+  `https://d3lapyynmdp1i9.cloudfront.net/` as the base URL in the YAML
+  configuration. Run `pwa-metainfo-generator.py` again.
+* Run [generate-eos-extra-appstream](./generate-eos-extra-appstream)
 * Commit the result and submit a pull request
