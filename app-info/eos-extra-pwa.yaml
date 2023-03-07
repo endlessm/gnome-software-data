@@ -22,40 +22,40 @@
     - social-contacts=intense
   adaptive: true
   screenshots:
-    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot1.png
+    - src: https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot1.png
       default: true
       width: 900
       height: 900
-    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot2.png
+    - src: https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot2.png
       width: 900
       height: 900
-    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot3.png
+    - src: https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot3.png
       width: 900
       height: 900
-    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot4.png
+    - src: https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot4.png
       width: 900
       height: 900
-    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot5.png
+    - src: https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot5.png
       width: 900
       height: 900
-    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot6.png
+    - src: https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot6.png
       width: 900
       height: 900
-    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot7.png
+    - src: https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot7.png
       width: 900
       height: 900
-    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot8.png
+    - src: https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot8.png
       width: 900
       height: 900
-    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot9.png
+    - src: https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot9.png
       width: 900
       height: 900
-    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot10.png
+    - src: https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot10.png
       width: 900
       height: 900
-    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot11.png
+    - src: https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot11.png
       width: 900
       height: 900
-    - src: https://d3lapyynmdp1i9.cloudfront.net/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot12.png
+    - src: https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot12.png
       width: 900
       height: 900
