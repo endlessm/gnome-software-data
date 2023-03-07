@@ -138,6 +138,20 @@ def og_property_from_head(soup, og_property):
     )[0]['content']
 
 
+def keywords_from_head(soup):
+    try:
+        # Try to set keywords to the contents of keywords meta element from the header
+        keywords = soup.head.find(
+            "meta",
+            attrs={"name": "keywords"},
+        )['content'].split(", ")
+    except TypeError:
+        # Set keywords to empty list if no keyword meta elements
+        keywords = []
+
+    return keywords
+
+
 def get_app_id_for_url(url):
     # Generate a unique app ID that meets the spec requirements. A different
     # app ID will be used upon install that is determined by the backing browser
@@ -277,7 +291,7 @@ def create_component_for_app(app):
             except KeyError:
                 pass
 
-    keywords = app.get('keywords')
+    keywords = app.get('keywords', keywords_from_head(soup))
     if keywords:
         keywords_element = ET.SubElement(app_component, 'keywords')
         for keyword in keywords:
