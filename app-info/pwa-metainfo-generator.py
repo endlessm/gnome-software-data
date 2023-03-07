@@ -11,6 +11,8 @@ supporting the follwing fields:
 
 - url (required, string):
   The URL to the main page of the app.
+- name (optional, string):
+  A custom name to override the name in the app's manifest.
 - name_property (optional, string):
   The manifest attribute to use for the app name. This can be either
   'name' or 'short_name'. If left empty, 'short_name' will be preferred
@@ -102,11 +104,13 @@ class ManifestNotFoundException(Exception):
     """
 
 
-def get_manifest_for_url(url):
+def get_soup_for_url(url):
     response = requests.get(url)
     response.raise_for_status()
-    soup = BeautifulSoup(response.text, features="lxml")
+    return BeautifulSoup(response.text, features="lxml")
 
+
+def get_manifest(soup, url):
     if soup.head:
         manifest_link = soup.head.find("link", rel="manifest", href=True)
     else:
@@ -127,6 +131,27 @@ def get_manifest_for_url(url):
     return json.loads(manifest_response.text)
 
 
+def og_property_from_head(soup, og_property):
+    return soup.head.find_all(
+        "meta",
+        {"property": "og:" + str(og_property)},
+    )[0]['content']
+
+
+def keywords_from_head(soup):
+    try:
+        # Try to set keywords to the contents of keywords meta element from the header
+        keywords = soup.head.find(
+            "meta",
+            attrs={"name": "keywords"},
+        )['content'].split(", ")
+    except TypeError:
+        # Set keywords to empty list if no keyword meta elements
+        keywords = []
+
+    return keywords
+
+
 def get_app_id_for_url(url):
     # Generate a unique app ID that meets the spec requirements. A different
     # app ID will be used upon install that is determined by the backing browser
@@ -141,21 +166,30 @@ def create_component_for_app(app):
     app_component.set('type', 'web-application')
 
     url = app["url"]
-    manifest = get_manifest_for_url(url)
+    soup = get_soup_for_url(url)
+    manifest = get_manifest(soup, url)
 
     app_id = get_app_id_for_url(url)
     ET.SubElement(app_component, 'id').text = app_id + '.desktop'
 
-    name_property = app.get('name_property')
-    if name_property is None:
-        # Short name seems more suitable in practice
-        name_property = 'short_name' if 'short_name' in manifest else 'name'
-    elif name_property not in ('name', 'short_name'):
-        raise ValueError(
-            "name_property must be set to 'name' or 'short_name', not {}"
-            .format(name_property)
-        )
-    ET.SubElement(app_component, 'name').text = manifest[name_property]
+    name = app.get('name')
+    if not name:
+        # No name was configured. First try the OpenGraph name.
+        name = og_property_from_head(soup, "site_name")
+        if not name:
+            # No OpenGraph name. Try the manifest name, allowing the property to be
+            # chosen.
+            name_property = app.get('name_property')
+            if name_property is None:
+                # Short name seems more suitable in practice
+                name_property = 'short_name' if 'short_name' in manifest else 'name'
+            elif name_property not in ('name', 'short_name'):
+                raise ValueError(
+                    "name_property must be set to 'name' or 'short_name', not '{}'"
+                    .format(name_property)
+                )
+            name = manifest[name_property]
+    ET.SubElement(app_component, 'name').text = name
 
     launchable = ET.SubElement(app_component, 'launchable')
     launchable.set('type', 'url')
@@ -165,7 +199,11 @@ def create_component_for_app(app):
     url_element.set('type', 'homepage')
     url_element.text = url
 
-    summary = app.get('summary') or manifest.get('description')
+    summary = (
+        app.get('summary', og_property_from_head(soup, "title"))
+        or manifest.get('description')
+    )
+
     if summary:
         # appstreamcli validate recommends summary not ending with '.'
         if summary.endswith('.'):
@@ -174,8 +212,9 @@ def create_component_for_app(app):
         summary = summary.replace('\n', ' ').strip()
         ET.SubElement(app_component, 'summary').text = summary
 
-    description = app['description']
+    description = app.get('description', og_property_from_head(soup, "description"))
     description_element = ET.SubElement(app_component, 'description')
+
     try:
         # Try to parse the description as XML since it will look nicer.
         description_xml = ET.fromstring(description)
@@ -252,7 +291,7 @@ def create_component_for_app(app):
             except KeyError:
                 pass
 
-    keywords = app.get('keywords')
+    keywords = app.get('keywords', keywords_from_head(soup))
     if keywords:
         keywords_element = ET.SubElement(app_component, 'keywords')
         for keyword in keywords:
