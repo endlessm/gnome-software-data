@@ -185,6 +185,32 @@ class App:
 
         ET.SubElement(app_component, 'id').text = self.id + '.desktop'
 
+        self._add_name(app_component)
+        self._add_launchable(app_component)
+        self._add_url(app_component)
+        self._add_summary(app_component)
+        self._add_description(app_component)
+        self._add_project_license(app_component)
+        self._add_metadata_license(app_component)
+        self._add_developer_name(app_component)
+        self._add_icons(app_component)
+        self._add_screenshots(app_component)
+        self._add_categories(app_component)
+        self._add_keywords(app_component)
+        self._add_content_rating(app_component)
+        self._add_recommends(app_component)
+
+        return app_component
+
+    def _get_app_id(self):
+        # Generate a unique app ID that meets the spec requirements. A
+        # different app ID will be used upon install that is determined
+        # by the backing browser Note, the algorithm used here is also
+        # used in the epiphany plugin, so it cannot be changed.
+        hashed_url = hashlib.sha1(self.url.encode("utf-8")).hexdigest()
+        return "org.gnome.Software.WebApp_" + hashed_url
+
+    def _add_name(self, app_component):
         name = self.config.get('name')
         if not name:
             # No name was configured. First try the OpenGraph name.
@@ -207,14 +233,17 @@ class App:
                 name = self.manifest[name_property]
         ET.SubElement(app_component, 'name').text = name
 
+    def _add_launchable(self, app_component):
         launchable = ET.SubElement(app_component, 'launchable')
         launchable.set('type', 'url')
         launchable.text = self.url
 
+    def _add_url(self, app_component):
         url_element = ET.SubElement(app_component, 'url')
         url_element.set('type', 'homepage')
         url_element.text = self.url
 
+    def _add_summary(self, app_component):
         summary = (
             self.config.get('summary', og_property_from_head(self.soup, "title"))
             or self.manifest.get('description')
@@ -228,6 +257,7 @@ class App:
             summary = summary.replace('\n', ' ').strip()
             ET.SubElement(app_component, 'summary').text = summary
 
+    def _add_description(self, app_component):
         description = self.config.get(
             'description',
             og_property_from_head(self.soup, "description"),
@@ -242,17 +272,21 @@ class App:
             # Fallback to just adding it as text in the description node.
             description_element.text = description
 
+    def _add_project_license(self, app_component):
         project_license = ET.SubElement(app_component, 'project_license')
         project_license.text = self.config["license"]
 
+    def _add_metadata_license(self, app_component):
         # metadata license is a required field but we don't have one, assume FSFAP?
         metadata_license = ET.SubElement(app_component, 'metadata_license')
         metadata_license.text = 'FSFAP'
 
+    def _add_developer_name(self, app_component):
         developer_name = self.config.get('developer_name')
         if developer_name:
             ET.SubElement(app_component, 'developer_name').text = developer_name
 
+    def _add_icons(self, app_component):
         # Avoid using maskable icons if we can, they don't have nice rounded edges
         normal_icon_exists = False
         for icon in self.manifest['icons']:
@@ -269,6 +303,7 @@ class App:
             icon_element.set('width', size.split('x')[0])
             icon_element.set('height', size.split('x')[1])
 
+    def _add_screenshots(self, app_component):
         screenshots = self.config.get('screenshots', self.manifest.get('screenshots'))
         if screenshots:
             screenshots_element = ET.SubElement(app_component, 'screenshots')
@@ -296,6 +331,7 @@ class App:
                 if caption:
                     ET.SubElement(screenshot_element, 'caption').text = caption
 
+    def _add_categories(self, app_component):
         categories_element = ET.SubElement(app_component, 'categories')
         user_categories = self.config.get('categories', [])
         for category in user_categories:
@@ -312,12 +348,14 @@ class App:
                 except KeyError:
                     pass
 
+    def _add_keywords(self, app_component):
         keywords = self.config.get('keywords', keywords_from_head(self.soup))
         if keywords:
             keywords_element = ET.SubElement(app_component, 'keywords')
             for keyword in keywords:
                 ET.SubElement(keywords_element, 'keyword').text = keyword
 
+    def _add_content_rating(self, app_component):
         content_ratings = self.config.get('content_rating', [])
         if len(content_ratings) > 0:
             ratings_element = ET.SubElement(app_component, 'content_rating')
@@ -328,6 +366,7 @@ class App:
                     rating_element.text = rating.split('=')[1]
                     rating_element.set('id', rating.split('=')[0])
 
+    def _add_recommends(self, app_component):
         adaptive = self.config.get('adaptive')
         if adaptive is not None:
             recommends_element = ET.SubElement(app_component, 'recommends')
@@ -341,16 +380,6 @@ class App:
                 display_element.text = 'small'
             else:
                 display_element.text = 'medium'
-
-        return app_component
-
-    def _get_app_id(self):
-        # Generate a unique app ID that meets the spec requirements. A
-        # different app ID will be used upon install that is determined
-        # by the backing browser. Note, the algorithm used here is also
-        # used in the epiphany plugin, so it cannot be changed.
-        hashed_url = hashlib.sha1(self.url.encode("utf-8")).hexdigest()
-        return "org.gnome.Software.WebApp_" + hashed_url
 
 
 def main():
