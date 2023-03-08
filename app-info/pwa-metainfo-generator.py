@@ -132,21 +132,42 @@ def get_manifest(soup, url):
 
 
 def og_property_from_head(soup, og_property):
-    return soup.head.find_all(
-        "meta",
-        {"property": "og:" + str(og_property)},
-    )[0]['content']
+    prop = soup.head.find_all("meta", {"property": "og:" + str(og_property)})
+
+    if len(prop) > 0:
+        prop = prop[0]['content']
+
+    return prop
+
+
+def prop_from_head(soup, name):
+    prop = soup.head.find_all("meta", {"name": name})
+
+    if len(prop) > 0:
+        prop = prop[0]['content']
+    else:
+        prop = soup.head.find_all("meta", {"name": name.capitalize()})
+
+        if len(prop) > 0:
+            prop = prop[0]['content']
+
+    return prop
 
 
 def keywords_from_head(soup):
-    try:
-        # Try to set keywords to the contents of keywords meta element from the header
-        keywords = soup.head.find(
-            "meta",
-            attrs={"name": "keywords"},
-        )['content'].split(", ")
-    except TypeError:
-        # Set keywords to empty list if no keyword meta elements
+    keywords = soup.head.find("meta", attrs={"name": "Keywords"})
+
+    if keywords is None:
+        keywords = soup.head.find("meta", attrs={"name": "keywords"})
+        if keywords is None:
+            keywords = []
+        elif "meta" in str(keywords):
+            keywords = keywords['content'].split(", ")
+        else:
+            keywords = []
+    elif "meta" in str(keywords):
+        keywords = keywords['content'].split(", ")
+    else:
         keywords = []
 
     return keywords
