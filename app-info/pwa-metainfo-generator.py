@@ -359,8 +359,6 @@ def main():
     with args.input as input_yaml:
         data = yaml.safe_load(input_yaml)
 
-    components = ET.Element('components')
-    components.set('version', '0.15')
     for app in data:
         url = app["url"]
         print('Processing entry \'{}\' from file \'{}\''
