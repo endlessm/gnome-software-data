@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_dd7b0c5ff0c21c2984f8fc1a05d01c33aee4fe9d.desktop</id>
+  <name>GNOME Discourse</name>
+  <launchable type="url">https://discourse.gnome.org/</launchable>
+  <url type="homepage">https://discourse.gnome.org/</url>
+  <summary>GNOME Discourse</summary>
+  <description>GNOME Project and Community related discussions</description>
+  <project_license>GPL-2.0-or-later</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <icon type="remote" width="512" height="512">https://discourse-gnome-org-uploads.s3.dualstack.us-east-2.amazonaws.com/optimized/1X/d7f8fbabd4cd13f5fdbf7c73bd203723a2ef36ea_2_512x512.png</icon>
+  <categories>
+    <category>Chat</category>
+  </categories>
+  <keywords>
+    <keyword>GNOME</keyword>
+    <keyword>forum</keyword>
+    <keyword>support</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-info">moderate</content_attribute>
+    <content_attribute id="social-audio">moderate</content_attribute>
+    <content_attribute id="social-contacts">intense</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

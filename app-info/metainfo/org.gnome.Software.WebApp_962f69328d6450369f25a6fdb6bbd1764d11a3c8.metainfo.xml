@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_962f69328d6450369f25a6fdb6bbd1764d11a3c8.desktop</id>
+  <name>DevDocs</name>
+  <launchable type="url">https://devdocs.io/</launchable>
+  <url type="homepage">https://devdocs.io/</url>
+  <summary>DevDocs</summary>
+  <description>Fast, offline, and free documentation browser for developers. Search 100+ docs in one web app including HTML, CSS, JavaScript, PHP, Ruby, Python, Go, C, C++, and many more.</description>
+  <project_license>MPL-2.0</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <icon type="remote" width="32" height="32">https://devdocs.io/images/webapp-icon-32.png</icon>
+  <icon type="remote" width="60" height="60">https://devdocs.io/images/webapp-icon-60.png</icon>
+  <icon type="remote" width="80" height="80">https://devdocs.io/images/webapp-icon-80.png</icon>
+  <icon type="remote" width="128" height="128">https://devdocs.io/images/webapp-icon-128.png</icon>
+  <icon type="remote" width="192" height="192">https://devdocs.io/images/webapp-icon-192.png</icon>
+  <icon type="remote" width="256" height="256">https://devdocs.io/images/webapp-icon-256.png</icon>
+  <icon type="remote" width="512" height="512">https://devdocs.io/images/webapp-icon-512.png</icon>
+  <categories>
+    <category>Programming and Developer Software</category>
+  </categories>
+  <keywords>
+    <keyword>Documentation</keyword>
+    <keyword>Development</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-info">moderate</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>
