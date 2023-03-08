@@ -159,176 +159,198 @@ def keywords_from_head(soup):
     return keywords
 
 
-def get_app_id_for_url(url):
-    # Generate a unique app ID that meets the spec requirements. A different
-    # app ID will be used upon install that is determined by the backing browser
-    # Note, the algorithm used here is also used in the epiphany plugin, so it
-    # cannot be changed.
-    hashed_url = hashlib.sha1(url.encode("utf-8")).hexdigest()
-    return "org.gnome.Software.WebApp_" + hashed_url
+class App:
+    def __init__(self, config):
+        self.config = config
+        self.url = self.config["url"]
+        self.id = self._get_app_id()
+        self.soup = get_soup_for_url(self.url)
+        self.manifest = get_manifest(self.soup, self.url)
 
+    def write_metainfo(self, path):
+        component = self.create_component()
+        component.tail = "\n"
+        tree = ET.ElementTree(component)
+        ET.indent(tree)
+        tree.write(
+            path,
+            xml_declaration=True,
+            encoding='utf-8',
+            method='xml',
+        )
 
-def create_component_for_app(app):
-    app_component = ET.Element('component')
-    app_component.set('type', 'web-application')
+    def create_component(self):
+        app_component = ET.Element('component')
+        app_component.set('type', 'web-application')
 
-    url = app["url"]
-    soup = get_soup_for_url(url)
-    manifest = get_manifest(soup, url)
+        ET.SubElement(app_component, 'id').text = self.id + '.desktop'
 
-    app_id = get_app_id_for_url(url)
-    ET.SubElement(app_component, 'id').text = app_id + '.desktop'
-
-    name = app.get('name')
-    if not name:
-        # No name was configured. First try the OpenGraph name.
-        name = og_property_from_head(soup, "site_name")
+        name = self.config.get('name')
         if not name:
-            # No OpenGraph name. Try the manifest name, allowing the property to be
-            # chosen.
-            name_property = app.get('name_property')
-            if name_property is None:
-                # Short name seems more suitable in practice
-                name_property = 'short_name' if 'short_name' in manifest else 'name'
-            elif name_property not in ('name', 'short_name'):
-                raise ValueError(
-                    "name_property must be set to 'name' or 'short_name', not '{}'"
-                    .format(name_property)
-                )
-            name = manifest[name_property]
-    ET.SubElement(app_component, 'name').text = name
+            # No name was configured. First try the OpenGraph name.
+            name = og_property_from_head(self.soup, "site_name")
+            if not name:
+                # No OpenGraph name. Try the manifest name, allowing the property to be
+                # chosen.
+                name_property = self.config.get('name_property')
+                if name_property is None:
+                    # Short name seems more suitable in practice
+                    if "short_name" in self.manifest:
+                        name_property = "short_name"
+                    else:
+                        name_property = "name"
+                elif name_property not in ('name', 'short_name'):
+                    raise ValueError(
+                        "name_property must be set to 'name' or 'short_name', not '{}'"
+                        .format(name_property)
+                    )
+                name = self.manifest[name_property]
+        ET.SubElement(app_component, 'name').text = name
 
-    launchable = ET.SubElement(app_component, 'launchable')
-    launchable.set('type', 'url')
-    launchable.text = url
+        launchable = ET.SubElement(app_component, 'launchable')
+        launchable.set('type', 'url')
+        launchable.text = self.url
 
-    url_element = ET.SubElement(app_component, 'url')
-    url_element.set('type', 'homepage')
-    url_element.text = url
+        url_element = ET.SubElement(app_component, 'url')
+        url_element.set('type', 'homepage')
+        url_element.text = self.url
 
-    summary = (
-        app.get('summary', og_property_from_head(soup, "title"))
-        or manifest.get('description')
-    )
+        summary = (
+            self.config.get('summary', og_property_from_head(self.soup, "title"))
+            or self.manifest.get('description')
+        )
 
-    if summary:
-        # appstreamcli validate recommends summary not ending with '.'
-        if summary.endswith('.'):
-            summary = summary[:-1]
-        # ...and not containing newlines
-        summary = summary.replace('\n', ' ').strip()
-        ET.SubElement(app_component, 'summary').text = summary
+        if summary:
+            # appstreamcli validate recommends summary not ending with '.'
+            if summary.endswith('.'):
+                summary = summary[:-1]
+            # ...and not containing newlines
+            summary = summary.replace('\n', ' ').strip()
+            ET.SubElement(app_component, 'summary').text = summary
 
-    description = app.get('description', og_property_from_head(soup, "description"))
-    description_element = ET.SubElement(app_component, 'description')
+        description = self.config.get(
+            'description',
+            og_property_from_head(self.soup, "description"),
+        )
+        description_element = ET.SubElement(app_component, 'description')
 
-    try:
-        # Try to parse the description as XML since it will look nicer.
-        description_xml = ET.fromstring(description)
-        description_element.append(description_xml)
-    except ET.ParseError:
-        # Fallback to just adding it as text in the description node.
-        description_element.text = description
+        try:
+            # Try to parse the description as XML since it will look nicer.
+            description_xml = ET.fromstring(description)
+            description_element.append(description_xml)
+        except ET.ParseError:
+            # Fallback to just adding it as text in the description node.
+            description_element.text = description
 
-    project_license = ET.SubElement(app_component, 'project_license')
-    project_license.text = app["license"]
+        project_license = ET.SubElement(app_component, 'project_license')
+        project_license.text = self.config["license"]
 
-    # metadata license is a required field but we don't have one, assume FSFAP?
-    metadata_license = ET.SubElement(app_component, 'metadata_license')
-    metadata_license.text = 'FSFAP'
+        # metadata license is a required field but we don't have one, assume FSFAP?
+        metadata_license = ET.SubElement(app_component, 'metadata_license')
+        metadata_license.text = 'FSFAP'
 
-    developer_name = app.get('developer_name')
-    if developer_name:
-        ET.SubElement(app_component, 'developer_name').text = developer_name
+        developer_name = self.config.get('developer_name')
+        if developer_name:
+            ET.SubElement(app_component, 'developer_name').text = developer_name
 
-    # Avoid using maskable icons if we can, they don't have nice rounded edges
-    normal_icon_exists = False
-    for icon in manifest['icons']:
-        if 'purpose' not in icon or icon['purpose'] == 'any':
-            normal_icon_exists = True
+        # Avoid using maskable icons if we can, they don't have nice rounded edges
+        normal_icon_exists = False
+        for icon in self.manifest['icons']:
+            if 'purpose' not in icon or icon['purpose'] == 'any':
+                normal_icon_exists = True
 
-    for icon in manifest['icons']:
-        if 'purpose' in icon and icon['purpose'] != 'any' and normal_icon_exists:
-            continue
-        icon_element = ET.SubElement(app_component, 'icon')
-        icon_element.text = urljoin(url, icon['src'])
-        icon_element.set('type', 'remote')
-        size = icon['sizes'].split(' ')[-1]
-        icon_element.set('width', size.split('x')[0])
-        icon_element.set('height', size.split('x')[1])
+        for icon in self.manifest['icons']:
+            if 'purpose' in icon and icon['purpose'] != 'any' and normal_icon_exists:
+                continue
+            icon_element = ET.SubElement(app_component, 'icon')
+            icon_element.text = urljoin(self.url, icon['src'])
+            icon_element.set('type', 'remote')
+            size = icon['sizes'].split(' ')[-1]
+            icon_element.set('width', size.split('x')[0])
+            icon_element.set('height', size.split('x')[1])
 
-    screenshots = app.get('screenshots', manifest.get('screenshots'))
-    if screenshots:
-        screenshots_element = ET.SubElement(app_component, 'screenshots')
+        screenshots = self.config.get('screenshots', self.manifest.get('screenshots'))
+        if screenshots:
+            screenshots_element = ET.SubElement(app_component, 'screenshots')
 
-        # Make sure at least one of the screenshots is the default.
-        has_default = any([s.get('default', False) for s in screenshots])
-        if not has_default:
-            # Make the first one the default.
-            screenshots[0]['default'] = True
+            # Make sure at least one of the screenshots is the default.
+            has_default = any([s.get('default', False) for s in screenshots])
+            if not has_default:
+                # Make the first one the default.
+                screenshots[0]['default'] = True
 
-        for screenshot in screenshots:
-            screenshot_element = ET.SubElement(screenshots_element, 'screenshot')
-            if screenshot.get('default', False):
-                screenshot_element.set('type', 'default')
-            image_element = ET.SubElement(screenshot_element, 'image')
-            image_element.text = urljoin(url, screenshot['src'])
-            if 'sizes' in screenshot:
-                size = screenshot['sizes'].split(' ')[-1]
-                image_element.set('width', size.split('x')[0])
-                image_element.set('height', size.split('x')[1])
+            for screenshot in screenshots:
+                screenshot_element = ET.SubElement(screenshots_element, 'screenshot')
+                if screenshot.get('default', False):
+                    screenshot_element.set('type', 'default')
+                image_element = ET.SubElement(screenshot_element, 'image')
+                image_element.text = urljoin(self.url, screenshot['src'])
+                if 'sizes' in screenshot:
+                    size = screenshot['sizes'].split(' ')[-1]
+                    image_element.set('width', size.split('x')[0])
+                    image_element.set('height', size.split('x')[1])
+                else:
+                    image_element.set('width', str(screenshot['width']))
+                    image_element.set('height', str(screenshot['height']))
+                caption = screenshot.get('caption') or screenshot.get('label')
+                if caption:
+                    ET.SubElement(screenshot_element, 'caption').text = caption
+
+        categories_element = ET.SubElement(app_component, 'categories')
+        user_categories = self.config.get('categories', [])
+        for category in user_categories:
+            if len(category) > 0:
+                ET.SubElement(categories_element, 'category').text = category
+        if 'categories' in self.manifest:
+            for category in self.manifest['categories']:
+                try:
+                    mapped_category = w3c_to_appstream_categories[category]
+                    if mapped_category not in user_categories:
+                        ET.SubElement(categories_element, 'category').text = (
+                            mapped_category
+                        )
+                except KeyError:
+                    pass
+
+        keywords = self.config.get('keywords', keywords_from_head(self.soup))
+        if keywords:
+            keywords_element = ET.SubElement(app_component, 'keywords')
+            for keyword in keywords:
+                ET.SubElement(keywords_element, 'keyword').text = keyword
+
+        content_ratings = self.config.get('content_rating', [])
+        if len(content_ratings) > 0:
+            ratings_element = ET.SubElement(app_component, 'content_rating')
+            ratings_element.set('type', 'oars-1.1')
+            for rating in content_ratings:
+                if len(rating) > 0:
+                    rating_element = ET.SubElement(ratings_element, 'content_attribute')
+                    rating_element.text = rating.split('=')[1]
+                    rating_element.set('id', rating.split('=')[0])
+
+        adaptive = self.config.get('adaptive')
+        if adaptive is not None:
+            recommends_element = ET.SubElement(app_component, 'recommends')
+            ET.SubElement(recommends_element, 'control').text = 'pointing'
+            ET.SubElement(recommends_element, 'control').text = 'keyboard'
+            if adaptive:
+                ET.SubElement(recommends_element, 'control').text = 'touch'
+            display_element = ET.SubElement(recommends_element, 'display_length')
+            display_element.set('compare', 'ge')
+            if adaptive:
+                display_element.text = 'small'
             else:
-                image_element.set('width', str(screenshot['width']))
-                image_element.set('height', str(screenshot['height']))
-            caption = screenshot.get('caption') or screenshot.get('label')
-            if caption:
-                ET.SubElement(screenshot_element, 'caption').text = caption
+                display_element.text = 'medium'
 
-    categories_element = ET.SubElement(app_component, 'categories')
-    user_categories = app.get('categories', [])
-    for category in user_categories:
-        if len(category) > 0:
-            ET.SubElement(categories_element, 'category').text = category
-    if 'categories' in manifest:
-        for category in manifest['categories']:
-            try:
-                mapped_category = w3c_to_appstream_categories[category]
-                if mapped_category not in user_categories:
-                    ET.SubElement(categories_element, 'category').text = mapped_category
-            except KeyError:
-                pass
+        return app_component
 
-    keywords = app.get('keywords', keywords_from_head(soup))
-    if keywords:
-        keywords_element = ET.SubElement(app_component, 'keywords')
-        for keyword in keywords:
-            ET.SubElement(keywords_element, 'keyword').text = keyword
-
-    content_ratings = app.get('content_rating', [])
-    if len(content_ratings) > 0:
-        ratings_element = ET.SubElement(app_component, 'content_rating')
-        ratings_element.set('type', 'oars-1.1')
-        for rating in content_ratings:
-            if len(rating) > 0:
-                rating_element = ET.SubElement(ratings_element, 'content_attribute')
-                rating_element.text = rating.split('=')[1]
-                rating_element.set('id', rating.split('=')[0])
-
-    adaptive = app.get('adaptive')
-    if adaptive is not None:
-        recommends_element = ET.SubElement(app_component, 'recommends')
-        ET.SubElement(recommends_element, 'control').text = 'pointing'
-        ET.SubElement(recommends_element, 'control').text = 'keyboard'
-        if adaptive:
-            ET.SubElement(recommends_element, 'control').text = 'touch'
-        display_element = ET.SubElement(recommends_element, 'display_length')
-        display_element.set('compare', 'ge')
-        if adaptive:
-            display_element.text = 'small'
-        else:
-            display_element.text = 'medium'
-
-    return app_component
+    def _get_app_id(self):
+        # Generate a unique app ID that meets the spec requirements. A
+        # different app ID will be used upon install that is determined
+        # by the backing browser. Note, the algorithm used here is also
+        # used in the epiphany plugin, so it cannot be changed.
+        hashed_url = hashlib.sha1(self.url.encode("utf-8")).hexdigest()
+        return "org.gnome.Software.WebApp_" + hashed_url
 
 
 def main():
@@ -359,24 +381,13 @@ def main():
     with args.input as input_yaml:
         data = yaml.safe_load(input_yaml)
 
-    for app in data:
-        url = app["url"]
-        print('Processing entry \'{}\' from file \'{}\''
-              .format(url, input_filename))
-        app_component = create_component_for_app(app)
-
-        app_id = get_app_id_for_url(url)
-        out_filename = os.path.join(args.output, app_id + ".metainfo.xml")
-        print("Generating {} metainfo file {}".format(url, out_filename))
-        app_component.tail = "\n"
-        tree = ET.ElementTree(app_component)
-        ET.indent(tree)
-        tree.write(
-            out_filename,
-            xml_declaration=True,
-            encoding='utf-8',
-            method='xml',
-        )
+    for config in data:
+        print("Processing entry '{}' from file '{}'"
+              .format(config["url"], input_filename))
+        app = App(config)
+        out_filename = os.path.join(args.output, app.id + ".metainfo.xml")
+        print("Generating {} metainfo file {}".format(app.url, out_filename))
+        app.write_metainfo(out_filename)
 
 
 if __name__ == '__main__':
