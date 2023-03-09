@@ -79,7 +79,8 @@
   adaptive: true
 - url: https://pinafore.social/
   name_property: name
-  description: An alternative web client for Mastodon, focused on speed and simplicity.
+  summary: An alternative web client for Mastodon, focused on speed and simplicity.
+  description: 
   license: AGPL-3.0-only
   categories:
     - Chat
@@ -114,7 +115,6 @@
   adaptive: true
 - url: https://squoosh.app/
   name_property: name
-  summary: Squoosh
   description: Squoosh is the ultimate image optimizer that allows you to compress and compare images with different codecs in your browser.
   license: Apache-2.0
   categories:
@@ -128,7 +128,7 @@
   adaptive: true
 - url: https://excalidraw.com/
   name_property: name
-  summary: Excalidraw — Collaborative whiteboarding made easy
+  summary: Collaborative whiteboarding made easy
   description: Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.
   license: MIT
   categories:
@@ -209,8 +209,7 @@
   adaptive: true
 - url: https://www.instagram.com/
   name_property: name
-  summary: Instagram
-  description: Create an account or log in to Instagram - A simple, fun & creative way to capture, edit & share photos, videos & messages with friends & family.
+  description: A simple, fun & creative way to capture, edit & share photos, videos & messages with friends & family.
   license: LicenseRef-proprietary
   categories:
     - Chat
@@ -228,7 +227,6 @@
   adaptive: true
 - url: https://www.pinterest.com/
   name_property: name
-  summary: Pinterest
   description: Discover recipes, home ideas, style inspiration and other ideas to try.
   license: LicenseRef-proprietary
   categories:
