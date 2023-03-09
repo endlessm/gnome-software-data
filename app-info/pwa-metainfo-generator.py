@@ -5,57 +5,9 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
 
 """\
-Generates AppStream metainfo for a set of Progressive Web Apps
+Generates AppStream metainfo for a set of Progressive Web App URLs
 
-The YAML should consists of a sequence of web apps. Each app is a map
-supporting the follwing fields:
-
-- url (required, string):
-  The URL to the main page of the app.
-- name (optional, string):
-  A custom name to override the name in the app's manifest.
-- name_property (optional, string):
-  The manifest attribute to use for the app name. This can be either
-  'name' or 'short_name'. If left empty, 'short_name' will be preferred
-  if it's defined in the manifest.
-- summary (optional, string):
-  A custom summary to override the app's description of itself.
-- description (required, string):
-  A long description of the app. Some HTML markup is supported.
-- license (required, string):
-  A SPDX license expression, such as AGPL-3.0-only.
-- developer_name (optional, string):
-  The developers or project responsible for the app.
-- screenshots (optional, sequence of maps):
-  A sequence of screenshots. Each screenshot entry must have 'src', 'width'
-  and 'height' properties. Each entry may have an optional boolean 'default'
-  field. It is assumed false if not specified. If no screenshots have been set
-  as the default, the first screenshot will be the default. Each entry may also
-  have an optional 'caption' field. For example:
-    screenshots:
-      - src: https://example.com/screenshot1.jpg
-        default: true
-        width: 800
-        height: 600
-        caption: Super App's main window.
-      - src: https://example.com/screenshot2.jpg
-        width: 800
-        height: 600
-- categories (optional, sequence of strings):
-  A sequence of category names, as defined by the desktop menu specification.
-- keywords (optional, sequence of strings):
-  A sequence of keywords to be used for searching.
-- content_rating (optional, sequence of strings):
-  A sequence of OARS content ratings, for example:
-    content_rating:
-      - social-audio=moderate
-      - social-contacts=intense
-- adaptive (optional, boolean):
-  true if the app works well on phones, false if it does not. If the value is
-  not provided, no control or display recommendations will be added.
-
-The output will be written to a file with the same name as the input but a .xml
-file ending.
+The output will be written to a file using the generated app ID.
 
 This tool uses the web app's manifest to fill out the AppStream info, so an
 Internet connection is required.
@@ -70,7 +22,7 @@ import hashlib
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 import sys
-import yaml
+import textwrap
 
 # w3c categories: https://github.com/w3c/manifest/wiki/Categories
 # appstream categories: https://specifications.freedesktop.org/menu-spec/latest/apa.html
@@ -161,9 +113,8 @@ def keywords_from_head(soup):
 
 
 class App:
-    def __init__(self, config):
-        self.config = config
-        self.url = self.config["url"]
+    def __init__(self, url):
+        self.url = url
         self.id = self._get_app_id()
         self.soup = get_soup_for_url(self.url)
         self.manifest = get_manifest(self.soup, self.url)
@@ -211,28 +162,62 @@ class App:
         hashed_url = hashlib.sha1(self.url.encode("utf-8")).hexdigest()
         return "org.gnome.Software.WebApp_" + hashed_url
 
+    def _add_comment(self, element, text):
+        text = textwrap.fill(text, break_long_words=False, break_on_hyphens=False)
+        text = f' {text} '.replace('\n', '\n       ')
+        comment = ET.Comment(text)
+        element.append(comment)
+
+    @staticmethod
+    def _join_words(words):
+        num_words = len(words)
+        if num_words == 0:
+            return ""
+        elif num_words == 1:
+            return words[0]
+        return ", ".join(words[:-1]) + f" and {words[-1]}"
+
     def _add_name(self, app_component):
-        name = self.config.get('name')
-        if not name:
-            # No name was configured. First try the OpenGraph name.
-            name = og_property_from_head(self.soup, "site_name")
+        self._add_comment(
+            app_component,
+            textwrap.dedent("""\
+            A human-readable name for this web app. See
+            https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-name
+            for details.
+            """),
+        )
+
+        # Build a list of name and comment tuples.
+        names_data = [
+            (og_property_from_head(self.soup, "site_name"), "OpenGraph name"),
+            (self.manifest.get("name"), "Manifest name"),
+            (self.manifest.get("short_name"), "Manifest short_name"),
+        ]
+
+        # Reassmble it into a dictionary to prune and deduplicate names.
+        names = {}
+        for name, comment in names_data:
             if not name:
-                # No OpenGraph name. Try the manifest name, allowing the property to be
-                # chosen.
-                name_property = self.config.get('name_property')
-                if name_property is None:
-                    # Short name seems more suitable in practice
-                    if "short_name" in self.manifest:
-                        name_property = "short_name"
-                    else:
-                        name_property = "name"
-                elif name_property not in ('name', 'short_name'):
-                    raise ValueError(
-                        "name_property must be set to 'name' or 'short_name', not '{}'"
-                        .format(name_property)
-                    )
-                name = self.manifest[name_property]
-        ET.SubElement(app_component, 'name').text = name
+                continue
+            comments = names.setdefault(name, [])
+            comments.append(comment)
+
+        num_names = len(names)
+        if num_names > 1:
+            self._add_comment(
+                app_component,
+                "Multiple names detected. Delete all but one name element below.",
+            )
+        elif num_names == 0:
+            self._add_comment(
+                app_component,
+                "No app name detected. Update the placeholder below.",
+            )
+            ET.SubElement(app_component, 'name').text = "Placeholder"
+
+        for name, comments in names.items():
+            self._add_comment(app_component, self._join_words(comments))
+            ET.SubElement(app_component, 'name').text = name
 
     def _add_launchable(self, app_component):
         launchable = ET.SubElement(app_component, 'launchable')
@@ -244,48 +229,132 @@ class App:
         url_element.set('type', 'homepage')
         url_element.text = self.url
 
+    @staticmethod
+    def _canonicalize_summary(summary):
+        if not summary:
+            return summary
+
+        # appstreamcli validate recommends summary not ending with '.'
+        if summary.endswith('.'):
+            summary = summary[:-1]
+        # ...and not containing newlines
+        return summary.replace('\n', ' ').strip()
+
     def _add_summary(self, app_component):
-        summary = (
-            self.config.get('summary', og_property_from_head(self.soup, "title"))
-            or self.manifest.get('description')
+        self._add_comment(
+            app_component,
+            textwrap.dedent("""\
+            A short summary of what this web app does. See
+            https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary
+            for details.
+            """),
         )
 
-        if summary:
-            # appstreamcli validate recommends summary not ending with '.'
-            if summary.endswith('.'):
-                summary = summary[:-1]
-            # ...and not containing newlines
-            summary = summary.replace('\n', ' ').strip()
+        # Build a list of summary and comment tuples.
+        summaries_data = [
+            (
+                self._canonicalize_summary(og_property_from_head(self.soup, 'title')),
+                "OpenGraph summary"
+            ),
+            (
+                self._canonicalize_summary(self.manifest.get('description')),
+                "Manifest summary"
+            ),
+        ]
+
+        # Reassmble it into a dictionary to prune and deduplicate names.
+        summaries = {}
+        for summary, comment in summaries_data:
+            if not summary:
+                continue
+            comments = summaries.setdefault(summary, [])
+            comments.append(comment)
+
+        num_summaries = len(summaries)
+        if num_summaries > 1:
+            self._add_comment(
+                app_component,
+                textwrap.dedent("""\
+                Multiple summaries detected. Delete all but one summary element below.
+                """),
+            )
+        elif num_summaries == 0:
+            self._add_comment(
+                app_component,
+                "No summary detected. Update the placeholder below.",
+            )
+            ET.SubElement(app_component, 'summary').text = "A placeholder summary"
+
+        for summary, comments in summaries.items():
+            self._add_comment(app_component, self._join_words(comments))
             ET.SubElement(app_component, 'summary').text = summary
 
     def _add_description(self, app_component):
-        description = self.config.get(
-            'description',
-            og_property_from_head(self.soup, "description"),
+        self._add_comment(
+            app_component,
+            textwrap.dedent("""\
+            A long description of this web app. Some markup can be used. See
+            https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description
+            for details.
+            """),
         )
-        description_element = ET.SubElement(app_component, 'description')
-
-        try:
-            # Try to parse the description as XML since it will look nicer.
-            description_xml = ET.fromstring(description)
-            description_element.append(description_xml)
-        except ET.ParseError:
-            # Fallback to just adding it as text in the description node.
-            description_element.text = description
+        description = og_property_from_head(self.soup, "description")
+        description_element = ET.Element("description")
+        if description:
+            self._add_comment(app_component, "OpenGraph description")
+            app_component.append(description_element)
+            try:
+                # Try to parse the description as XML since it will look nicer.
+                description_xml = ET.fromstring(description)
+                description_element.append(description_xml)
+            except ET.ParseError:
+                # Fallback to just adding it as text in the description node.
+                description_element.text = description
+        else:
+            self._add_comment(
+                app_component,
+                "No description was found. Update the placeholder below.",
+            )
+            app_component.append(description_element)
+            ET.SubElement(description_element, "p").text = (
+                "A placeholder description for the app."
+            )
+            ET.SubElement(description_element, "p").text = (
+                "The description can use some markup such as multiple paragraphs."
+            )
 
     def _add_project_license(self, app_component):
-        project_license = ET.SubElement(app_component, 'project_license')
-        project_license.text = self.config["license"]
+        self._add_comment(
+            app_component,
+            textwrap.dedent("""\
+            The license of the web app in SPDX format. See
+            https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-project_license
+            for details.
+            """),
+        )
+        ET.SubElement(app_component, "project_license").text = "Placeholder"
 
     def _add_metadata_license(self, app_component):
-        # metadata license is a required field but we don't have one, assume FSFAP?
-        metadata_license = ET.SubElement(app_component, 'metadata_license')
-        metadata_license.text = 'FSFAP'
+        self._add_comment(
+            app_component,
+            textwrap.dedent("""\
+            The license of this metadata in SPDX format. See
+            https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-metadata_license
+            for details. A potential license to use is FSFAP.
+            """),
+        )
+        ET.SubElement(app_component, "metadata_license").text = "Placeholder"
 
     def _add_developer_name(self, app_component):
-        developer_name = self.config.get('developer_name')
-        if developer_name:
-            ET.SubElement(app_component, 'developer_name').text = developer_name
+        self._add_comment(
+            app_component,
+            textwrap.dedent("""\
+            The developer or project responsible for the web app. See
+            https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-developer_name
+            for details.
+            """),
+        )
+        ET.SubElement(app_component, "developer_name").text = "Placeholder"
 
     def _add_icons(self, app_component):
         # Avoid using maskable icons if we can, they don't have nice rounded edges
@@ -305,9 +374,20 @@ class App:
             icon_element.set('height', size.split('x')[1])
 
     def _add_screenshots(self, app_component):
-        screenshots = self.config.get('screenshots', self.manifest.get('screenshots'))
+        self._add_comment(
+            app_component,
+            textwrap.dedent("""\
+            One or more images displaying the web app interface. See
+            https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-screenshots
+            for details.
+            """),
+        )
+        screenshots = self.manifest.get('screenshots')
+        screenshots_element = ET.Element('screenshots')
+
         if screenshots:
-            screenshots_element = ET.SubElement(app_component, 'screenshots')
+            self._add_comment(app_component, "Manifest screenshots")
+            app_component.append(screenshots_element)
 
             # Make sure at least one of the screenshots is the default.
             has_default = any([s.get('default', False) for s in screenshots])
@@ -331,56 +411,111 @@ class App:
                 caption = screenshot.get('caption') or screenshot.get('label')
                 if caption:
                     ET.SubElement(screenshot_element, 'caption').text = caption
+        else:
+            self._add_comment(
+                app_component,
+                "No screenshots found. Update the placeholders below.",
+            )
+            app_component.append(screenshots_element)
+            for x in range(1, 3):
+                screenshot_element = ET.SubElement(screenshots_element, "screenshot")
+                if x == 1:
+                    screenshot_element.set('type', 'default')
+                image_element = ET.SubElement(screenshot_element, 'image')
+                image_element.text = f"https://example.com/screenshot{x}.jpg"
+                image_element.set("width", "1600")
+                image_element.set("height", "900")
+                ET.SubElement(screenshot_element, 'caption').text = f"Screenshot {x}"
 
     def _add_categories(self, app_component):
-        categories_element = ET.SubElement(app_component, 'categories')
-        user_categories = self.config.get('categories', [])
-        for category in user_categories:
-            if len(category) > 0:
-                ET.SubElement(categories_element, 'category').text = category
-        if 'categories' in self.manifest:
-            for category in self.manifest['categories']:
-                try:
-                    mapped_category = w3c_to_appstream_categories[category]
-                    if mapped_category not in user_categories:
-                        ET.SubElement(categories_element, 'category').text = (
-                            mapped_category
-                        )
-                except KeyError:
-                    pass
+        self._add_comment(
+            app_component,
+            textwrap.dedent("""\
+            One or more categories describing the web app. See
+            https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-categories
+            for details.
+            """),
+        )
+        categories = self.manifest.get('categories', [])
+        categories_element = ET.Element('categories')
+        mapped_categories = list(
+            filter(
+                None,
+                [w3c_to_appstream_categories.get(c) for c in categories],
+            )
+        )
+        if mapped_categories:
+            app_component.append(categories_element)
+        else:
+            self._add_comment(
+                app_component,
+                "No categories found in manifest. Update the placeholders below.",
+            )
+            app_component.append(categories_element)
+            mapped_categories = ["Placeholder1", "Placeholder2"]
+
+        for category in mapped_categories:
+            ET.SubElement(categories_element, "category").text = category
 
     def _add_keywords(self, app_component):
-        keywords = self.config.get('keywords', keywords_from_head(self.soup))
-        if keywords:
-            keywords_element = ET.SubElement(app_component, 'keywords')
-            for keyword in keywords:
-                ET.SubElement(keywords_element, 'keyword').text = keyword
+        self._add_comment(
+            app_component,
+            textwrap.dedent("""\
+            One or more keywords describing the web app. See
+            https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-keywords
+            for details.
+            """),
+        )
+        keywords = keywords_from_head(self.soup)
+        keywords_element = ET.Element("keywords")
+        if not keywords:
+            self._add_comment(
+                app_component,
+                "No keywords found in page. Update the placeholders below.",
+            )
+            keywords = ["placeholder1", "placeholder2"]
+        app_component.append(keywords_element)
+        for keyword in keywords:
+            ET.SubElement(keywords_element, "keyword").text = keyword
 
     def _add_content_rating(self, app_component):
-        content_ratings = self.config.get('content_rating', [])
-        if len(content_ratings) > 0:
-            ratings_element = ET.SubElement(app_component, 'content_rating')
-            ratings_element.set('type', 'oars-1.1')
-            for rating in content_ratings:
-                if len(rating) > 0:
-                    rating_element = ET.SubElement(ratings_element, 'content_attribute')
-                    rating_element.text = rating.split('=')[1]
-                    rating_element.set('id', rating.split('=')[0])
+        self._add_comment(
+            app_component,
+            textwrap.dedent("""\
+            Add content rating metadata if applicable. Update or remove the
+            placeholder elements below. See
+            https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-content_rating
+            for details.
+            """),
+        )
+        ratings_element = ET.SubElement(app_component, "content_rating")
+        ratings_element.set("type", "oars-1.1")
+        for attr in ("social-info", "social-chat"):
+            rating_element = ET.SubElement(ratings_element, "content_attribute")
+            rating_element.set("id", attr)
+            rating_element.text = "moderate"
 
     def _add_recommends(self, app_component):
-        adaptive = self.config.get('adaptive')
-        if adaptive is not None:
-            recommends_element = ET.SubElement(app_component, 'recommends')
-            ET.SubElement(recommends_element, 'control').text = 'pointing'
-            ET.SubElement(recommends_element, 'control').text = 'keyboard'
-            if adaptive:
-                ET.SubElement(recommends_element, 'control').text = 'touch'
-            display_element = ET.SubElement(recommends_element, 'display_length')
-            display_element.set('compare', 'ge')
-            if adaptive:
-                display_element.text = 'small'
-            else:
-                display_element.text = 'medium'
+        self._add_comment(
+            app_component,
+            textwrap.dedent("""\
+            Add recommended controls and display sizes. See
+            https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-relations
+            for details.
+            """),
+        )
+        recommends_element = ET.SubElement(app_component, 'recommends')
+        ET.SubElement(recommends_element, 'control').text = 'pointing'
+        ET.SubElement(recommends_element, 'control').text = 'keyboard'
+        ET.SubElement(recommends_element, 'control').text = 'touch'
+
+        self._add_comment(
+            recommends_element,
+            "If the website is adaptive, change this to small.",
+        )
+        display_element = ET.SubElement(recommends_element, 'display_length')
+        display_element.set('compare', 'ge')
+        display_element.text = 'medium'
 
 
 def main():
@@ -390,17 +525,16 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument(
-        "input",
-        type=argparse.FileType("r"),
-        metavar="input.yaml",
-        help="YAML file, with one sequence element per site",
+        "urls",
+        metavar="URL",
+        nargs="+",
+        help="URL to the main page of the app",
     )
     output_group = parser.add_mutually_exclusive_group()
     output_group.add_argument(
         "-O", "--output",
         help=(
-            "metainfo output directory (default: metainfo subdirectory of the input "
-            "YAML file directory)"
+            "metainfo output directory (default: metainfo subdirectory of this program)"
         ),
     )
     output_group.add_argument(
@@ -410,19 +544,14 @@ def main():
     )
     args = parser.parse_args()
 
-    input_filename = args.input.name
-    with args.input as input_yaml:
-        data = yaml.safe_load(input_yaml)
-
     if not args.stdout:
         if args.output is None:
-            args.output = os.path.join(os.path.dirname(input_filename), "metainfo")
+            args.output = os.path.join(os.path.dirname(__file__), "metainfo")
         os.makedirs(args.output, exist_ok=True)
 
-    for config in data:
-        print("Processing entry '{}' from file '{}'"
-              .format(config["url"], input_filename))
-        app = App(config)
+    for url in args.urls:
+        print(f"Processing URL {url}")
+        app = App(url)
         out_filename = app.id + ".metainfo.xml"
         if args.stdout:
             out_file = sys.stdout.buffer

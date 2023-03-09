@@ -23,11 +23,16 @@ configuration, using the upstream functionality.
 
 ## How to add a Progressive Web Application?
 
-* Add the website to [eos-extra-pwa.yaml](./eos-extra-pwa.yaml)
-* Run [pwa-metainfo-generator.py](./pwa-metainfo-generator.py)
+* Run [pwa-metainfo-generator.py](./pwa-metainfo-generator.py) with the
+  website's URL. This will generate or update a metainfo XML file in the
+  [metainfo](./metainfo) directory.
+* Edit the metainfo XML until it's in a publishable form. Run `git add
+  metainfo` to include a new metainfo XML file.
 * If necessary, add screenshots in [s3/screenshots](../s3/screenshots)
   in a subdirectory named by with the generated app ID. Use
-  `https://appstream.endlessos.org/` as the base URL in the YAML
-  configuration. Run `pwa-metainfo-generator.py` again.
-* Run [generate-eos-extra-appstream](./generate-eos-extra-appstream)
-* Commit the result and submit a pull request
+  `https://appstream.endlessos.org/` as the base URL. Run `git add
+  ../s3/screenshots` to include any new screenshots.
+* Run [generate-eos-extra-appstream](./generate-eos-extra-appstream). If
+  there are any validation errors, correct them in the metainfo file and
+  run `./generate-eos-extra-appstream` again.
+* Commit the result and submit a pull request.
