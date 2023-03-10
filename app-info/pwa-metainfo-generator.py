@@ -69,6 +69,7 @@ import json
 import hashlib
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup
+import sys
 import yaml
 
 # w3c categories: https://github.com/w3c/manifest/wiki/Categories
@@ -394,29 +395,42 @@ def main():
         metavar="input.yaml",
         help="YAML file, with one sequence element per site",
     )
-    parser.add_argument(
+    output_group = parser.add_mutually_exclusive_group()
+    output_group.add_argument(
         "-O", "--output",
         help=(
             "metainfo output directory (default: metainfo subdirectory of the input "
             "YAML file directory)"
         ),
     )
+    output_group.add_argument(
+        "-s", "--stdout",
+        action="store_true",
+        help="print the metainfo instead of saving to files",
+    )
     args = parser.parse_args()
 
     input_filename = args.input.name
-    if args.output is None:
-        args.output = os.path.join(os.path.dirname(args.input.name), "metainfo")
-    os.makedirs(args.output, exist_ok=True)
     with args.input as input_yaml:
         data = yaml.safe_load(input_yaml)
+
+    if not args.stdout:
+        if args.output is None:
+            args.output = os.path.join(os.path.dirname(input_filename), "metainfo")
+        os.makedirs(args.output, exist_ok=True)
 
     for config in data:
         print("Processing entry '{}' from file '{}'"
               .format(config["url"], input_filename))
         app = App(config)
-        out_filename = os.path.join(args.output, app.id + ".metainfo.xml")
-        print("Generating {} metainfo file {}".format(app.url, out_filename))
-        app.write_metainfo(out_filename)
+        out_filename = app.id + ".metainfo.xml"
+        if args.stdout:
+            out_file = sys.stdout.buffer
+            print(f"# {out_filename}", flush=True)
+        else:
+            out_file = os.path.join(args.output, out_filename)
+            print("Generating {} metainfo file {}".format(app.url, out_file))
+        app.write_metainfo(out_file)
 
 
 if __name__ == '__main__':
