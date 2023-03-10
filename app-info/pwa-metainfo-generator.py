@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Copyright 2021-2022 Matthew Leeds
-# SPDX-License-Identifier: GPL-2.0+
+# Copyright 2023 Endless OS Foundation, LLC
+# SPDX-License-Identifier: GPL-2.0-or-later
 
 """\
 Generates AppStream metainfo for a set of Progressive Web Apps
