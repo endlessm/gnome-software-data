@@ -1,5 +1,9 @@
 #!/bin/bash -e
 
+# Copyright 2017 Endless Mobile, Inc.
+# Copyright 2023 Endless OS Foundation, LLC
+# SPDX-License-Identifier: GPL-2.0-or-later
+
 # Sync appstream, screenshots and thumbnails to S3
 
 SRCDIR=$(dirname "$0")
