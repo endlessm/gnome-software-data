@@ -1,0 +1,15 @@
+# eos-extra PWA URL list.
+https://community.endlessos.com/
+https://app.diagrams.net
+https://pinafore.social/
+https://snapdrop.net/
+https://stackedit.io/app
+https://squoosh.app/
+https://excalidraw.com/
+https://discourse.gnome.org/
+https://discourse.flathub.org/
+https://devdocs.io/
+https://twitter.com/
+https://todoist.com/
+https://www.instagram.com/
+https://www.pinterest.com/

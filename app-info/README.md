@@ -35,4 +35,6 @@ configuration, using the upstream functionality.
 * Run [generate-eos-extra-appstream](./generate-eos-extra-appstream). If
   there are any validation errors, correct them in the metainfo file and
   run `./generate-eos-extra-appstream` again.
+* Record the website URL in the [eos-extra-pwa.txt](./eos-extra-pwa.txt)
+  file.
 * Commit the result and submit a pull request.
