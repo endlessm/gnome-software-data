@@ -58,8 +58,11 @@ class ManifestNotFoundException(Exception):
     """
 
 
-def get_soup_for_url(url):
-    response = requests.get(url)
+def get_soup_for_url(url, language=None):
+    headers = {}
+    if language:
+        headers["Accept-Language"] = language
+    response = requests.get(url, headers=headers)
     response.raise_for_status()
     return BeautifulSoup(response.text, features="lxml")
 
@@ -113,10 +116,13 @@ def keywords_from_head(soup):
 
 
 class App:
+    LANGUAGES = ("es", "fr", "pt")
+
     def __init__(self, url):
         self.url = url
         self.id = self._get_app_id()
         self.soup = get_soup_for_url(self.url)
+        self.lang_soup = self._get_lang_soup()
         self.manifest = get_manifest(self.soup, self.url)
 
     def write_metainfo(self, path):
@@ -161,6 +167,14 @@ class App:
         # used in the epiphany plugin, so it cannot be changed.
         hashed_url = hashlib.sha1(self.url.encode("utf-8")).hexdigest()
         return "org.gnome.Software.WebApp_" + hashed_url
+
+    def _get_lang_soup(self):
+        lang_soup = {}
+        for lang in self.LANGUAGES:
+            soup = get_soup_for_url(self.url, lang)
+            if soup != self.soup:
+                lang_soup[lang] = soup
+        return lang_soup
 
     def _add_comment(self, element, text):
         text = textwrap.fill(text, break_long_words=False, break_on_hyphens=False)
@@ -218,6 +232,16 @@ class App:
         for name, comments in names.items():
             self._add_comment(app_component, self._join_words(comments))
             ET.SubElement(app_component, 'name').text = name
+
+        # Add translated names if available.
+        for lang, soup in sorted(self.lang_soup.items()):
+            lang_name = og_property_from_head(soup, "site_name")
+            if not lang_name or lang_name in names:
+                continue
+            self._add_comment(app_component, f"OpenGraph {lang} name")
+            lang_element = ET.SubElement(app_component, "name")
+            lang_element.set("xml:lang", lang)
+            lang_element.text = lang_name
 
     def _add_launchable(self, app_component):
         launchable = ET.SubElement(app_component, 'launchable')
@@ -289,6 +313,28 @@ class App:
             self._add_comment(app_component, self._join_words(comments))
             ET.SubElement(app_component, 'summary').text = summary
 
+        # Add translated summaries if available.
+        for lang, soup in sorted(self.lang_soup.items()):
+            lang_summary = self._canonicalize_summary(
+                og_property_from_head(soup, 'title')
+            )
+            if not lang_summary or lang_summary in summaries:
+                continue
+            self._add_comment(app_component, f"OpenGraph {lang} summary")
+            lang_element = ET.SubElement(app_component, "summary")
+            lang_element.set("xml:lang", lang)
+            lang_element.text = lang_summary
+
+    @staticmethod
+    def _add_description_content(element, description):
+        try:
+            # Try to parse the description as XML since it will look nicer.
+            description_xml = ET.fromstring(description)
+            element.append(description_xml)
+        except ET.ParseError:
+            # Fallback to just adding it as text in the description node.
+            element.text = description
+
     def _add_description(self, app_component):
         self._add_comment(
             app_component,
@@ -303,13 +349,7 @@ class App:
         if description:
             self._add_comment(app_component, "OpenGraph description")
             app_component.append(description_element)
-            try:
-                # Try to parse the description as XML since it will look nicer.
-                description_xml = ET.fromstring(description)
-                description_element.append(description_xml)
-            except ET.ParseError:
-                # Fallback to just adding it as text in the description node.
-                description_element.text = description
+            self._add_description_content(description_element, description)
         else:
             self._add_comment(
                 app_component,
@@ -322,6 +362,16 @@ class App:
             ET.SubElement(description_element, "p").text = (
                 "The description can use some markup such as multiple paragraphs."
             )
+
+        # Add translated descriptions if available.
+        for lang, soup in sorted(self.lang_soup.items()):
+            lang_description = og_property_from_head(soup, "description")
+            if not lang_description or lang_description == description:
+                continue
+            self._add_comment(app_component, f"OpenGraph {lang} description")
+            lang_element = ET.SubElement(app_component, "description")
+            lang_element.set("xml:lang", lang)
+            self._add_description_content(lang_element, lang_description)
 
     def _add_project_license(self, app_component):
         self._add_comment(
@@ -477,6 +527,16 @@ class App:
         app_component.append(keywords_element)
         for keyword in keywords:
             ET.SubElement(keywords_element, "keyword").text = keyword
+
+        # Add translated keywords if available.
+        for lang, soup in sorted(self.lang_soup.items()):
+            lang_keywords = keywords_from_head(soup)
+            for keyword in lang_keywords:
+                if keyword in keywords:
+                    continue
+                lang_element = ET.SubElement(keywords_element, "keyword")
+                lang_element.set("xml:lang", lang)
+                lang_element.text = keyword
 
     def _add_content_rating(self, app_component):
         self._add_comment(
