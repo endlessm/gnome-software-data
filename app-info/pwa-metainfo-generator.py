@@ -524,11 +524,19 @@ def main():
         epilog="\n".join(__doc__.split("\n")[1:]),
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
+    # It would be nice to use a mutually exclusive group to handle
+    # positional URLs vs a URL file, but argparse doesn't handle
+    # optional positional arguments in that scenario.
     parser.add_argument(
         "urls",
         metavar="URL",
-        nargs="+",
+        nargs="*",
         help="URL to the main page of the app",
+    )
+    parser.add_argument(
+        "-f", "--url-file",
+        type=argparse.FileType("r"),
+        help="file containing URLs to process",
     )
     output_group = parser.add_mutually_exclusive_group()
     output_group.add_argument(
@@ -543,6 +551,20 @@ def main():
         help="print the metainfo instead of saving to files",
     )
     args = parser.parse_args()
+
+    if args.urls and args.url_file:
+        parser.error("argument -f/--url-file not allowed with URL arguments")
+    elif not (args.urls or args.url_file):
+        parser.error("either -f/--url-file or URL arguments are required")
+
+    if args.url_file:
+        with args.url_file as f:
+            args.urls = sorted(
+                filter(
+                    lambda url: url and not url.startswith("#"),
+                    {line.strip() for line in f},
+                )
+            )
 
     if not args.stdout:
         if args.output is None:
