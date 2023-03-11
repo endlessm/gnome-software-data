@@ -132,41 +132,26 @@ def get_manifest(soup, url):
 
 
 def og_property_from_head(soup, og_property):
-    prop = soup.head.find_all("meta", {"property": "og:" + str(og_property)})
+    tag = soup.head.find("meta", attrs={"property": f"og:{og_property}"})
 
-    if len(prop) > 0:
-        prop = prop[0]['content']
-
-    return prop
+    if tag is None:
+        return None
+    return tag.get("content")
 
 
 def prop_from_head(soup, name):
-    prop = soup.head.find_all("meta", {"name": name})
+    tag = soup.head.find("meta", attrs={"name": f"{name}"})
 
-    if len(prop) > 0:
-        prop = prop[0]['content']
-    else:
-        prop = soup.head.find_all("meta", {"name": name.capitalize()})
-
-        if len(prop) > 0:
-            prop = prop[0]['content']
-
-    return prop
+    if tag is None:
+        return None
+    return tag.get("content")
 
 
 def keywords_from_head(soup):
-    keywords = soup.head.find("meta", attrs={"name": "Keywords"})
+    keywords_value = prop_from_head(soup, "keywords")
 
-    if keywords is None:
-        keywords = soup.head.find("meta", attrs={"name": "keywords"})
-        if keywords is None:
-            keywords = []
-        elif "meta" in str(keywords):
-            keywords = keywords['content'].split(", ")
-        else:
-            keywords = []
-    elif "meta" in str(keywords):
-        keywords = keywords['content'].split(", ")
+    if keywords_value:
+        keywords = keywords_value.split(", ")
     else:
         keywords = []
 
