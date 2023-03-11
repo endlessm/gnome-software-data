@@ -4,10 +4,11 @@
   <name>Excalidraw</name>
   <launchable type="url">https://excalidraw.com/</launchable>
   <url type="homepage">https://excalidraw.com/</url>
-  <summary>Excalidraw — Collaborative whiteboarding made easy</summary>
+  <summary>Collaborative whiteboarding made easy</summary>
   <description>Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.</description>
   <project_license>MIT</project_license>
   <metadata_license>FSFAP</metadata_license>
+  <developer_name>Excalidraw</developer_name>
   <icon type="remote" width="180" height="180">https://excalidraw.com/logo-180x180.png</icon>
   <icon type="remote" width="256" height="256">https://excalidraw.com/apple-touch-icon.png</icon>
   <screenshots>

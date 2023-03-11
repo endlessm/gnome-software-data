@@ -4,10 +4,11 @@
   <name>DevDocs</name>
   <launchable type="url">https://devdocs.io/</launchable>
   <url type="homepage">https://devdocs.io/</url>
-  <summary>DevDocs</summary>
+  <summary>DevDocs combines multiple API documentations in a fast, organized, and searchable interface</summary>
   <description>Fast, offline, and free documentation browser for developers. Search 100+ docs in one web app including HTML, CSS, JavaScript, PHP, Ruby, Python, Go, C, C++, and many more.</description>
   <project_license>MPL-2.0</project_license>
   <metadata_license>FSFAP</metadata_license>
+  <developer_name>Thibaut Courouble</developer_name>
   <icon type="remote" width="32" height="32">https://devdocs.io/images/webapp-icon-32.png</icon>
   <icon type="remote" width="60" height="60">https://devdocs.io/images/webapp-icon-60.png</icon>
   <icon type="remote" width="80" height="80">https://devdocs.io/images/webapp-icon-80.png</icon>

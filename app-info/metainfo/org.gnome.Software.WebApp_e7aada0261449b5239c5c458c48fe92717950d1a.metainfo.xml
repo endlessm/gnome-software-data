@@ -4,10 +4,11 @@
   <name>StackEdit</name>
   <launchable type="url">https://stackedit.io/app</launchable>
   <url type="homepage">https://stackedit.io/app</url>
-  <summary>Full-featured, open-source Markdown editor</summary>
-  <description>Free, open-source, full-featured Markdown editor.</description>
+  <summary>Free, open-source, full-featured Markdown editor</summary>
+  <description>Full-featured, open-source Markdown editor based on PageDown, the Markdown library used by Stack Overflow and the other Stack Exchange sites.</description>
   <project_license>Apache-2.0</project_license>
   <metadata_license>FSFAP</metadata_license>
+  <developer_name>Dock5 Software Ltd.</developer_name>
   <icon type="remote" width="512" height="512">https://stackedit.io/icon_512x512.bc1452c3b77b59eb0d8c449de1c77310.png</icon>
   <icon type="remote" width="384" height="384">https://stackedit.io/icon_384x384.3f55b77300c8b37b4aa380c8460ee0a2.png</icon>
   <icon type="remote" width="256" height="256">https://stackedit.io/icon_256x256.f406288343ae34c5c7bd1543700c2ac0.png</icon>
@@ -17,6 +18,11 @@
   <categories>
     <category>Programming and Developer Software</category>
   </categories>
+  <keywords>
+    <keyword>markdown</keyword>
+    <keyword>editor</keyword>
+    <keyword>open-source</keyword>
+  </keywords>
   <content_rating type="oars-1.1">
     <content_attribute id="social-info">mild</content_attribute>
   </content_rating>

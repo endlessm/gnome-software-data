@@ -4,14 +4,15 @@
   <name>Instagram</name>
   <launchable type="url">https://www.instagram.com/</launchable>
   <url type="homepage">https://www.instagram.com/</url>
-  <summary>Instagram</summary>
-  <description>Create an account or log in to Instagram - A simple, fun &amp; creative way to capture, edit &amp; share photos, videos &amp; messages with friends &amp; family.</description>
+  <summary>Give people the power to build community and bring the world closer together</summary>
+  <description>A simple, fun &amp; creative way to capture, edit &amp; share photos, videos &amp; messages with friends &amp; family.</description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
+  <developer_name>Instagram</developer_name>
   <icon type="remote" width="144" height="144">https://www.instagram.com/static/images/ico/xxhdpi_launcher.png/99cf3909d459.png</icon>
   <icon type="remote" width="192" height="192">https://www.instagram.com/static/images/ico/xxxhdpi_launcher.png/9fc4bab7565b.png</icon>
   <categories>
-    <category>Chat</category>
+    <category>Chat, InstantMessaging, Video, Audio</category>
   </categories>
   <keywords>
     <keyword>Photography</keyword>

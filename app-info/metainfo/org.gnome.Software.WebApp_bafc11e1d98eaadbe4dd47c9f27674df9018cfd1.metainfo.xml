@@ -8,6 +8,7 @@
   <description>Trusted by 30 million people and teams. Todoist is the world's favorite task manager and to-do list app. Finally become focused, organized and calm.</description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
+  <developer_name>Doist Inc.</developer_name>
   <icon type="remote" width="192" height="192">https://todoist.com/static/android-chrome-192x192.png</icon>
   <icon type="remote" width="256" height="256">https://todoist.com/static/android-chrome-256x256.png</icon>
   <categories>

@@ -4,10 +4,11 @@
   <name>Pinterest</name>
   <launchable type="url">https://www.pinterest.com/</launchable>
   <url type="homepage">https://www.pinterest.com/</url>
-  <summary>Pinterest</summary>
-  <description>Discover recipes, home ideas, style inspiration and other ideas to try.</description>
+  <summary>Discover recipes, home ideas, style inspiration and other ideas to try</summary>
+  <description>Pinterest is a visual discovery engine for finding ideas like recipes, home and style inspiration, and more.</description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
+  <developer_name>Pinterest</developer_name>
   <icon type="remote" width="192" height="192">https://s.pinimg.com/images/favicon_red_192.png</icon>
   <categories>
     <category>Chat</category>

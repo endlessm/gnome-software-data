@@ -4,10 +4,11 @@
   <name>Flathub Discourse</name>
   <launchable type="url">https://discourse.flathub.org/</launchable>
   <url type="homepage">https://discourse.flathub.org/</url>
-  <summary>Flathub Discourse</summary>
-  <description>A place for Flathub Contributors and Users</description>
+  <summary>A forum for Flathub users</summary>
+  <description>Flathub aims to be the place to get and distribute apps for Linux. It is powered by Flatpak which allows Flathub apps to run on almost any Linux distribution.</description>
   <project_license>GPL-2.0-or-later</project_license>
   <metadata_license>FSFAP</metadata_license>
+  <developer_name>Flathub</developer_name>
   <icon type="remote" width="512" height="512">https://discourse-flathub-org-uploads.s3.dualstack.us-east-1.amazonaws.com/optimized/1X/be4563846333bda6607c6c3c5b226dff9d213866_2_512x512.png</icon>
   <categories>
     <category>Chat</category>

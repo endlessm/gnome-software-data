@@ -4,10 +4,11 @@
   <name>Pinafore for Mastodon</name>
   <launchable type="url">https://pinafore.social/</launchable>
   <url type="homepage">https://pinafore.social/</url>
-  <summary>An alternative web client for Mastodon, focused on speed and simplicity</summary>
-  <description>An alternative web client for Mastodon, focused on speed and simplicity.</description>
+  <summary>An alternative web client for Mastodon</summary>
+  <description>Pinafore is an alternative web client for Mastodon that focuses on speed, simplicity, Multi-account Support, Offline Usability, Mobile Support, and User Privacy.</description>
   <project_license>AGPL-3.0-only</project_license>
   <metadata_license>FSFAP</metadata_license>
+  <developer_name>Nolan Lawson</developer_name>
   <icon type="remote" width="48" height="48">https://pinafore.social/icon-48.png</icon>
   <icon type="remote" width="72" height="72">https://pinafore.social/icon-72.png</icon>
   <icon type="remote" width="96" height="96">https://pinafore.social/icon-96.png</icon>
@@ -31,6 +32,14 @@
   <categories>
     <category>Chat</category>
   </categories>
+  <keywords>
+    <keyword>Fast</keyword>
+    <keyword>Simple</keyword>
+    <keyword>Mastodon</keyword>
+    <keyword>Multi-Account Support</keyword>
+    <keyword>Offline Compatible</keyword>
+    <keyword>Private</keyword>
+  </keywords>
   <content_rating type="oars-1.1">
     <content_attribute id="social-audio">intense</content_attribute>
     <content_attribute id="social-info">none</content_attribute>

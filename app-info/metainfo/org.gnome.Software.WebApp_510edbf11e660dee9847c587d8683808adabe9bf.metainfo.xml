@@ -8,6 +8,7 @@
   <description>draw.io is a free online diagramming application and flowchart maker . You can use it to create UML, entity relationship, org charts, BPMN and BPM, database schema and networks. Also possible are telecommunication network, workflow, flowcharts, maps overlays and GIS, electronic circuit and social network diagrams.</description>
   <project_license>Apache-2.0</project_license>
   <metadata_license>FSFAP</metadata_license>
+  <developer_name>JGraph Ltd</developer_name>
   <icon type="remote" width="512" height="512">https://app.diagrams.net/images/android-chrome-512x512.png</icon>
   <categories>
     <category>Programming and Developer Software</category>
