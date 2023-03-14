@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_bafc11e1d98eaadbe4dd47c9f27674df9018cfd1.desktop</id>
+  <name>Todoist</name>
+  <launchable type="url">https://todoist.com/</launchable>
+  <url type="homepage">https://todoist.com/</url>
+  <summary>A to-do list to organize your work and life</summary>
+  <description>Trusted by 30 million people and teams. Todoist is the world's favorite task manager and to-do list app. Finally become focused, organized and calm.</description>
+  <project_license>LicenseRef-proprietary</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>Doist Inc.</developer_name>
+  <icon type="remote" width="192" height="192">https://todoist.com/static/android-chrome-192x192.png</icon>
+  <icon type="remote" width="256" height="256">https://todoist.com/static/android-chrome-256x256.png</icon>
+  <categories>
+    <category>Programming and Developer Software</category>
+  </categories>
+  <keywords>
+    <keyword>Office</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-info">moderate</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

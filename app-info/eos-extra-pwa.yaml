@@ -59,3 +59,186 @@
     - src: https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec/screenshot12.png
       width: 900
       height: 900
+- url: https://app.diagrams.net
+  name_property: name
+  summary: draw.io is free online diagram software for making flowcharts, process diagrams, org charts, UML, ER and network diagrams
+  description: draw.io is a free online diagramming application and flowchart maker . You can use it to create UML, entity relationship, org charts, BPMN and BPM, database schema and networks. Also possible are telecommunication network, workflow, flowcharts, maps overlays and GIS, electronic circuit and social network diagrams.
+  license: Apache-2.0
+  categories:
+    - Programming and Developer Software
+  keywords:
+    - drawio
+    - diagram
+    - FlowChart
+    - online
+    - flowchart maker
+    - uml
+    - erd
+  content_rating:
+    - social-info=mild
+  adaptive: true
+- url: https://pinafore.social/
+  name_property: name
+  summary: An alternative web client for Mastodon, focused on speed and simplicity.
+  description: 
+  license: AGPL-3.0-only
+  categories:
+    - Chat
+  content_rating:
+    - social-audio=intense
+    - social-info=none
+  adaptive: true
+- url: https://snapdrop.net/
+  name_property: name
+  summary: Local network file sharing in your browser
+  description: Instantly share images, videos, PDFs, and links with people nearby. Peer2Peer and Open Source. No Setup, No Signup.
+  license: GPL-3.0-only
+  developer_name: RobinLinus
+  categories:
+    - Programming and Developer Software
+  keywords:
+    - File
+    - Transfer
+    - Share
+    - Peer2Peer
+  content_rating:
+    - social-info=mild
+  adaptive: true
+- url: https://stackedit.io/app
+  name_property: name
+  description: Free, open-source, full-featured Markdown editor.
+  license: Apache-2.0
+  categories:
+    - Programming and Developer Software
+  content_rating:
+      - social-info=mild
+  adaptive: true
+- url: https://squoosh.app/
+  name_property: name
+  description: Squoosh is the ultimate image optimizer that allows you to compress and compare images with different codecs in your browser.
+  license: Apache-2.0
+  categories:
+    - Graphics Multimedia and Web Design
+  keywords:
+    - FileTools
+    - Image
+    - Processing
+  content_rating:
+    - social-info=moderate
+  adaptive: true
+- url: https://excalidraw.com/
+  name_property: name
+  summary: Collaborative whiteboarding made easy
+  description: Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.
+  license: MIT
+  categories:
+    - Programming and Developer Software
+  keywords:
+    - Office
+    - Education
+  content_rating:
+    - social-info=moderate
+  adaptive: true
+- url: https://discourse.gnome.org/
+  name_property: name
+  summary: GNOME Discourse
+  description: GNOME Project and Community related discussions
+  license: GPL-2.0-or-later
+  categories:
+    - Chat
+  keywords:
+    - GNOME
+    - forum
+    - support
+  content_rating:
+      - social-info=moderate
+      - social-audio=moderate
+      - social-contacts=intense
+  adaptive: true
+- url: https://discourse.flathub.org/
+  name_property: name
+  summary: Flathub Discourse
+  description: A place for Flathub Contributors and Users
+  license: GPL-2.0-or-later
+  categories:
+    - Chat
+  keywords:
+    - Flatpak
+    - forum
+    - support
+  content_rating:
+    - social-info=moderate
+    - social-audio=moderate
+    - social-contacts=intense
+  adaptive: true
+- url: https://devdocs.io/
+  name_property: name
+  summary: DevDocs
+  description: Fast, offline, and free documentation browser for developers. Search 100+ docs in one web app including HTML, CSS, JavaScript, PHP, Ruby, Python, Go, C, C++, and many more.
+  license: MPL-2.0
+  categories:
+    - Programming and Developer Software
+  keywords:
+    - Documentation
+    - Development
+  content_rating:
+    - social-info=moderate
+  adaptive: true
+- url: https://twitter.com/
+  name_property: name
+  summary: Twitter
+  description: The latest stories on Twitter - as told by Tweets.
+  license: LicenseRef-proprietary
+  categories:
+    - Chat
+  content_rating:
+    - social-info=intense
+    - social-audio=moderate
+  adaptive: true
+- url: https://todoist.com/
+  name_property: name
+  summary: A to-do list to organize your work and life
+  description: Trusted by 30 million people and teams. Todoist is the world's favorite task manager and to-do list app. Finally become focused, organized and calm.
+  license: LicenseRef-proprietary
+  categories:
+    - Programming and Developer Software
+  keywords:
+    - Office
+  content_rating:
+    - social-info=moderate
+  adaptive: true
+- url: https://www.instagram.com/
+  name_property: name
+  description: A simple, fun & creative way to capture, edit & share photos, videos & messages with friends & family.
+  license: LicenseRef-proprietary
+  categories:
+    - Chat
+  keywords:
+    - Photography
+    - Graphics
+  content_rating:
+    - sex-themes=mild
+    - social-chat=intense
+    - social-info=intense
+    - social-audio=intense
+    - social-location=intense
+    - social-contacts=intense
+    - money-advertising=intense
+  adaptive: true
+- url: https://www.pinterest.com/
+  name_property: name
+  description: Discover recipes, home ideas, style inspiration and other ideas to try.
+  license: LicenseRef-proprietary
+  categories:
+    - Chat
+  keywords:
+    - Photography
+    - Graphics
+  content_rating:
+    - drugs-alcohol=mild
+    - sex-nudity=mild
+    - sex-themes=mild
+    - social-chat=intense
+    - social-info=moderate
+    - money-advertising=intense
+  adaptive: true

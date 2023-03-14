@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_ea52ad18346faac27072cd1654243dfb7c70ef14.desktop</id>
+  <name>Excalidraw</name>
+  <launchable type="url">https://excalidraw.com/</launchable>
+  <url type="homepage">https://excalidraw.com/</url>
+  <summary>Collaborative whiteboarding made easy</summary>
+  <description>Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.</description>
+  <project_license>MIT</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>Excalidraw</developer_name>
+  <icon type="remote" width="180" height="180">https://excalidraw.com/logo-180x180.png</icon>
+  <icon type="remote" width="256" height="256">https://excalidraw.com/apple-touch-icon.png</icon>
+  <screenshots>
+    <screenshot type="default">
+      <image width="462" height="945">https://excalidraw.com/screenshots/virtual-whiteboard.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="462" height="945">https://excalidraw.com/screenshots/wireframe.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="462" height="945">https://excalidraw.com/screenshots/illustration.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="462" height="945">https://excalidraw.com/screenshots/shapes.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="462" height="945">https://excalidraw.com/screenshots/collaboration.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="462" height="945">https://excalidraw.com/screenshots/export.png</image>
+    </screenshot>
+  </screenshots>
+  <categories>
+    <category>Programming and Developer Software</category>
+  </categories>
+  <keywords>
+    <keyword>Office</keyword>
+    <keyword>Education</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-info">moderate</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

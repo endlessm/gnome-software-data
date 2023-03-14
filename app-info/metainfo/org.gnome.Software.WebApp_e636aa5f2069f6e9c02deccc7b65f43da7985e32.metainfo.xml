@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_e636aa5f2069f6e9c02deccc7b65f43da7985e32.desktop</id>
+  <name>Pinafore for Mastodon</name>
+  <launchable type="url">https://pinafore.social/</launchable>
+  <url type="homepage">https://pinafore.social/</url>
+  <summary>An alternative web client for Mastodon</summary>
+  <description>Pinafore is an alternative web client for Mastodon that focuses on speed, simplicity, Multi-account Support, Offline Usability, Mobile Support, and User Privacy.</description>
+  <project_license>AGPL-3.0-only</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>Nolan Lawson</developer_name>
+  <icon type="remote" width="48" height="48">https://pinafore.social/icon-48.png</icon>
+  <icon type="remote" width="72" height="72">https://pinafore.social/icon-72.png</icon>
+  <icon type="remote" width="96" height="96">https://pinafore.social/icon-96.png</icon>
+  <icon type="remote" width="144" height="144">https://pinafore.social/icon-144.png</icon>
+  <icon type="remote" width="192" height="192">https://pinafore.social/icon-192.png</icon>
+  <icon type="remote" width="512" height="512">https://pinafore.social/icon-512.png</icon>
+  <icon type="remote" width="44" height="44">https://pinafore.social/icon-44.png</icon>
+  <icon type="remote" width="50" height="50">https://pinafore.social/icon-50.png</icon>
+  <icon type="remote" width="150" height="150">https://pinafore.social/icon-150.png</icon>
+  <screenshots>
+    <screenshot type="default">
+      <image width="540" height="720">https://pinafore.social/screenshot-540-720-1.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="540" height="720">https://pinafore.social/screenshot-540-720-2.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="540" height="720">https://pinafore.social/screenshot-540-720-3.png</image>
+    </screenshot>
+  </screenshots>
+  <categories>
+    <category>Chat</category>
+  </categories>
+  <keywords>
+    <keyword>Fast</keyword>
+    <keyword>Simple</keyword>
+    <keyword>Mastodon</keyword>
+    <keyword>Multi-Account Support</keyword>
+    <keyword>Offline Compatible</keyword>
+    <keyword>Private</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-audio">intense</content_attribute>
+    <content_attribute id="social-info">none</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

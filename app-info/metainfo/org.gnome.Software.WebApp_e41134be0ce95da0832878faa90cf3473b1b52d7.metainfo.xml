@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_e41134be0ce95da0832878faa90cf3473b1b52d7.desktop</id>
+  <name>Squoosh</name>
+  <launchable type="url">https://squoosh.app/</launchable>
+  <url type="homepage">https://squoosh.app/</url>
+  <summary>An image compression web app that reduces image sizes through numerous formats</summary>
+  <description>Squoosh is the ultimate image optimizer that allows you to compress and compare images with different codecs in your browser.</description>
+  <project_license>Apache-2.0</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>Surma</developer_name>
+  <icon type="remote" width="1024" height="1024">https://squoosh.app/c/icon-large-cb438cac.png</icon>
+  <screenshots>
+    <screenshot type="default">
+      <image width="540" height="720">https://squoosh.app/c/screenshot1-0ff68546.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="540" height="720">https://squoosh.app/c/screenshot2-1f78c4db.jpg</image>
+    </screenshot>
+    <screenshot>
+      <image width="540" height="720">https://squoosh.app/c/screenshot3-c1e02216.jpg</image>
+    </screenshot>
+    <screenshot>
+      <image width="1024" height="593">https://squoosh.app/c/screenshot4-3a706c3c.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="1024" height="593">https://squoosh.app/c/screenshot5-ea50826f.jpg</image>
+    </screenshot>
+    <screenshot>
+      <image width="1024" height="593">https://squoosh.app/c/screenshot6-0168d284.jpg</image>
+    </screenshot>
+  </screenshots>
+  <categories>
+    <category>Graphics Multimedia and Web Design</category>
+    <category>Photography</category>
+    <category>Office</category>
+    <category>Utility</category>
+  </categories>
+  <keywords>
+    <keyword>FileTools</keyword>
+    <keyword>Image</keyword>
+    <keyword>Processing</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-info">moderate</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

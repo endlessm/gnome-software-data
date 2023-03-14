@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_4dda9043da5b2d2aa57c6064c907c1ae3fe58941.desktop</id>
+  <name>Snapdrop</name>
+  <launchable type="url">https://snapdrop.net/</launchable>
+  <url type="homepage">https://snapdrop.net/</url>
+  <summary>Local network file sharing in your browser</summary>
+  <description>Instantly share images, videos, PDFs, and links with people nearby. Peer2Peer and Open Source. No Setup, No Signup.</description>
+  <project_license>GPL-3.0-only</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>RobinLinus</developer_name>
+  <icon type="remote" width="192" height="192">https://snapdrop.net/images/android-chrome-192x192.png</icon>
+  <icon type="remote" width="512" height="512">https://snapdrop.net/images/android-chrome-512x512.png</icon>
+  <icon type="remote" width="96" height="96">https://snapdrop.net/images/favicon-96x96.png</icon>
+  <categories>
+    <category>Programming and Developer Software</category>
+  </categories>
+  <keywords>
+    <keyword>File</keyword>
+    <keyword>Transfer</keyword>
+    <keyword>Share</keyword>
+    <keyword>Peer2Peer</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-info">mild</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

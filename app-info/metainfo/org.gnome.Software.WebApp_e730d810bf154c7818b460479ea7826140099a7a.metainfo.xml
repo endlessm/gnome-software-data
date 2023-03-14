@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_e730d810bf154c7818b460479ea7826140099a7a.desktop</id>
+  <name>Instagram</name>
+  <launchable type="url">https://www.instagram.com/</launchable>
+  <url type="homepage">https://www.instagram.com/</url>
+  <summary>Give people the power to build community and bring the world closer together</summary>
+  <description>A simple, fun &amp; creative way to capture, edit &amp; share photos, videos &amp; messages with friends &amp; family.</description>
+  <project_license>LicenseRef-proprietary</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>Instagram</developer_name>
+  <icon type="remote" width="144" height="144">https://www.instagram.com/static/images/ico/xxhdpi_launcher.png/99cf3909d459.png</icon>
+  <icon type="remote" width="192" height="192">https://www.instagram.com/static/images/ico/xxxhdpi_launcher.png/9fc4bab7565b.png</icon>
+  <categories>
+    <category>Chat, InstantMessaging, Video, Audio</category>
+  </categories>
+  <keywords>
+    <keyword>Photography</keyword>
+    <keyword>Graphics</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="sex-themes">mild</content_attribute>
+    <content_attribute id="social-chat">intense</content_attribute>
+    <content_attribute id="social-info">intense</content_attribute>
+    <content_attribute id="social-audio">intense</content_attribute>
+    <content_attribute id="social-location">intense</content_attribute>
+    <content_attribute id="social-contacts">intense</content_attribute>
+    <content_attribute id="money-advertising">intense</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

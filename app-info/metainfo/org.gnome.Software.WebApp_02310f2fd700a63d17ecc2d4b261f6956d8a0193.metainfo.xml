@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_02310f2fd700a63d17ecc2d4b261f6956d8a0193.desktop</id>
+  <name>Flathub Discourse</name>
+  <launchable type="url">https://discourse.flathub.org/</launchable>
+  <url type="homepage">https://discourse.flathub.org/</url>
+  <summary>A forum for Flathub users</summary>
+  <description>Flathub aims to be the place to get and distribute apps for Linux. It is powered by Flatpak which allows Flathub apps to run on almost any Linux distribution.</description>
+  <project_license>GPL-2.0-or-later</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>Flathub</developer_name>
+  <icon type="remote" width="512" height="512">https://discourse-flathub-org-uploads.s3.dualstack.us-east-1.amazonaws.com/optimized/1X/be4563846333bda6607c6c3c5b226dff9d213866_2_512x512.png</icon>
+  <categories>
+    <category>Chat</category>
+  </categories>
+  <keywords>
+    <keyword>Flatpak</keyword>
+    <keyword>forum</keyword>
+    <keyword>support</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-info">moderate</content_attribute>
+    <content_attribute id="social-audio">moderate</content_attribute>
+    <content_attribute id="social-contacts">intense</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>
