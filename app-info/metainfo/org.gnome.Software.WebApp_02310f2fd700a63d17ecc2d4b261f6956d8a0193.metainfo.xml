@@ -5,7 +5,10 @@
   <launchable type="url">https://discourse.flathub.org/</launchable>
   <url type="homepage">https://discourse.flathub.org/</url>
   <summary>A forum for Flathub users</summary>
-  <description>Flathub aims to be the place to get and distribute apps for Linux. It is powered by Flatpak which allows Flathub apps to run on almost any Linux distribution.</description>
+  <description>
+    <p>Flathub aims to be the place to get and distribute apps for Linux. It is powered
+    by Flatpak which allows Flathub apps to run on almost any Linux distribution.</p>
+  </description>
   <project_license>GPL-2.0-or-later</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Flathub</developer_name>

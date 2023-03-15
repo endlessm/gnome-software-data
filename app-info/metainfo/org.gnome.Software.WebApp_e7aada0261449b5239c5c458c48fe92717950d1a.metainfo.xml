@@ -5,7 +5,10 @@
   <launchable type="url">https://stackedit.io/app</launchable>
   <url type="homepage">https://stackedit.io/app</url>
   <summary>Free, open-source, full-featured Markdown editor</summary>
-  <description>Full-featured, open-source Markdown editor based on PageDown, the Markdown library used by Stack Overflow and the other Stack Exchange sites.</description>
+  <description>
+    <p>Full-featured, open-source Markdown editor based on PageDown, the Markdown
+    library used by Stack Overflow and the other Stack Exchange sites.</p>
+  </description>
   <project_license>Apache-2.0</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Dock5 Software Ltd.</developer_name>

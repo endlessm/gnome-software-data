@@ -5,7 +5,9 @@
   <launchable type="url">https://discourse.gnome.org/</launchable>
   <url type="homepage">https://discourse.gnome.org/</url>
   <summary>A forum for GNOME users</summary>
-  <description>GNOME Project and Community related discussions</description>
+  <description>
+    <p>GNOME Project and Community related discussions.</p>
+  </description>
   <project_license>GPL-2.0-or-later</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>The GNOME Project</developer_name>

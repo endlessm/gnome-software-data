@@ -5,7 +5,9 @@
   <launchable type="url">https://twitter.com/</launchable>
   <url type="homepage">https://twitter.com/</url>
   <summary>The latest stories on Twitter - as told by Tweets</summary>
-  <description>Twitter is what’s happening and what people are talking about right now.</description>
+  <description>
+    <p>Twitter is what’s happening and what people are talking about right now.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Twitter Inc.</developer_name>

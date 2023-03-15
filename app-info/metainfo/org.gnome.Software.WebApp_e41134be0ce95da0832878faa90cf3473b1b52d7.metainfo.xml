@@ -5,7 +5,10 @@
   <launchable type="url">https://squoosh.app/</launchable>
   <url type="homepage">https://squoosh.app/</url>
   <summary>An image compression web app that reduces image sizes through numerous formats</summary>
-  <description>Squoosh is the ultimate image optimizer that allows you to compress and compare images with different codecs in your browser.</description>
+  <description>
+    <p>Squoosh is the ultimate image optimizer that allows you to compress and compare
+    images with different codecs in your browser.</p>
+  </description>
   <project_license>Apache-2.0</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Surma</developer_name>
