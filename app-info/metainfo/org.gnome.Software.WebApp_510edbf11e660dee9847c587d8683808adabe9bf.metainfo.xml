@@ -5,7 +5,12 @@
   <launchable type="url">https://app.diagrams.net</launchable>
   <url type="homepage">https://app.diagrams.net</url>
   <summary>draw.io is free online diagram software for making flowcharts, process diagrams, org charts, UML, ER and network diagrams</summary>
-  <description>draw.io is a free online diagramming application and flowchart maker . You can use it to create UML, entity relationship, org charts, BPMN and BPM, database schema and networks. Also possible are telecommunication network, workflow, flowcharts, maps overlays and GIS, electronic circuit and social network diagrams.</description>
+  <description>
+    <p>draw.io is a free online diagramming application and flowchart maker. You can use
+    it to create UML, entity relationship, org charts, BPMN and BPM, database schema and
+    networks. Also possible are telecommunication network, workflow, flowcharts, maps
+    overlays and GIS, electronic circuit and social network diagrams.</p>
+  </description>
   <project_license>Apache-2.0</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>JGraph Ltd</developer_name>

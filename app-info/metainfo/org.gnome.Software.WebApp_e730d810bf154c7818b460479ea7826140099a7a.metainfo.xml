@@ -5,7 +5,10 @@
   <launchable type="url">https://www.instagram.com/</launchable>
   <url type="homepage">https://www.instagram.com/</url>
   <summary>Give people the power to build community and bring the world closer together</summary>
-  <description>A simple, fun &amp; creative way to capture, edit &amp; share photos, videos &amp; messages with friends &amp; family.</description>
+  <description>
+    <p>A simple, fun &amp; creative way to capture, edit &amp; share photos, videos
+    &amp; messages with friends &amp; family.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Instagram</developer_name>

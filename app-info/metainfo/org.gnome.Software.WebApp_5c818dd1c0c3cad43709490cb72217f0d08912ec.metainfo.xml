@@ -6,11 +6,10 @@
   <url type="homepage">https://community.endlessos.com/</url>
   <summary>A forum to discuss, get help with, and give feedback on Endless OS</summary>
   <description>
-    <p>The Endless Community forum is a place to share tips about using Endless
-OS, ask for advice or support when something doesn't work quite right, get
-announcements about upcoming releases, and give your feedback. Join the
-conversation with fellow community members and Endless OS Foundation
-staff.</p>
+    <p>The Endless Community forum is a place to share tips about using Endless OS, ask
+    for advice or support when something doesn't work quite right, get announcements
+    about upcoming releases, and give your feedback. Join the conversation with fellow
+    community members and Endless OS Foundation staff.</p>
   </description>
   <project_license>GPL-2.0-or-later</project_license>
   <metadata_license>FSFAP</metadata_license>

@@ -5,7 +5,11 @@
   <launchable type="url">https://pinafore.social/</launchable>
   <url type="homepage">https://pinafore.social/</url>
   <summary>An alternative web client for Mastodon</summary>
-  <description>Pinafore is an alternative web client for Mastodon that focuses on speed, simplicity, Multi-account Support, Offline Usability, Mobile Support, and User Privacy.</description>
+  <description>
+    <p>Pinafore is an alternative web client for Mastodon that focuses on speed,
+    simplicity, Multi-account Support, Offline Usability, Mobile Support, and User
+    Privacy.</p>
+  </description>
   <project_license>AGPL-3.0-only</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Nolan Lawson</developer_name>

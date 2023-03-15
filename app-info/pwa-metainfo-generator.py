@@ -330,10 +330,12 @@ class App:
         try:
             # Try to parse the description as XML since it will look nicer.
             description_xml = ET.fromstring(description)
-            element.append(description_xml)
         except ET.ParseError:
-            # Fallback to just adding it as text in the description node.
-            element.text = description
+            # Fallback to just adding it as text wrapped in a <p> node.
+            description_xml = ET.Element("p")
+            description_xml.text = description
+
+        element.append(description_xml)
 
     def _add_description(self, app_component):
         self._add_comment(
@@ -606,7 +608,7 @@ def main():
         ),
     )
     output_group.add_argument(
-        "-s", "--stdout",
+        "-p", "--print",
         action="store_true",
         help="print the metainfo instead of saving to files",
     )
@@ -626,7 +628,7 @@ def main():
                 )
             )
 
-    if not args.stdout:
+    if not args.print:
         if args.output is None:
             args.output = os.path.join(os.path.dirname(__file__), "metainfo")
         os.makedirs(args.output, exist_ok=True)
@@ -635,7 +637,7 @@ def main():
         print(f"Processing URL {url}")
         app = App(url)
         out_filename = app.id + ".metainfo.xml"
-        if args.stdout:
+        if args.print:
             out_file = sys.stdout.buffer
             print(f"# {out_filename}", flush=True)
         else:

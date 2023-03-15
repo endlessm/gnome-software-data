@@ -5,7 +5,10 @@
   <launchable type="url">https://todoist.com/</launchable>
   <url type="homepage">https://todoist.com/</url>
   <summary>A to-do list to organize your work and life</summary>
-  <description>Trusted by 30 million people and teams. Todoist is the world's favorite task manager and to-do list app. Finally become focused, organized and calm.</description>
+  <description>
+    <p>Trusted by 30 million people and teams. Todoist is the world's favorite task
+    manager and to-do list app. Finally become focused, organized and calm.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Doist Inc.</developer_name>

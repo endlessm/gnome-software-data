@@ -5,7 +5,10 @@
   <launchable type="url">https://snapdrop.net/</launchable>
   <url type="homepage">https://snapdrop.net/</url>
   <summary>Local network file sharing in your browser</summary>
-  <description>Instantly share images, videos, PDFs, and links with people nearby. Peer2Peer and Open Source. No Setup, No Signup.</description>
+  <description>
+    <p>Instantly share images, videos, PDFs, and links with people nearby. Peer2Peer and
+    Open Source. No Setup, No Signup.</p>
+  </description>
   <project_license>GPL-3.0-only</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>RobinLinus</developer_name>
