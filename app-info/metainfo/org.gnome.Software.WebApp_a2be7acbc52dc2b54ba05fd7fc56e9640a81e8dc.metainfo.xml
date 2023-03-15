@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_a2be7acbc52dc2b54ba05fd7fc56e9640a81e8dc.desktop</id>
+  <name>Google Arts &amp; Culture</name>
+  <launchable type="url">https://artsandculture.google.com/</launchable>
+  <url type="homepage">https://artsandculture.google.com/</url>
+  <summary>Bringing the world's treasures online!</summary>
+  <description>Google Arts &amp; Culture features content from over 2000 leading museums and archives who have partnered with the Google Cultural Institute to bring the world's treasures online.</description>
+  <project_license>LicenseRef-proprietary</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>Google</developer_name>
+  <icon type="remote" width="36" height="36">https://www.gstatic.com/culturalinstitute/stella/android-chrome-36x36-v1.png</icon>
+  <icon type="remote" width="48" height="48">https://www.gstatic.com/culturalinstitute/stella/android-chrome-48x48-v1.png</icon>
+  <icon type="remote" width="72" height="72">https://www.gstatic.com/culturalinstitute/stella/android-chrome-72x72-v1.png</icon>
+  <icon type="remote" width="96" height="96">https://www.gstatic.com/culturalinstitute/stella/android-chrome-96x96-v1.png</icon>
+  <icon type="remote" width="144" height="144">https://www.gstatic.com/culturalinstitute/stella/android-chrome-144x144-v1.png</icon>
+  <icon type="remote" width="192" height="192">https://www.gstatic.com/culturalinstitute/stella/android-chrome-192x192-v1.png</icon>
+  <categories>
+    <category>Games</category>
+    <category>Education</category>
+    <category>Art</category>
+  </categories>
+  <keywords>
+    <keyword>Art</keyword>
+    <keyword>Art Movement</keyword>
+    <keyword>Artists</keyword>
+    <keyword>Mediums</keyword>
+    <keyword>Historic Events</keyword>
+    <keyword>Historical Figures</keyword>
+    <keyword>Places</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-cartoon">mild</content_attribute>
+    <content_attribute id="violence-fantasy">mild</content_attribute>
+    <content_attribute id="violence-realistic">mild</content_attribute>
+    <content_attribute id="violence-bloodshed">mild</content_attribute>
+    <content_attribute id="violence-desecration">mild</content_attribute>
+    <content_attribute id="violence-slavery">mild</content_attribute>
+    <content_attribute id="drugs-alcohol">mild</content_attribute>
+    <content_attribute id="drugs-narcotics">mild</content_attribute>
+    <content_attribute id="drugs-tobacco">mild</content_attribute>
+    <content_attribute id="sex-nudity">mild</content_attribute>
+    <content_attribute id="sex-themes">mild</content_attribute>
+    <content_attribute id="language-profanity">moderate</content_attribute>
+    <content_attribute id="money-advertising">moderate</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_7236bcfcc34bbdb54ff31a49ec40cdc2fd50c6e0.desktop</id>
+  <name />
+  <launchable type="url">https://www.mayoclinic.org/</launchable>
+  <url type="homepage">https://www.mayoclinic.org/</url>
+  <summary>Seamless care that revolves around you</summary>
+  <description>More than 4,700 physicians and scientists collaborate across Mayo Clinic campuses in Arizona, Florida and Minnesota. U.S. News &amp; World Report ranks Mayo Clinic as the \#1 hospital overall and \#1 in more specialties than any other hospital in the nation.</description>
+  <project_license>LicenseRef-proprietary</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>Mayo Foundation for Medical Education and Research</developer_name>
+  <categories>
+    <category>MedicalSoftware</category>
+  </categories>
+  <keywords>
+    <keyword>Medical</keyword>
+    <keyword>Health</keyword>
+    <keyword>Health Information</keyword>
+    <keyword>Research</keyword>
+    <keyword>Medicine</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-contacts">intense</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_86e2349cc64991cad7c6262274e06fd635da1a77.desktop</id>
+  <name>Healthline</name>
+  <launchable type="url">https://www.healthline.com/</launchable>
+  <url type="homepage">https://www.healthline.com/</url>
+  <summary>Medical information and health advice you can trust</summary>
+  <description>We're committed to being your source for expert health guidance. Come to us in your pursuit of wellness.</description>
+  <project_license>LicenseRef-proprietary</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>Healthline Media</developer_name>
+  <categories>
+    <category>MedicalSoftware</category>
+  </categories>
+  <keywords>
+    <keyword>Guidance</keyword>
+    <keyword>Wellness</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-contacts">intense</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

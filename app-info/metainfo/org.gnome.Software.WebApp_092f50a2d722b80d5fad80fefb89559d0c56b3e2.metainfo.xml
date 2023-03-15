@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_092f50a2d722b80d5fad80fefb89559d0c56b3e2.desktop</id>
+  <name />
+  <launchable type="url">https://archive.org/</launchable>
+  <url type="homepage">https://archive.org/</url>
+  <summary>Providing Universal Access to All Knowledge</summary>
+  <description>Internet Archive is a non-profit digital library offering free universal access to books, movies &amp; music, as well as 624 billion archived web pages.</description>
+  <project_license>GPL-2.0-or-later</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>Internet Archive</developer_name>
+  <categories>
+    <category>History</category>
+    <category>Database</category>
+    <category>Documentation</category>
+  </categories>
+  <keywords>
+    <keyword>Books</keyword>
+    <keyword>Movies</keyword>
+    <keyword>Music</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-contacts">intense</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

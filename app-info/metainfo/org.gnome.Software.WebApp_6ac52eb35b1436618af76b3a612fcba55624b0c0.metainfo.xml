@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_6ac52eb35b1436618af76b3a612fcba55624b0c0.desktop</id>
+  <name>MIT OpenCourseWare</name>
+  <launchable type="url">https://ocw.mit.edu/</launchable>
+  <url type="homepage">https://ocw.mit.edu/</url>
+  <summary>Free Online Course Materials</summary>
+  <description>MIT OpenCourseWare is a web based publication of virtually all MIT course content. OCW is open and available to the world and is a permanent MIT activity</description>
+  <project_license>LicenseRef-proprietary</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>Massachusetts Institute of Technology</developer_name>
+  <categories>
+    <category>Education</category>
+    <category>ComputerScience</category>
+  </categories>
+  <keywords>
+    <keyword>opencourseware</keyword>
+    <keyword>MIT OCW</keyword>
+    <keyword>courseware</keyword>
+    <keyword>MIT opencourseware</keyword>
+    <keyword>Free Courses</keyword>
+    <keyword>class notes</keyword>
+    <keyword>class syllabus</keyword>
+    <keyword>class materials</keyword>
+    <keyword>tutorials</keyword>
+    <keyword>online courses</keyword>
+    <keyword>MIT courses</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="money-advertising">moderate</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>
