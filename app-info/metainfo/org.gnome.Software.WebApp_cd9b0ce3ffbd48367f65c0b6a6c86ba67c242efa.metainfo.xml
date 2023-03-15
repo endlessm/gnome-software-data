@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_cd9b0ce3ffbd48367f65c0b6a6c86ba67c242efa.desktop</id>
+  <name>Common Sense Education</name>
+  <launchable type="url">https://www.commonsense.org/education</launchable>
+  <url type="homepage">https://www.commonsense.org/education</url>
+  <summary>Free Digital Citizenship curriculum, reviews of EdTech apps, and resources for student privacy</summary>
+  <description>Common Sense Education provides educators and students with the resources they need to harness the power of technology for learning and life. Find a free K-12 Digital Citizenship curriculum, reviews of popular EdTech apps, and resources for protecting student privacy.</description>
+  <project_license>GPL-2.0-or-later</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>Common Sense Media</developer_name>
+  <categories>
+    <category>Education</category>
+    <category>Documentation</category>
+  </categories>
+  <keywords>
+    <keyword>Digital Citizenship</keyword>
+    <keyword>Professional Development</keyword>
+    <keyword>Family Resources</keyword>
+    <keyword>Lessons and Activities</keyword>
+    <keyword>Teaching Strategies</keyword>
+    <keyword>Essential Guides</keyword>
+    <keyword>EdTech</keyword>
+    <keyword>News</keyword>
+    <keyword>Media Literacy</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-chat">intense</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

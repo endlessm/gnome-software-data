@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_5ebefcad2b41b82f1346426b129c91e231484348.desktop</id>
+  <name>Scribd</name>
+  <launchable type="url">https://scribd.com/</launchable>
+  <url type="homepage">https://scribd.com/</url>
+  <summary>Discover the Best eBooks, Audiobooks, Magazines, Sheet Music, and More</summary>
+  <description>Scribd gives you access to millions of ebooks, audiobooks, magazines, podcasts, and more — all in one place, for one price.</description>
+  <project_license>LicenseRef-proprietary</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>Scribd Inc.</developer_name>
+  <categories>
+    <category>Database</category>
+    <category>Documentation</category>
+    <category>Audio</category>
+  </categories>
+  <keywords>
+    <keyword>eBooks</keyword>
+    <keyword>Audiobooks</keyword>
+    <keyword>Magazines</keyword>
+    <keyword>Sheet Music</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-contacts">intense</content_attribute>
+    <content_attribute id="money-purchasing">intense</content_attribute>
+    <content_attribute id="money-advertising">intense</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

@@ -15,7 +15,10 @@
   <icon type="remote" width="144" height="144">https://www.instagram.com/static/images/ico/xxhdpi_launcher.png/99cf3909d459.png</icon>
   <icon type="remote" width="192" height="192">https://www.instagram.com/static/images/ico/xxxhdpi_launcher.png/9fc4bab7565b.png</icon>
   <categories>
-    <category>Chat, InstantMessaging, Video, Audio</category>
+    <category>Chat</category>
+    <category>InstantMessaging</category>
+    <category>Video</category>
+    <category>Audio</category>
   </categories>
   <keywords>
     <keyword>Photography</keyword>
