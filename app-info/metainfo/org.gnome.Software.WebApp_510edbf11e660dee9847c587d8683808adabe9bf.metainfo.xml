@@ -16,12 +16,11 @@
   <developer_name>JGraph Ltd</developer_name>
   <icon type="remote" width="512" height="512">https://app.diagrams.net/images/android-chrome-512x512.png</icon>
   <categories>
-    <category>Programming and Developer Software</category>
+    <category>FlowChart</category>
   </categories>
   <keywords>
     <keyword>drawio</keyword>
     <keyword>diagram</keyword>
-    <keyword>FlowChart</keyword>
     <keyword>online</keyword>
     <keyword>flowchart maker</keyword>
     <keyword>uml</keyword>

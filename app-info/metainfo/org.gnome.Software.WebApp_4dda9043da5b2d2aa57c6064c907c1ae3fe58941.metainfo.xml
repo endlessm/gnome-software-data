@@ -16,7 +16,8 @@
   <icon type="remote" width="512" height="512">https://snapdrop.net/images/android-chrome-512x512.png</icon>
   <icon type="remote" width="96" height="96">https://snapdrop.net/images/favicon-96x96.png</icon>
   <categories>
-    <category>Programming and Developer Software</category>
+    <category>FileTools</category>
+    <category>FileTransfer</category>
   </categories>
   <keywords>
     <keyword>File</keyword>

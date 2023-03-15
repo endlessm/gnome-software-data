@@ -15,10 +15,11 @@
   <icon type="remote" width="192" height="192">https://todoist.com/static/android-chrome-192x192.png</icon>
   <icon type="remote" width="256" height="256">https://todoist.com/static/android-chrome-256x256.png</icon>
   <categories>
-    <category>Programming and Developer Software</category>
+    <category>Office</category>
   </categories>
   <keywords>
-    <keyword>Office</keyword>
+    <keyword>list</keyword>
+    <keyword>organization</keyword>
   </keywords>
   <content_rating type="oars-1.1">
     <content_attribute id="social-info">moderate</content_attribute>
