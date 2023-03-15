@@ -52,12 +52,6 @@ w3c_to_appstream_categories = {
 }
 
 
-class ManifestNotFoundException(Exception):
-    """
-    Raised if a web manifest can't be found for a URL.
-    """
-
-
 def get_soup_for_url(url, language=None):
     headers = {}
     if language:
@@ -74,14 +68,14 @@ def get_manifest(soup, url):
         manifest_link = soup.find("link", rel="manifest", href=True)
 
     if manifest_link:
-        manifest_path = manifest_link["href"]
+        manifest_path = manifest_link.get("href")
     else:
         # Discourse doesn't include the web manifest link in the initial page content
         generator = soup.head.find("meta", attrs={"name": "generator"})
         if generator and generator["content"].startswith("Discourse "):
             manifest_path = "/manifest.webmanifest"
         else:
-            raise ManifestNotFoundException(url)
+            return {}
 
     manifest_response = requests.get(urljoin(url, manifest_path))
     manifest_response.raise_for_status()
