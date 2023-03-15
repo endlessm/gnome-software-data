@@ -330,10 +330,12 @@ class App:
         try:
             # Try to parse the description as XML since it will look nicer.
             description_xml = ET.fromstring(description)
-            element.append(description_xml)
         except ET.ParseError:
-            # Fallback to just adding it as text in the description node.
-            element.text = description
+            # Fallback to just adding it as text wrapped in a <p> node.
+            description_xml = ET.Element("p")
+            description_xml.text = description
+
+        element.append(description_xml)
 
     def _add_description(self, app_component):
         self._add_comment(
