@@ -52,17 +52,8 @@ w3c_to_appstream_categories = {
 }
 
 
-class ManifestNotFoundException(Exception):
-    """
-    Raised if a web manifest can't be found for a URL.
-    """
-
-
-def get_soup_for_url(url, language=None):
-    headers = {}
-    if language:
-        headers["Accept-Language"] = language
-    response = requests.get(url, headers=headers)
+def get_soup_for_url(url):
+    response = requests.get(url)
     response.raise_for_status()
     return BeautifulSoup(response.text, features="lxml")
 
@@ -74,14 +65,14 @@ def get_manifest(soup, url):
         manifest_link = soup.find("link", rel="manifest", href=True)
 
     if manifest_link:
-        manifest_path = manifest_link["href"]
+        manifest_path = manifest_link.get("href")
     else:
         # Discourse doesn't include the web manifest link in the initial page content
         generator = soup.head.find("meta", attrs={"name": "generator"})
         if generator and generator["content"].startswith("Discourse "):
             manifest_path = "/manifest.webmanifest"
         else:
-            raise ManifestNotFoundException(url)
+            return {}
 
     manifest_response = requests.get(urljoin(url, manifest_path))
     manifest_response.raise_for_status()
@@ -411,11 +402,11 @@ class App:
     def _add_icons(self, app_component):
         # Avoid using maskable icons if we can, they don't have nice rounded edges
         normal_icon_exists = False
-        for icon in self.manifest['icons']:
+        for icon in self.manifest.get('icons', []):
             if 'purpose' not in icon or icon['purpose'] == 'any':
                 normal_icon_exists = True
 
-        for icon in self.manifest['icons']:
+        for icon in self.manifest.get('icons', []):
             if 'purpose' in icon and icon['purpose'] != 'any' and normal_icon_exists:
                 continue
             icon_element = ET.SubElement(app_component, 'icon')
@@ -434,7 +425,7 @@ class App:
             for details.
             """),
         )
-        screenshots = self.manifest.get('screenshots')
+        screenshots = self.manifest.get('screenshots', [])
         screenshots_element = ET.Element('screenshots')
 
         if screenshots:
