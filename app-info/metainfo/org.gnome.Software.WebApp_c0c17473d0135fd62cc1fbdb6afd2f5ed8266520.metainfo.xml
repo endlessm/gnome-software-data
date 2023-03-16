@@ -5,7 +5,10 @@
   <launchable type="url">https://www.commonsensemedia.org/</launchable>
   <url type="homepage">https://www.commonsensemedia.org/</url>
   <summary>Age-Based Media Reviews for Families</summary>
-  <description>Common Sense Media is the leading source of entertainment and technology recommendations for families. Parents trust our expert reviews and objective advice.</description>
+  <description>
+    <p>Common Sense Media is the leading source of entertainment and technology recommendations
+      for families. Parents trust our expert reviews and objective advice.</p>
+  </description>
   <project_license>GPL-2.0-or-later</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Common Sense Media</developer_name>

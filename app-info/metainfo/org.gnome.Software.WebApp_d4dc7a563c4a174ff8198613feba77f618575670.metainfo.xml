@@ -5,7 +5,10 @@
   <launchable type="url">https://www.weather.com/</launchable>
   <url type="homepage">https://www.weather.com/</url>
   <summary>National and Local Weather Radar, Daily Forecast, Hurricane and information from The Weather Channel and weather.com</summary>
-  <description>The Weather Channel and weather.com provide a national and local weather forecast for cities, as well as weather radar, report and hurricane coverage</description>
+  <description>
+    <p>The Weather Channel and weather.com provide a national and local weather
+      forecast for cities, as well as weather radar, report and hurricane coverage</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>TWC Product and Technology LLC</developer_name>

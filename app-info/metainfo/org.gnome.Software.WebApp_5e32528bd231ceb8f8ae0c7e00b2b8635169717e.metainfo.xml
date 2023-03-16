@@ -1,11 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <component type="web-application">
   <id>org.gnome.Software.WebApp_5e32528bd231ceb8f8ae0c7e00b2b8635169717e.desktop</id>
-  <name>reddit</name>
+  <name>Reddit</name>
   <launchable type="url">https://www.reddit.com/</launchable>
   <url type="homepage">https://www.reddit.com/</url>
   <summary>A network of communities for people and their interests!</summary>
-  <description>Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for whatever you're interested in on Reddit.</description>
+  <description>
+    <p>Reddit is a network of communities where people can dive into their interests,
+      hobbies and passions. There's a community for whatever you're interested in on Reddit.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Reddit Inc.</developer_name>

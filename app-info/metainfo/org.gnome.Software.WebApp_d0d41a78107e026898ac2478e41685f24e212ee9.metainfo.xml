@@ -5,7 +5,10 @@
   <launchable type="url">https://www.linkedin.com/</launchable>
   <url type="homepage">https://www.linkedin.com/</url>
   <summary>Connecting the world’s professionals to make them more productive and successful</summary>
-  <description>Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.</description>
+  <description>
+    <p>Manage your professional identity. Build and engage with your
+      professional network. Access knowledge, insights and opportunities.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>LinkedIn Corporation</developer_name>

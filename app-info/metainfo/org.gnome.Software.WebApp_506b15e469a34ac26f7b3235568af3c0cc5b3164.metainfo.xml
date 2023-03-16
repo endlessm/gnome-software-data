@@ -1,11 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <component type="web-application">
   <id>org.gnome.Software.WebApp_506b15e469a34ac26f7b3235568af3c0cc5b3164.desktop</id>
-  <name />
+  <name>iCloud</name>
   <launchable type="url">https://www.icloud.com/</launchable>
   <url type="homepage">https://www.icloud.com/</url>
   <summary>Access your photos, videos, documents, notes, contacts, and more</summary>
-  <description>iCloud is essential for keeping personal information from your devices safe, up to date, and available wherever you are.</description>
+  <description>
+    <p>iCloud is essential for keeping personal information from
+      your devices safe, up to date, and available wherever you are.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Apple Inc.</developer_name>

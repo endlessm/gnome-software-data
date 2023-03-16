@@ -1,11 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <component type="web-application">
   <id>org.gnome.Software.WebApp_52b732dd06d99298b6e9bfccc17e25e0ac8b2bcb.desktop</id>
-  <name />
+  <name>PayPal</name>
   <launchable type="url">https://www.paypal.com/us/home</launchable>
   <url type="homepage">https://www.paypal.com/us/home</url>
   <summary>Digital Wallets, Money Management, and More</summary>
-  <description>PayPal is the faster, safer way to send and receive money or make an online payment. Get started or create a merchant account to accept payments.</description>
+  <description>
+    <p>PayPal is the faster, safer way to send and receive money or make an online payment.
+      Get started or create a merchant account to accept payments.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>PayPal Inc.</developer_name>

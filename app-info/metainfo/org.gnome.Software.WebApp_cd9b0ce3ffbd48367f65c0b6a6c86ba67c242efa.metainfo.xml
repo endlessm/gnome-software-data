@@ -5,7 +5,11 @@
   <launchable type="url">https://www.commonsense.org/education</launchable>
   <url type="homepage">https://www.commonsense.org/education</url>
   <summary>Free Digital Citizenship curriculum, reviews of EdTech apps, and resources for student privacy</summary>
-  <description>Common Sense Education provides educators and students with the resources they need to harness the power of technology for learning and life. Find a free K-12 Digital Citizenship curriculum, reviews of popular EdTech apps, and resources for protecting student privacy.</description>
+  <description>
+    <p>Common Sense Education provides educators and students with the resources they need to
+      harness the power of technology for learning and life. Find a free K-12 Digital Citizenship
+      curriculum, reviews of popular EdTech apps, and resources for protecting student privacy.</p>
+  </description>
   <project_license>GPL-2.0-or-later</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Common Sense Media</developer_name>

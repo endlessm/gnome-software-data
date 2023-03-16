@@ -5,7 +5,10 @@
   <launchable type="url">https://artsandculture.google.com/</launchable>
   <url type="homepage">https://artsandculture.google.com/</url>
   <summary>Bringing the world's treasures online!</summary>
-  <description>Google Arts &amp; Culture features content from over 2000 leading museums and archives who have partnered with the Google Cultural Institute to bring the world's treasures online.</description>
+  <description>
+    <p>Google Arts &amp; Culture features content from over 2000 leading museums and archives who
+      have partnered with the Google Cultural Institute to bring the world's treasures online.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Google</developer_name>

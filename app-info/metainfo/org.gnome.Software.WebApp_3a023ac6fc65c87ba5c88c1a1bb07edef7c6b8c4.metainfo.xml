@@ -1,11 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <component type="web-application">
   <id>org.gnome.Software.WebApp_3a023ac6fc65c87ba5c88c1a1bb07edef7c6b8c4.desktop</id>
-  <name />
+  <name>Merriam-Webster Dictionary</name>
   <launchable type="url">https://www.merriam-webster.com/</launchable>
   <url type="homepage">https://www.merriam-webster.com/</url>
   <summary>America's most-trusted online dictionary</summary>
-  <description>The dictionary by Merriam-Webster is America's most trusted online dictionary for English word definitions, meanings, and pronunciation. \#wordsmatter</description>
+  <description>
+    <p>The dictionary by Merriam-Webster is America's most trusted online dictionary for
+      English word definitions, meanings, and pronunciation. \#wordsmatter</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Merriam-Webster Incorporated</developer_name>

@@ -5,7 +5,10 @@
   <launchable type="url">https://www.instructables.com/</launchable>
   <url type="homepage">https://www.instructables.com/</url>
   <summary>A community for people who like to make things</summary>
-  <description>Instructables is a community for people who like to make things. Come explore, share, and make your next project with us!</description>
+  <description>
+    <p>Instructables is a community for people who like to make things.
+      Come explore, share, and make your next project with us!</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>instructables</developer_name>

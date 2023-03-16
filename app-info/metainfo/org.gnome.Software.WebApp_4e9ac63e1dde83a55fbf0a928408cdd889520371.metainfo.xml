@@ -5,7 +5,11 @@
   <launchable type="url">https://www.quora.com/</launchable>
   <url type="homepage">https://www.quora.com/</url>
   <summary>A place to gain and share knowledge</summary>
-  <description>Quora is a place to gain and share knowledge. It's a platform to ask questions and connect with people who contribute unique insights and quality answers. This empowers people to learn from each other and to better understand the world.</description>
+  <description>
+    <p>Quora is a place to gain and share knowledge. It's a platform to ask questions
+    and connect with people who contribute unique insights and quality answers.
+    This empowers people to learn from each other and to better understand the world.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Quora</developer_name>

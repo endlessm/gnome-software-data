@@ -1,11 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <component type="web-application">
   <id>org.gnome.Software.WebApp_9e300f8f00666f4790eb7ed1b9e1c92c598759cb.desktop</id>
-  <name />
+  <name>BBC</name>
   <launchable type="url">https://bbc.com/</launchable>
   <url type="homepage">https://bbc.com/</url>
   <summary>Breaking news, sport, TV, radio and a whole lot more</summary>
-  <description>The BBC informs, educates and entertains - wherever you are, whatever your age.</description>
+  <description>
+    <p>The BBC informs, educates and entertains - wherever you are, whatever your age.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>BBC</developer_name>

@@ -5,7 +5,10 @@
   <launchable type="url">https://apnews.com/</launchable>
   <url type="homepage">https://apnews.com/</url>
   <summary>Breaking News &amp; Latest News Today</summary>
-  <description>Stay informed and read the latest news today from The Associated Press, the definitive source for independent journalism from every corner of the globe.</description>
+  <description>
+    <p>Stay informed and read the latest news today from The Associated Press, the
+      definitive source for independent journalism from every corner of the globe.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>The Associated Press</developer_name>

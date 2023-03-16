@@ -5,7 +5,10 @@
   <launchable type="url">https://ocw.mit.edu/</launchable>
   <url type="homepage">https://ocw.mit.edu/</url>
   <summary>Free Online Course Materials</summary>
-  <description>MIT OpenCourseWare is a web based publication of virtually all MIT course content. OCW is open and available to the world and is a permanent MIT activity</description>
+  <description>
+    <p>MIT OpenCourseWare is a web based publication of virtually all MIT course content.
+      OCW is open and available to the world and is a permanent MIT activity</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Massachusetts Institute of Technology</developer_name>

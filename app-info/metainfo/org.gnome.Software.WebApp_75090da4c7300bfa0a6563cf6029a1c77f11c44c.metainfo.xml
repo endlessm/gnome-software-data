@@ -5,7 +5,10 @@
   <launchable type="url">https://www.twitch.tv/</launchable>
   <url type="homepage">https://www.twitch.tv/</url>
   <summary>Livestreaming service for practically everything!</summary>
-  <description>Twitch is an interactive livestreaming service for content spanning gaming, entertainment, sports, music, and more. There's something for everyone on Twitch.</description>
+  <description>
+    <p>Twitch is an interactive livestreaming service for content spanning gaming,
+      entertainment, sports, music, and more. There's something for everyone on Twitch.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Twitch Interactive</developer_name>

@@ -5,7 +5,10 @@
   <launchable type="url">https://scribd.com/</launchable>
   <url type="homepage">https://scribd.com/</url>
   <summary>Discover the Best eBooks, Audiobooks, Magazines, Sheet Music, and More</summary>
-  <description>Scribd gives you access to millions of ebooks, audiobooks, magazines, podcasts, and more — all in one place, for one price.</description>
+  <description>
+    <p>Scribd gives you access to millions of ebooks, audiobooks, magazines,
+      podcasts, and more — all in one place, for one price.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Scribd Inc.</developer_name>

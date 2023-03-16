@@ -5,7 +5,10 @@
   <launchable type="url">https://www.youtube.com/</launchable>
   <url type="homepage">https://www.youtube.com/</url>
   <summary>Enjoy the videos and music you love and share your own!</summary>
-  <description>Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.</description>
+  <description>
+    <p>Enjoy the videos and music you love, upload original content,
+      and share it all with friends, family, and the world on YouTube.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Youtube</developer_name>

@@ -5,7 +5,10 @@
   <launchable type="url">https://www.facebook.com/</launchable>
   <url type="homepage">https://www.facebook.com/</url>
   <summary>Connect with people you know!</summary>
-  <description>Log into Facebook to start sharing and connecting with your friends, family, and people you know.</description>
+  <description>
+    <p>Log into Facebook to start sharing and connecting
+    with your friends, family, and people you know.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Facebook</developer_name>

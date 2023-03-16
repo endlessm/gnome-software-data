@@ -1,11 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <component type="web-application">
   <id>org.gnome.Software.WebApp_bcfc6eb9c0ad7ed0b04cf9f69a30df35d44e0132.desktop</id>
-  <name>Messages</name>
+  <name>Google Messages</name>
   <launchable type="url">https://messages.google.com/web/</launchable>
   <url type="homepage">https://messages.google.com/web/</url>
   <summary>Messages for web</summary>
-  <description>Use Messages for web to send SMS, MMS, and RCS messages from your computer. Open the Messages app on your Android phone to get started.</description>
+  <description>
+    <p>Use Messages for web to send SMS, MMS, and RCS messages from your computer.
+      Open the Messages app on your Android phone to get started.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Google</developer_name>

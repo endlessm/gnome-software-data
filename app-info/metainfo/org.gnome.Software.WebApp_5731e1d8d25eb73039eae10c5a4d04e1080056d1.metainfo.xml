@@ -5,7 +5,10 @@
   <launchable type="url">https://www.edx.org/</launchable>
   <url type="homepage">https://www.edx.org/</url>
   <summary>Free Online Courses by Harvard, MIT, &amp; more</summary>
-  <description>Access 2000 free online courses from 140 leading institutions worldwide. Gain new skills and earn a certificate of completion.</description>
+  <description>
+    <p>Access 2000 free online courses from 140 leading institutions
+      worldwide. Gain new skills and earn a certificate of completion.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>edXOnline</developer_name>

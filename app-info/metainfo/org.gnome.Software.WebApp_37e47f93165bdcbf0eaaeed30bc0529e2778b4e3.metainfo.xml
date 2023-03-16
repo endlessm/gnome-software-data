@@ -5,7 +5,10 @@
   <launchable type="url">https://www.goodreads.com/</launchable>
   <url type="homepage">https://www.goodreads.com/</url>
   <summary>Discover and share books you love on Goodreads, the world's largest site for readers and book recommendations!</summary>
-  <description>Find and read more books you’ll love, and keep track of the books you want to read. Be part of the world’s largest community of book lovers on Goodreads.</description>
+  <description>
+    <p>Find and read more books you’ll love, and keep track of the books you want to read.
+      Be part of the world’s largest community of book lovers on Goodreads.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Goodreads Inc.</developer_name>

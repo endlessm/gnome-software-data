@@ -5,7 +5,9 @@
   <launchable type="url">https://www.healthline.com/</launchable>
   <url type="homepage">https://www.healthline.com/</url>
   <summary>Medical information and health advice you can trust</summary>
-  <description>We're committed to being your source for expert health guidance. Come to us in your pursuit of wellness.</description>
+  <description>
+    <p>We're committed to being your source for expert health guidance. Come to us in your pursuit of wellness.</p>
+  </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Healthline Media</developer_name>

@@ -5,7 +5,10 @@
   <launchable type="url">https://strudel.tidalcycles.org/</launchable>
   <url type="homepage">https://strudel.tidalcycles.org/</url>
   <summary>Experimental port of tidalcycles to Javascript</summary>
-  <description>Strudel is a music live coding environment for the browser, porting the TidalCycles pattern language to JavaScript.</description>
+  <description>
+    <p>Strudel is a music live coding environment for the browser,
+      porting the TidalCycles pattern language to JavaScript.</p>
+  </description>
   <project_license>AGPL-3.0</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Felix Roos</developer_name>
