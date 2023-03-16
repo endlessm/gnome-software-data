@@ -630,7 +630,7 @@ def main():
     for url in args.urls:
         print(f"Processing URL {url}")
         app = App(url)
-        out_filename = app.id + ".metainfo.xml"
+        out_filename = app.id + ".metainfo.xml.in"
         if args.print:
             out_file = sys.stdout.buffer
             print(f"# {out_filename}", flush=True)
