@@ -232,10 +232,13 @@ class App:
             lang_name = og_property_from_head(soup, "site_name")
             if not lang_name or lang_name in names:
                 continue
-            self._add_comment(app_component, f"OpenGraph {lang} name")
-            lang_element = ET.SubElement(app_component, "name")
-            lang_element.set("xml:lang", lang)
-            lang_element.text = lang_name
+            self._add_comment(
+                app_component,
+                textwrap.dedent(f"""\
+                OpenGraph {lang} name - "{lang_name}".
+                Use this in the component/name {self.id} msgstr in po/{lang}.po.
+                """),
+            )
 
     def _add_launchable(self, app_component):
         launchable = ET.SubElement(app_component, 'launchable')
@@ -314,10 +317,13 @@ class App:
             )
             if not lang_summary or lang_summary in summaries:
                 continue
-            self._add_comment(app_component, f"OpenGraph {lang} summary")
-            lang_element = ET.SubElement(app_component, "summary")
-            lang_element.set("xml:lang", lang)
-            lang_element.text = lang_summary
+            self._add_comment(
+                app_component,
+                textwrap.dedent(f"""\
+                OpenGraph {lang} summary - "{lang_summary}".
+                Use this in the component/summary {self.id} msgstr in po/{lang}.po.
+                """),
+            )
 
     @staticmethod
     def _add_description_content(element, description):
@@ -364,10 +370,13 @@ class App:
             lang_description = og_property_from_head(soup, "description")
             if not lang_description or lang_description == description:
                 continue
-            self._add_comment(app_component, f"OpenGraph {lang} description")
-            lang_element = ET.SubElement(app_component, "description")
-            lang_element.set("xml:lang", lang)
-            self._add_description_content(lang_element, lang_description)
+            self._add_comment(
+                app_component,
+                textwrap.dedent(f"""\
+                OpenGraph {lang} description - "{lang_description}".
+                Use this in the description/p {self.id} msgstr in po/{lang}.po.
+                """),
+            )
 
     def _add_project_license(self, app_component):
         self._add_comment(
@@ -530,9 +539,13 @@ class App:
             for keyword in lang_keywords:
                 if keyword in keywords:
                     continue
-                lang_element = ET.SubElement(keywords_element, "keyword")
-                lang_element.set("xml:lang", lang)
-                lang_element.text = keyword
+                self._add_comment(
+                    app_component,
+                    textwrap.dedent(f"""\
+                    {lang} keyword - "{keyword}".
+                    Use this in the keywords/keyword {self.id} msgstr in po/{lang}.po.
+                    """),
+                )
 
     def _add_content_rating(self, app_component):
         self._add_comment(
