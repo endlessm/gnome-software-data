@@ -52,8 +52,11 @@ w3c_to_appstream_categories = {
 }
 
 
-def get_soup_for_url(url):
-    response = requests.get(url)
+def get_soup_for_url(url, language=None):
+    headers = {}
+    if language:
+        headers["Accept-Language"] = language
+    response = requests.get(url, headers=headers)
     response.raise_for_status()
     return BeautifulSoup(response.text, features="lxml")
 
