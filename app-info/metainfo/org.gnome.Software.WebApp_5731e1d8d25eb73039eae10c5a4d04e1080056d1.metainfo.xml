@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_5731e1d8d25eb73039eae10c5a4d04e1080056d1.desktop</id>
+  <name>edX</name>
+  <launchable type="url">https://www.edx.org/</launchable>
+  <url type="homepage">https://www.edx.org/</url>
+  <summary>Free Online Courses by Harvard, MIT, &amp; more</summary>
+  <description>
+    <p>Access 2000 free online courses from 140 leading institutions
+      worldwide. Gain new skills and earn a certificate of completion.</p>
+  </description>
+  <project_license>LicenseRef-proprietary</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>edXOnline</developer_name>
+  <categories>
+    <category>Education</category>
+  </categories>
+  <keywords>
+    <keyword>Courses</keyword>
+    <keyword>Boot Camps</keyword>
+    <keyword>College Degrees</keyword>
+    <keyword>Certificates</keyword>
+    <keyword>XSeries</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-chat">moderate</content_attribute>
+    <content_attribute id="social-audio">moderate</content_attribute>
+    <content_attribute id="social-contacts">intense</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

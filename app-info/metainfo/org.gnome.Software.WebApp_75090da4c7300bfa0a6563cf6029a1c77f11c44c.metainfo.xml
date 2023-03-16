@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_75090da4c7300bfa0a6563cf6029a1c77f11c44c.desktop</id>
+  <name>Twitch</name>
+  <launchable type="url">https://www.twitch.tv/</launchable>
+  <url type="homepage">https://www.twitch.tv/</url>
+  <summary>Livestreaming service for practically everything!</summary>
+  <description>
+    <p>Twitch is an interactive livestreaming service for content spanning gaming,
+      entertainment, sports, music, and more. There's something for everyone on Twitch.</p>
+  </description>
+  <project_license>LicenseRef-proprietary</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>Twitch Interactive</developer_name>
+  <categories>
+    <category>Games</category>
+    <category>Chat</category>
+  </categories>
+  <keywords>
+    <keyword>Stream</keyword>
+    <keyword>Gaming</keyword>
+    <keyword>Music</keyword>
+    <keyword>Talk Shows</keyword>
+    <keyword>Sports</keyword>
+    <keyword>Travel</keyword>
+    <keyword>Outdoors</keyword>
+    <keyword>Chatting</keyword>
+    <keyword>Special Events</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-cartoon">moderate</content_attribute>
+    <content_attribute id="violence-fantasy">moderate</content_attribute>
+    <content_attribute id="violence-realistic">mild</content_attribute>
+    <content_attribute id="drugs-alcohol">mild</content_attribute>
+    <content_attribute id="drugs-narcotics">mild</content_attribute>
+    <content_attribute id="drugs-tobacco">mild</content_attribute>
+    <content_attribute id="sex-themes">mild</content_attribute>
+    <content_attribute id="language-profanity">intense</content_attribute>
+    <content_attribute id="language-humor">moderate</content_attribute>
+    <content_attribute id="social-chat">moderate</content_attribute>
+    <content_attribute id="social-contacts">intense</content_attribute>
+    <content_attribute id="money-purchasing">intense</content_attribute>
+    <content_attribute id="money-advertising">intense</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

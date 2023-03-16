@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_aaa1593b8cfa7b64fdbafa029938b699f260dc99.desktop</id>
+  <name>Investopedia</name>
+  <launchable type="url">http://investopedia.com/</launchable>
+  <url type="homepage">http://investopedia.com/</url>
+  <summary>The world's leading source of financial content on the web!</summary>
+  <description>
+    <p>Investopedia is the world's leading source of financial content on the web, ranging from
+      market news to retirement strategies, investing education to insights from advisors.</p>
+  </description>
+  <project_license>LicenseRef-proprietary</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>Investopedia</developer_name>
+  <categories>
+    <category>Financial</category>
+    <category>Education</category>
+  </categories>
+  <keywords>
+    <keyword>market news</keyword>
+    <keyword>retirement</keyword>
+    <keyword>retirement strategies</keyword>
+    <keyword>investing</keyword>
+    <keyword>investing advisors</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-contacts">intense</content_attribute>
+    <content_attribute id="money-purchasing">intense</content_attribute>
+    <content_attribute id="money-advertising">intense</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_9e300f8f00666f4790eb7ed1b9e1c92c598759cb.desktop</id>
+  <name>BBC</name>
+  <launchable type="url">https://bbc.com/</launchable>
+  <url type="homepage">https://bbc.com/</url>
+  <summary>Breaking news, sport, TV, radio and a whole lot more</summary>
+  <description>
+    <p>The BBC informs, educates and entertains - wherever you are, whatever your age.</p>
+  </description>
+  <project_license>LicenseRef-proprietary</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>BBC</developer_name>
+  <categories>
+    <category>news</category>
+  </categories>
+  <keywords>
+    <keyword>BBC</keyword>
+    <keyword>bbc.co.uk</keyword>
+    <keyword>bbc.com</keyword>
+    <keyword>Search</keyword>
+    <keyword>British Broadcasting Corporation</keyword>
+    <keyword>BBC iPlayer</keyword>
+    <keyword>BBCi</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-realistic">moderate</content_attribute>
+    <content_attribute id="drugs-alcohol">mild</content_attribute>
+    <content_attribute id="drugs-narcotics">mild</content_attribute>
+    <content_attribute id="drugs-tobacco">mild</content_attribute>
+    <content_attribute id="language-profanity">mild</content_attribute>
+    <content_attribute id="social-contacts">intense</content_attribute>
+    <content_attribute id="money-advertising">moderate</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

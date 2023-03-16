@@ -25,18 +25,17 @@
     </screenshot>
   </screenshots>
   <categories>
-    <category>Chat, InstantMessaging, Video, Audio</category>
     <category>Chat</category>
+    <category>InstantMessaging</category>
     <category>News</category>
     <category>News</category>
   </categories>
   <keywords>
-    <keyword>Tweet</keyword>
-    <keyword>Bootstrap</keyword>
+    <keyword>Social</keyword>
+    <keyword>Information</keyword>
   </keywords>
   <content_rating type="oars-1.1">
     <content_attribute id="social-info">intense</content_attribute>
-    <content_attribute id="social-audio">moderate</content_attribute>
   </content_rating>
   <recommends>
     <control>pointing</control>

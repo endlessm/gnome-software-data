@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_d0d41a78107e026898ac2478e41685f24e212ee9.desktop</id>
+  <name>LinkedIn</name>
+  <launchable type="url">https://www.linkedin.com/</launchable>
+  <url type="homepage">https://www.linkedin.com/</url>
+  <summary>Connecting the world’s professionals to make them more productive and successful</summary>
+  <description>
+    <p>Manage your professional identity. Build and engage with your
+      professional network. Access knowledge, insights and opportunities.</p>
+  </description>
+  <project_license>LicenseRef-proprietary</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>LinkedIn Corporation</developer_name>
+  <categories>
+    <category>Profiling</category>
+  </categories>
+  <keywords>
+    <keyword>Professional</keyword>
+    <keyword>Networking</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-chat">moderate</content_attribute>
+    <content_attribute id="social-contacts">intense</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

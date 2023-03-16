@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_d4dc7a563c4a174ff8198613feba77f618575670.desktop</id>
+  <name>The Weather Channel</name>
+  <launchable type="url">https://www.weather.com/</launchable>
+  <url type="homepage">https://www.weather.com/</url>
+  <summary>National and Local Weather Radar, Daily Forecast, Hurricane and information from The Weather Channel and weather.com</summary>
+  <description>
+    <p>The Weather Channel and weather.com provide a national and local weather
+      forecast for cities, as well as weather radar, report and hurricane coverage</p>
+  </description>
+  <project_license>LicenseRef-proprietary</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>TWC Product and Technology LLC</developer_name>
+  <icon type="remote" width="36" height="36">https://s.w-x.co/twc_36x36.png</icon>
+  <icon type="remote" width="48" height="48">https://s.w-x.co/twc_48x48.png</icon>
+  <icon type="remote" width="72" height="72">https://s.w-x.co/twc_72x72.png</icon>
+  <icon type="remote" width="96" height="96">https://s.w-x.co/twc_96x96.png</icon>
+  <icon type="remote" width="128" height="128">https://s.w-x.co/twc_128x128.png</icon>
+  <icon type="remote" width="144" height="144">https://s.w-x.co/twc_144x144.png</icon>
+  <icon type="remote" width="192" height="192">https://s.w-x.co/twc_192x192.png</icon>
+  <categories>
+    <category>News</category>
+    <category>Weather</category>
+  </categories>
+  <keywords>
+    <keyword>news</keyword>
+    <keyword>weather</keyword>
+    <keyword>forcast</keyword>
+    <keyword>coverage</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-contacts">intense</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

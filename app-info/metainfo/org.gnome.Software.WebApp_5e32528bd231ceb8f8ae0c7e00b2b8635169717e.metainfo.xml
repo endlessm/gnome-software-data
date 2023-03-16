@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_5e32528bd231ceb8f8ae0c7e00b2b8635169717e.desktop</id>
+  <name>Reddit</name>
+  <launchable type="url">https://www.reddit.com/</launchable>
+  <url type="homepage">https://www.reddit.com/</url>
+  <summary>A network of communities for people and their interests!</summary>
+  <description>
+    <p>Reddit is a network of communities where people can dive into their interests,
+      hobbies and passions. There's a community for whatever you're interested in on Reddit.</p>
+  </description>
+  <project_license>LicenseRef-proprietary</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>Reddit Inc.</developer_name>
+  <icon type="remote" width="36" height="36">https://www.reddit.com/android-icon-36x36.png</icon>
+  <icon type="remote" width="48" height="48">https://www.reddit.com/android-icon-48x48.png</icon>
+  <icon type="remote" width="72" height="72">https://www.reddit.com/android-icon-72x72.png</icon>
+  <icon type="remote" width="96" height="96">https://www.reddit.com/android-icon-96x96.png</icon>
+  <icon type="remote" width="144" height="144">https://www.reddit.com/android-icon-144x144.png</icon>
+  <icon type="remote" width="192" height="192">https://www.reddit.com/android-icon-192x192.png</icon>
+  <icon type="remote" width="512" height="512">https://www.reddit.com/android-icon-512x512.png</icon>
+  <categories>
+    <category>Chat</category>
+    <category>InstantMessaging</category>
+  </categories>
+  <keywords>
+    <keyword>Social</keyword>
+    <keyword>Social Network</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-info">intense</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

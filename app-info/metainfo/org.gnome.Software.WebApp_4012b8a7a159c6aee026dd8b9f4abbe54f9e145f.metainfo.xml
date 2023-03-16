@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_4012b8a7a159c6aee026dd8b9f4abbe54f9e145f.desktop</id>
+  <name>AP NEWS</name>
+  <launchable type="url">https://apnews.com/</launchable>
+  <url type="homepage">https://apnews.com/</url>
+  <summary>Breaking News &amp; Latest News Today</summary>
+  <description>
+    <p>Stay informed and read the latest news today from The Associated Press, the
+      definitive source for independent journalism from every corner of the globe.</p>
+  </description>
+  <project_license>LicenseRef-proprietary</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>The Associated Press</developer_name>
+  <icon type="remote" width="36" height="36">https://apnews.com/branding/android-touch/ap-news-android-touchldpi_36.png</icon>
+  <icon type="remote" width="48" height="48">https://apnews.com/branding/android-touch/ap-news-android-touchmdpi_48.png</icon>
+  <icon type="remote" width="72" height="72">https://apnews.com/branding/android-touch/ap-news-android-touchhdpi_72.png</icon>
+  <icon type="remote" width="96" height="96">https://apnews.com/branding/android-touch/ap-news-android-touchxhdpi_96.png</icon>
+  <icon type="remote" width="144" height="144">https://apnews.com/branding/android-touch/ap-news-android-touchxxhdpi_144.png</icon>
+  <icon type="remote" width="192" height="192">https://apnews.com/branding/android-touch/ap-news-android-touchxxxhdpi_192.png</icon>
+  <categories>
+    <category>News</category>
+    <category>Education</category>
+  </categories>
+  <keywords>
+    <keyword>breaking news</keyword>
+    <keyword>U.S. news</keyword>
+    <keyword>news</keyword>
+    <keyword>news online</keyword>
+    <keyword>world news</keyword>
+    <keyword>weather</keyword>
+    <keyword>business</keyword>
+    <keyword>sports</keyword>
+    <keyword>politics</keyword>
+    <keyword>law</keyword>
+    <keyword>technology</keyword>
+    <keyword>entertainment</keyword>
+    <keyword>education</keyword>
+    <keyword>travel</keyword>
+    <keyword>health</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-realistic">moderate</content_attribute>
+    <content_attribute id="drugs-alcohol">mild</content_attribute>
+    <content_attribute id="drugs-narcotics">mild</content_attribute>
+    <content_attribute id="drugs-tobacco">mild</content_attribute>
+    <content_attribute id="language-profanity">mild</content_attribute>
+    <content_attribute id="social-contacts">intense</content_attribute>
+    <content_attribute id="money-advertising">moderate</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

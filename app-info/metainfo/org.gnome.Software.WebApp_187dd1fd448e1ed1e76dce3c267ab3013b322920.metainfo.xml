@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_187dd1fd448e1ed1e76dce3c267ab3013b322920.desktop</id>
+  <name>Instructables</name>
+  <launchable type="url">https://www.instructables.com/</launchable>
+  <url type="homepage">https://www.instructables.com/</url>
+  <summary>A community for people who like to make things</summary>
+  <description>
+    <p>Instructables is a community for people who like to make things.
+      Come explore, share, and make your next project with us!</p>
+  </description>
+  <project_license>LicenseRef-proprietary</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>instructables</developer_name>
+  <categories>
+    <category>Construction</category>
+    <category>Amusement</category>
+    <category>Education</category>
+  </categories>
+  <keywords>
+    <keyword>Step-by-Step</keyword>
+    <keyword>DIY</keyword>
+    <keyword>Circuits</keyword>
+    <keyword>Workshop</keyword>
+    <keyword>Craft</keyword>
+    <keyword>Cooking</keyword>
+    <keyword>Living</keyword>
+    <keyword>Outside</keyword>
+    <keyword>Teachers</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-chat">moderate</content_attribute>
+    <content_attribute id="social-contacts">intense</content_attribute>
+    <content_attribute id="money-advertising">intense</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_c0c17473d0135fd62cc1fbdb6afd2f5ed8266520.desktop</id>
+  <name>Common Sense Media</name>
+  <launchable type="url">https://www.commonsensemedia.org/</launchable>
+  <url type="homepage">https://www.commonsensemedia.org/</url>
+  <summary>Age-Based Media Reviews for Families</summary>
+  <description>
+    <p>Common Sense Media is the leading source of entertainment and technology recommendations
+      for families. Parents trust our expert reviews and objective advice.</p>
+  </description>
+  <project_license>GPL-2.0-or-later</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>Common Sense Media</developer_name>
+  <categories>
+    <category>Education</category>
+    <category>Literature</category>
+    <category>Game</category>
+    <category>KidsGame</category>
+  </categories>
+  <keywords>
+    <keyword>movies</keyword>
+    <keyword>tv</keyword>
+    <keyword>books</keyword>
+    <keyword>games</keyword>
+    <keyword>reviews</keyword>
+    <keyword>ratings</keyword>
+    <keyword>podcasts</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-chat">intense</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>

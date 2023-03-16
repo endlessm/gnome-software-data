@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_0d9bc082f7c36acbd482f0160f51005132097bc7.desktop</id>
+  <name>iLovePDF</name>
+  <launchable type="url">https://www.ilovepdf.com/</launchable>
+  <url type="homepage">https://www.ilovepdf.com/</url>
+  <summary>Online PDF tools for PDF lovers</summary>
+  <description>
+    <p>iLovePDF is an online service to work with PDF files completely free and easy to use.
+      Merge PDF, split PDF, compress PDF, office to PDF, PDF to JPG and more!</p>
+  </description>
+  <project_license>LicenseRef-proprietary</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>ilovepdf.com</developer_name>
+  <categories>
+    <category>Graphics</category>
+    <category>Viewer</category>
+  </categories>
+  <keywords>
+    <keyword>Merge PDF</keyword>
+    <keyword>split PDF</keyword>
+    <keyword>combine PDF</keyword>
+    <keyword>extract PDF</keyword>
+    <keyword>compress PDF</keyword>
+    <keyword>convert PDF</keyword>
+    <keyword>Word to PDF</keyword>
+    <keyword>Excel to PDF</keyword>
+    <keyword>Powerpoint to PDF</keyword>
+    <keyword>PDF to JPG</keyword>
+    <keyword>JPG to PDF</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-contacts">intense</content_attribute>
+    <content_attribute id="money-purchasing">intense</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>
