@@ -631,7 +631,7 @@ msgstr ""
 #. (itstool) path: component/summary
 #: metainfo/org.gnome.Software.WebApp_bafc11e1d98eaadbe4dd47c9f27674df9018cfd1.metainfo.xml.in:7
 msgid "A to-do list to organize your work and life"
-msgstr ""
+msgstr "Une to do list pour organiser vie et travail"
 
 #. (itstool) path: description/p
 #: metainfo/org.gnome.Software.WebApp_bafc11e1d98eaadbe4dd47c9f27674df9018cfd1.metainfo.xml.in:9
@@ -639,6 +639,9 @@ msgid ""
 "Trusted by 30 million people and teams. Todoist is the world's favorite task "
 "manager and to-do list app. Finally become focused, organized and calm."
 msgstr ""
+"30 millions de personnes et d'équipes lui font confiance. Todoist est "
+"l'application de gestion de tâches et de to do list préférée des "
+"utilisateurs. Gagnez en concentration, organisation et sérénité."
 
 #. (itstool) path: component/developer_name
 #: metainfo/org.gnome.Software.WebApp_bafc11e1d98eaadbe4dd47c9f27674df9018cfd1.metainfo.xml.in:14
