@@ -731,6 +731,8 @@ msgid ""
 "Manage your professional identity. Build and engage with your professional "
 "network. Access knowledge, insights and opportunities."
 msgstr ""
+"Gestiona tu identidad profesional. Amplía e interactúa con tu red "
+"profesional. Accede a conocimientos, información y oportunidades."
 
 #. (itstool) path: component/developer_name
 #: metainfo/org.gnome.Software.WebApp_d0d41a78107e026898ac2478e41685f24e212ee9.metainfo.xml.in:14
