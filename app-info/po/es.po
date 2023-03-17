@@ -755,6 +755,8 @@ msgid ""
 "National and Local Weather Radar, Daily Forecast, Hurricane and information "
 "from The Weather Channel and weather.com"
 msgstr ""
+"Radar del tiempo nacional y local, pronóstico diario, huracanes e "
+"información de The Weather Channel y weather.com"
 
 #. (itstool) path: description/p
 #: metainfo/org.gnome.Software.WebApp_d4dc7a563c4a174ff8198613feba77f618575670.metainfo.xml.in:9
@@ -762,6 +764,9 @@ msgid ""
 "The Weather Channel and weather.com provide a national and local weather "
 "forecast for cities, as well as weather radar, report and hurricane coverage"
 msgstr ""
+"The Weather Channel y weather.com proporcionan el pronóstico nacional y "
+"local para las ciudades, el radar del tiempo, reportes y cobertura de "
+"huracanes."
 
 #. (itstool) path: component/developer_name
 #: metainfo/org.gnome.Software.WebApp_d4dc7a563c4a174ff8198613feba77f618575670.metainfo.xml.in:14
