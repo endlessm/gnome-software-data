@@ -58,6 +58,14 @@ def get_soup_for_url(url, language=None):
         headers["Accept-Language"] = language
     response = requests.get(url, headers=headers)
     response.raise_for_status()
+
+    # If the site set Content-Type to text/* but didn't add charset,
+    # then requests assumes the content is ISO-8859-1 per the HTTP spec.
+    # In that case, prefer it's character set detection.
+    content_type = response.headers.get('Content-Type')
+    if content_type and 'charset=' not in content_type:
+        response.encoding = response.apparent_encoding
+
     return BeautifulSoup(response.text, features="lxml")
 
 
