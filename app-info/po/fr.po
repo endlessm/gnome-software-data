@@ -510,6 +510,9 @@ msgid ""
 "entertainment, sports, music, and more. There's something for everyone on "
 "Twitch."
 msgstr ""
+"Twitch est un service de streaming interactif de jeux vidéo, de "
+"divertissement, de musique, de sport, etc. Il y en a pour tous les goûts "
+"sur Twitch."
 
 #. (itstool) path: component/developer_name
 #: metainfo/org.gnome.Software.WebApp_75090da4c7300bfa0a6563cf6029a1c77f11c44c.metainfo.xml.in:14
