@@ -410,6 +410,8 @@ msgstr ""
 #: metainfo/org.gnome.Software.WebApp_5ebefcad2b41b82f1346426b129c91e231484348.metainfo.xml.in:7
 msgid "Discover the Best eBooks, Audiobooks, Magazines, Sheet Music, and More"
 msgstr ""
+"Descubra los mejores libros electrónicos, audiolibros, revistas, partituras "
+"y más"
 
 #. (itstool) path: description/p
 #: metainfo/org.gnome.Software.WebApp_5ebefcad2b41b82f1346426b129c91e231484348.metainfo.xml.in:9
