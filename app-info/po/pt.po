@@ -436,6 +436,8 @@ msgstr ""
 #: metainfo/org.gnome.Software.WebApp_6a26263aa32636b9fd0352fd6c8da5dca14ef1d7.metainfo.xml.in:7
 msgid "Discover recipes, home ideas, style inspiration and other ideas to try"
 msgstr ""
+"Descubra receitas, dicas para a casa, inspirações para o seu estilo e "
+"outras ideias para experimentar"
 
 #. (itstool) path: description/p
 #: metainfo/org.gnome.Software.WebApp_6a26263aa32636b9fd0352fd6c8da5dca14ef1d7.metainfo.xml.in:9
