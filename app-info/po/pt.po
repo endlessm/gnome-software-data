@@ -1,0 +1,941 @@
+# Portuguese translations for PACKAGE package.
+# Copyright (C) 2023 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-16 16:44-0600\n"
+"PO-Revision-Date: 2023-03-16 14:54-0600\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_02310f2fd700a63d17ecc2d4b261f6956d8a0193.metainfo.xml.in:4
+msgid "Flathub Discourse"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_02310f2fd700a63d17ecc2d4b261f6956d8a0193.metainfo.xml.in:7
+msgid "A forum for Flathub users"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_02310f2fd700a63d17ecc2d4b261f6956d8a0193.metainfo.xml.in:9
+msgid ""
+"Flathub aims to be the place to get and distribute apps for Linux. It is "
+"powered by Flatpak which allows Flathub apps to run on almost any Linux "
+"distribution."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_02310f2fd700a63d17ecc2d4b261f6956d8a0193.metainfo.xml.in:14
+msgid "Flathub"
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_092f50a2d722b80d5fad80fefb89559d0c56b3e2.metainfo.xml.in:4
+msgid "Archive.org"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_092f50a2d722b80d5fad80fefb89559d0c56b3e2.metainfo.xml.in:7
+msgid "Providing Universal Access to All Knowledge"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_092f50a2d722b80d5fad80fefb89559d0c56b3e2.metainfo.xml.in:9
+msgid ""
+"Internet Archive is a non-profit digital library offering free universal "
+"access to books, movies &amp; music, as well as 624 billion archived web "
+"pages."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_092f50a2d722b80d5fad80fefb89559d0c56b3e2.metainfo.xml.in:14
+msgid "Internet Archive"
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_0d9bc082f7c36acbd482f0160f51005132097bc7.metainfo.xml.in:4
+msgid "iLovePDF"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_0d9bc082f7c36acbd482f0160f51005132097bc7.metainfo.xml.in:7
+msgid "Online PDF tools for PDF lovers"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_0d9bc082f7c36acbd482f0160f51005132097bc7.metainfo.xml.in:9
+msgid ""
+"iLovePDF is an online service to work with PDF files completely free and "
+"easy to use. Merge PDF, split PDF, compress PDF, office to PDF, PDF to JPG "
+"and more!"
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_0d9bc082f7c36acbd482f0160f51005132097bc7.metainfo.xml.in:14
+msgid "ilovepdf.com"
+msgstr ""
+
+#. (itstool) path: component/name
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_108ec1825ce89b9f50be3f8e197ee4252f011be4.metainfo.xml.in:4
+#: metainfo/org.gnome.Software.WebApp_108ec1825ce89b9f50be3f8e197ee4252f011be4.metainfo.xml.in:14
+msgid "Facebook"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_108ec1825ce89b9f50be3f8e197ee4252f011be4.metainfo.xml.in:7
+msgid "Connect with people you know!"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_108ec1825ce89b9f50be3f8e197ee4252f011be4.metainfo.xml.in:9
+msgid ""
+"Log into Facebook to start sharing and connecting with your friends, family, "
+"and people you know."
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_187dd1fd448e1ed1e76dce3c267ab3013b322920.metainfo.xml.in:4
+msgid "Instructables"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_187dd1fd448e1ed1e76dce3c267ab3013b322920.metainfo.xml.in:7
+msgid "A community for people who like to make things"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_187dd1fd448e1ed1e76dce3c267ab3013b322920.metainfo.xml.in:9
+msgid ""
+"Instructables is a community for people who like to make things. Come "
+"explore, share, and make your next project with us!"
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_187dd1fd448e1ed1e76dce3c267ab3013b322920.metainfo.xml.in:14
+msgid "instructables"
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_37e47f93165bdcbf0eaaeed30bc0529e2778b4e3.metainfo.xml.in:4
+msgid "Goodreads"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_37e47f93165bdcbf0eaaeed30bc0529e2778b4e3.metainfo.xml.in:7
+msgid ""
+"Discover and share books you love on Goodreads, the world's largest site for "
+"readers and book recommendations!"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_37e47f93165bdcbf0eaaeed30bc0529e2778b4e3.metainfo.xml.in:9
+msgid ""
+"Find and read more books you’ll love, and keep track of the books you want "
+"to read. Be part of the world’s largest community of book lovers on "
+"Goodreads."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_37e47f93165bdcbf0eaaeed30bc0529e2778b4e3.metainfo.xml.in:14
+msgid "Goodreads Inc."
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_3a023ac6fc65c87ba5c88c1a1bb07edef7c6b8c4.metainfo.xml.in:4
+msgid "Merriam-Webster Dictionary"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_3a023ac6fc65c87ba5c88c1a1bb07edef7c6b8c4.metainfo.xml.in:7
+msgid "America's most-trusted online dictionary"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_3a023ac6fc65c87ba5c88c1a1bb07edef7c6b8c4.metainfo.xml.in:9
+msgid ""
+"The dictionary by Merriam-Webster is America's most trusted online "
+"dictionary for English word definitions, meanings, and pronunciation. "
+"\\#wordsmatter"
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_3a023ac6fc65c87ba5c88c1a1bb07edef7c6b8c4.metainfo.xml.in:14
+msgid "Merriam-Webster Incorporated"
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_4012b8a7a159c6aee026dd8b9f4abbe54f9e145f.metainfo.xml.in:4
+msgid "AP NEWS"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_4012b8a7a159c6aee026dd8b9f4abbe54f9e145f.metainfo.xml.in:7
+msgid "Breaking News &amp; Latest News Today"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_4012b8a7a159c6aee026dd8b9f4abbe54f9e145f.metainfo.xml.in:9
+msgid ""
+"Stay informed and read the latest news today from The Associated Press, the "
+"definitive source for independent journalism from every corner of the globe."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_4012b8a7a159c6aee026dd8b9f4abbe54f9e145f.metainfo.xml.in:14
+msgid "The Associated Press"
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_4dda9043da5b2d2aa57c6064c907c1ae3fe58941.metainfo.xml.in:4
+msgid "Snapdrop"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_4dda9043da5b2d2aa57c6064c907c1ae3fe58941.metainfo.xml.in:7
+msgid "Local network file sharing in your browser"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_4dda9043da5b2d2aa57c6064c907c1ae3fe58941.metainfo.xml.in:9
+msgid ""
+"Instantly share images, videos, PDFs, and links with people nearby. "
+"Peer2Peer and Open Source. No Setup, No Signup."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_4dda9043da5b2d2aa57c6064c907c1ae3fe58941.metainfo.xml.in:14
+msgid "RobinLinus"
+msgstr ""
+
+#. (itstool) path: component/name
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_4e9ac63e1dde83a55fbf0a928408cdd889520371.metainfo.xml.in:4
+#: metainfo/org.gnome.Software.WebApp_4e9ac63e1dde83a55fbf0a928408cdd889520371.metainfo.xml.in:15
+msgid "Quora"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_4e9ac63e1dde83a55fbf0a928408cdd889520371.metainfo.xml.in:7
+msgid "A place to gain and share knowledge"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_4e9ac63e1dde83a55fbf0a928408cdd889520371.metainfo.xml.in:9
+msgid ""
+"Quora is a place to gain and share knowledge. It's a platform to ask "
+"questions and connect with people who contribute unique insights and quality "
+"answers. This empowers people to learn from each other and to better "
+"understand the world."
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_506b15e469a34ac26f7b3235568af3c0cc5b3164.metainfo.xml.in:4
+msgid "iCloud"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_506b15e469a34ac26f7b3235568af3c0cc5b3164.metainfo.xml.in:7
+msgid "Access your photos, videos, documents, notes, contacts, and more"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_506b15e469a34ac26f7b3235568af3c0cc5b3164.metainfo.xml.in:9
+msgid ""
+"iCloud is essential for keeping personal information from your devices safe, "
+"up to date, and available wherever you are."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_506b15e469a34ac26f7b3235568af3c0cc5b3164.metainfo.xml.in:14
+msgid "Apple Inc."
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_510edbf11e660dee9847c587d8683808adabe9bf.metainfo.xml.in:4
+msgid "diagrams.net"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_510edbf11e660dee9847c587d8683808adabe9bf.metainfo.xml.in:7
+msgid ""
+"draw.io is free online diagram software for making flowcharts, process "
+"diagrams, org charts, UML, ER and network diagrams"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_510edbf11e660dee9847c587d8683808adabe9bf.metainfo.xml.in:9
+msgid ""
+"draw.io is a free online diagramming application and flowchart maker. You "
+"can use it to create UML, entity relationship, org charts, BPMN and BPM, "
+"database schema and networks. Also possible are telecommunication network, "
+"workflow, flowcharts, maps overlays and GIS, electronic circuit and social "
+"network diagrams."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_510edbf11e660dee9847c587d8683808adabe9bf.metainfo.xml.in:16
+msgid "JGraph Ltd"
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_52b732dd06d99298b6e9bfccc17e25e0ac8b2bcb.metainfo.xml.in:4
+msgid "PayPal"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_52b732dd06d99298b6e9bfccc17e25e0ac8b2bcb.metainfo.xml.in:7
+msgid "Digital Wallets, Money Management, and More"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_52b732dd06d99298b6e9bfccc17e25e0ac8b2bcb.metainfo.xml.in:9
+msgid ""
+"PayPal is the faster, safer way to send and receive money or make an online "
+"payment. Get started or create a merchant account to accept payments."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_52b732dd06d99298b6e9bfccc17e25e0ac8b2bcb.metainfo.xml.in:14
+msgid "PayPal Inc."
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_5731e1d8d25eb73039eae10c5a4d04e1080056d1.metainfo.xml.in:4
+msgid "edX"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_5731e1d8d25eb73039eae10c5a4d04e1080056d1.metainfo.xml.in:7
+msgid "Free Online Courses by Harvard, MIT, &amp; more"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_5731e1d8d25eb73039eae10c5a4d04e1080056d1.metainfo.xml.in:9
+msgid ""
+"Access 2000 free online courses from 140 leading institutions worldwide. "
+"Gain new skills and earn a certificate of completion."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_5731e1d8d25eb73039eae10c5a4d04e1080056d1.metainfo.xml.in:14
+msgid "edXOnline"
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec.metainfo.xml.in:4
+msgid "Endless Community"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec.metainfo.xml.in:7
+msgid "A forum to discuss, get help with, and give feedback on Endless OS"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec.metainfo.xml.in:9
+msgid ""
+"The Endless Community forum is a place to share tips about using Endless OS, "
+"ask for advice or support when something doesn't work quite right, get "
+"announcements about upcoming releases, and give your feedback. Join the "
+"conversation with fellow community members and Endless OS Foundation staff."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_5c818dd1c0c3cad43709490cb72217f0d08912ec.metainfo.xml.in:16
+msgid "Endless"
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_5e32528bd231ceb8f8ae0c7e00b2b8635169717e.metainfo.xml.in:4
+msgid "Reddit"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_5e32528bd231ceb8f8ae0c7e00b2b8635169717e.metainfo.xml.in:7
+msgid "A network of communities for people and their interests!"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_5e32528bd231ceb8f8ae0c7e00b2b8635169717e.metainfo.xml.in:9
+msgid ""
+"Reddit is a network of communities where people can dive into their "
+"interests, hobbies and passions. There's a community for whatever you're "
+"interested in on Reddit."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_5e32528bd231ceb8f8ae0c7e00b2b8635169717e.metainfo.xml.in:14
+msgid "Reddit Inc."
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_5ea0d5a0681e425022d889f3e355de2f19f92070.metainfo.xml.in:4
+msgid "Twitter"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_5ea0d5a0681e425022d889f3e355de2f19f92070.metainfo.xml.in:7
+msgid "The latest stories on Twitter - as told by Tweets"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_5ea0d5a0681e425022d889f3e355de2f19f92070.metainfo.xml.in:9
+msgid ""
+"Twitter is what’s happening and what people are talking about right now."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_5ea0d5a0681e425022d889f3e355de2f19f92070.metainfo.xml.in:13
+msgid "Twitter Inc."
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_5ebefcad2b41b82f1346426b129c91e231484348.metainfo.xml.in:4
+msgid "Scribd"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_5ebefcad2b41b82f1346426b129c91e231484348.metainfo.xml.in:7
+msgid "Discover the Best eBooks, Audiobooks, Magazines, Sheet Music, and More"
+msgstr ""
+"Descubra os melhores livros digitais, audiobooks, revistas, partituras e "
+"muito mais"
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_5ebefcad2b41b82f1346426b129c91e231484348.metainfo.xml.in:9
+msgid ""
+"Scribd gives you access to millions of ebooks, audiobooks, magazines, "
+"podcasts, and more — all in one place, for one price."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_5ebefcad2b41b82f1346426b129c91e231484348.metainfo.xml.in:14
+msgid "Scribd Inc."
+msgstr ""
+
+#. (itstool) path: component/name
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_6a26263aa32636b9fd0352fd6c8da5dca14ef1d7.metainfo.xml.in:4
+#: metainfo/org.gnome.Software.WebApp_6a26263aa32636b9fd0352fd6c8da5dca14ef1d7.metainfo.xml.in:14
+msgid "Pinterest"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_6a26263aa32636b9fd0352fd6c8da5dca14ef1d7.metainfo.xml.in:7
+msgid "Discover recipes, home ideas, style inspiration and other ideas to try"
+msgstr ""
+"Descubra receitas, dicas para a casa, inspirações para o seu estilo e "
+"outras ideias para experimentar"
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_6a26263aa32636b9fd0352fd6c8da5dca14ef1d7.metainfo.xml.in:9
+msgid ""
+"Pinterest is a visual discovery engine for finding ideas like recipes, home "
+"and style inspiration, and more."
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_6ac52eb35b1436618af76b3a612fcba55624b0c0.metainfo.xml.in:4
+msgid "MIT OpenCourseWare"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_6ac52eb35b1436618af76b3a612fcba55624b0c0.metainfo.xml.in:7
+msgid "Free Online Course Materials"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_6ac52eb35b1436618af76b3a612fcba55624b0c0.metainfo.xml.in:9
+msgid ""
+"MIT OpenCourseWare is a web based publication of virtually all MIT course "
+"content. OCW is open and available to the world and is a permanent MIT "
+"activity"
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_6ac52eb35b1436618af76b3a612fcba55624b0c0.metainfo.xml.in:14
+msgid "Massachusetts Institute of Technology"
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_7236bcfcc34bbdb54ff31a49ec40cdc2fd50c6e0.metainfo.xml.in:4
+msgid "Mayo Clinic"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_7236bcfcc34bbdb54ff31a49ec40cdc2fd50c6e0.metainfo.xml.in:7
+msgid "Seamless care that revolves around you"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_7236bcfcc34bbdb54ff31a49ec40cdc2fd50c6e0.metainfo.xml.in:9
+msgid ""
+"More than 4,700 physicians and scientists collaborate across Mayo Clinic "
+"campuses in Arizona, Florida and Minnesota. U.S. News &amp; World Report "
+"ranks Mayo Clinic as the \\#1 hospital overall and \\#1 in more specialties "
+"than any other hospital in the nation."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_7236bcfcc34bbdb54ff31a49ec40cdc2fd50c6e0.metainfo.xml.in:15
+msgid "Mayo Foundation for Medical Education and Research"
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_75090da4c7300bfa0a6563cf6029a1c77f11c44c.metainfo.xml.in:4
+msgid "Twitch"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_75090da4c7300bfa0a6563cf6029a1c77f11c44c.metainfo.xml.in:7
+msgid "Livestreaming service for practically everything!"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_75090da4c7300bfa0a6563cf6029a1c77f11c44c.metainfo.xml.in:9
+msgid ""
+"Twitch is an interactive livestreaming service for content spanning gaming, "
+"entertainment, sports, music, and more. There's something for everyone on "
+"Twitch."
+msgstr ""
+"A Twitch é um serviço de transmissão ao vivo interativo para conteúdo "
+"que abrange jogos, entretenimento, esportes, música e muito mais. Há "
+"algo para todo mundo na Twitch."
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_75090da4c7300bfa0a6563cf6029a1c77f11c44c.metainfo.xml.in:14
+msgid "Twitch Interactive"
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_86e2349cc64991cad7c6262274e06fd635da1a77.metainfo.xml.in:4
+msgid "Healthline"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_86e2349cc64991cad7c6262274e06fd635da1a77.metainfo.xml.in:7
+msgid "Medical information and health advice you can trust"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_86e2349cc64991cad7c6262274e06fd635da1a77.metainfo.xml.in:9
+msgid ""
+"We're committed to being your source for expert health guidance. Come to us "
+"in your pursuit of wellness."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_86e2349cc64991cad7c6262274e06fd635da1a77.metainfo.xml.in:13
+msgid "Healthline Media"
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_962f69328d6450369f25a6fdb6bbd1764d11a3c8.metainfo.xml.in:4
+msgid "DevDocs"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_962f69328d6450369f25a6fdb6bbd1764d11a3c8.metainfo.xml.in:7
+msgid ""
+"DevDocs combines multiple API documentations in a fast, organized, and "
+"searchable interface"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_962f69328d6450369f25a6fdb6bbd1764d11a3c8.metainfo.xml.in:9
+msgid ""
+"Fast, offline, and free documentation browser for developers. Search 100+ "
+"docs in one web app including HTML, CSS, JavaScript, PHP, Ruby, Python, Go, "
+"C, C++, and many more."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_962f69328d6450369f25a6fdb6bbd1764d11a3c8.metainfo.xml.in:15
+msgid "Thibaut Courouble"
+msgstr ""
+
+#. (itstool) path: component/name
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_9e300f8f00666f4790eb7ed1b9e1c92c598759cb.metainfo.xml.in:4
+#: metainfo/org.gnome.Software.WebApp_9e300f8f00666f4790eb7ed1b9e1c92c598759cb.metainfo.xml.in:13
+msgid "BBC"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_9e300f8f00666f4790eb7ed1b9e1c92c598759cb.metainfo.xml.in:7
+msgid "Breaking news, sport, TV, radio and a whole lot more"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_9e300f8f00666f4790eb7ed1b9e1c92c598759cb.metainfo.xml.in:9
+msgid ""
+"The BBC informs, educates and entertains - wherever you are, whatever your "
+"age."
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_a2be7acbc52dc2b54ba05fd7fc56e9640a81e8dc.metainfo.xml.in:4
+msgid "Google Arts &amp; Culture"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_a2be7acbc52dc2b54ba05fd7fc56e9640a81e8dc.metainfo.xml.in:7
+msgid "Bringing the world's treasures online!"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_a2be7acbc52dc2b54ba05fd7fc56e9640a81e8dc.metainfo.xml.in:9
+msgid ""
+"Google Arts &amp; Culture features content from over 2000 leading museums "
+"and archives who have partnered with the Google Cultural Institute to bring "
+"the world's treasures online."
+msgstr ""
+"O Google Arts & Culture exibe conteúdo de mais de dois mil museus e "
+"acervos importantes que fizeram parceria com o Google Cultural Institute "
+"para disponibilizar os tesouros do mundo na Internet."
+
+#. (itstool) path: component/developer_name
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_a2be7acbc52dc2b54ba05fd7fc56e9640a81e8dc.metainfo.xml.in:14
+#: metainfo/org.gnome.Software.WebApp_bcfc6eb9c0ad7ed0b04cf9f69a30df35d44e0132.metainfo.xml.in:14
+msgid "Google"
+msgstr ""
+
+#. (itstool) path: component/name
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_aaa1593b8cfa7b64fdbafa029938b699f260dc99.metainfo.xml.in:4
+#: metainfo/org.gnome.Software.WebApp_aaa1593b8cfa7b64fdbafa029938b699f260dc99.metainfo.xml.in:14
+msgid "Investopedia"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_aaa1593b8cfa7b64fdbafa029938b699f260dc99.metainfo.xml.in:7
+msgid "The world's leading source of financial content on the web!"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_aaa1593b8cfa7b64fdbafa029938b699f260dc99.metainfo.xml.in:9
+msgid ""
+"Investopedia is the world's leading source of financial content on the web, "
+"ranging from market news to retirement strategies, investing education to "
+"insights from advisors."
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_bafc11e1d98eaadbe4dd47c9f27674df9018cfd1.metainfo.xml.in:4
+msgid "Todoist"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_bafc11e1d98eaadbe4dd47c9f27674df9018cfd1.metainfo.xml.in:7
+msgid "A to-do list to organize your work and life"
+msgstr "A lista de tarefas para organizar o trabalho e a vida"
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_bafc11e1d98eaadbe4dd47c9f27674df9018cfd1.metainfo.xml.in:9
+msgid ""
+"Trusted by 30 million people and teams. Todoist is the world's favorite task "
+"manager and to-do list app. Finally become focused, organized and calm."
+msgstr ""
+"Mais de 30 milhões de pessoas e equipes confiam no Todoist. O Todoist é o "
+"gerenciador e aplicativo de lista de tarefas favorito do mundo. Finalmente "
+"alcance o foco, a organização e a calma tão desejados."
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_bafc11e1d98eaadbe4dd47c9f27674df9018cfd1.metainfo.xml.in:14
+msgid "Doist Inc."
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_bcfc6eb9c0ad7ed0b04cf9f69a30df35d44e0132.metainfo.xml.in:4
+msgid "Google Messages"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_bcfc6eb9c0ad7ed0b04cf9f69a30df35d44e0132.metainfo.xml.in:7
+msgid "Messages for web"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_bcfc6eb9c0ad7ed0b04cf9f69a30df35d44e0132.metainfo.xml.in:9
+msgid ""
+"Use Messages for web to send SMS, MMS, and RCS messages from your computer. "
+"Open the Messages app on your Android phone to get started."
+msgstr ""
+
+#. (itstool) path: component/name
+#. (itstool) path: component/developer_name
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_c0c17473d0135fd62cc1fbdb6afd2f5ed8266520.metainfo.xml.in:4
+#: metainfo/org.gnome.Software.WebApp_c0c17473d0135fd62cc1fbdb6afd2f5ed8266520.metainfo.xml.in:14
+#: metainfo/org.gnome.Software.WebApp_cd9b0ce3ffbd48367f65c0b6a6c86ba67c242efa.metainfo.xml.in:15
+msgid "Common Sense Media"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_c0c17473d0135fd62cc1fbdb6afd2f5ed8266520.metainfo.xml.in:7
+msgid "Age-Based Media Reviews for Families"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_c0c17473d0135fd62cc1fbdb6afd2f5ed8266520.metainfo.xml.in:9
+msgid ""
+"Common Sense Media is the leading source of entertainment and technology "
+"recommendations for families. Parents trust our expert reviews and objective "
+"advice."
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_cd9b0ce3ffbd48367f65c0b6a6c86ba67c242efa.metainfo.xml.in:4
+msgid "Common Sense Education"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_cd9b0ce3ffbd48367f65c0b6a6c86ba67c242efa.metainfo.xml.in:7
+msgid ""
+"Free Digital Citizenship curriculum, reviews of EdTech apps, and resources "
+"for student privacy"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_cd9b0ce3ffbd48367f65c0b6a6c86ba67c242efa.metainfo.xml.in:9
+msgid ""
+"Common Sense Education provides educators and students with the resources "
+"they need to harness the power of technology for learning and life. Find a "
+"free K-12 Digital Citizenship curriculum, reviews of popular EdTech apps, "
+"and resources for protecting student privacy."
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_d0d41a78107e026898ac2478e41685f24e212ee9.metainfo.xml.in:4
+msgid "LinkedIn"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_d0d41a78107e026898ac2478e41685f24e212ee9.metainfo.xml.in:7
+msgid ""
+"Connecting the world’s professionals to make them more productive and "
+"successful"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_d0d41a78107e026898ac2478e41685f24e212ee9.metainfo.xml.in:9
+msgid ""
+"Manage your professional identity. Build and engage with your professional "
+"network. Access knowledge, insights and opportunities."
+msgstr ""
+"Gerencie sua identidade profissional. Crie sua rede profissional e "
+"interaja com ela. Acesse estatísticas, conhecimento e oportunidades."
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_d0d41a78107e026898ac2478e41685f24e212ee9.metainfo.xml.in:14
+msgid "LinkedIn Corporation"
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_d4dc7a563c4a174ff8198613feba77f618575670.metainfo.xml.in:4
+msgid "The Weather Channel"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_d4dc7a563c4a174ff8198613feba77f618575670.metainfo.xml.in:7
+msgid ""
+"National and Local Weather Radar, Daily Forecast, Hurricane and information "
+"from The Weather Channel and weather.com"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_d4dc7a563c4a174ff8198613feba77f618575670.metainfo.xml.in:9
+msgid ""
+"The Weather Channel and weather.com provide a national and local weather "
+"forecast for cities, as well as weather radar, report and hurricane coverage"
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_d4dc7a563c4a174ff8198613feba77f618575670.metainfo.xml.in:14
+msgid "TWC Product and Technology LLC"
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_dd7b0c5ff0c21c2984f8fc1a05d01c33aee4fe9d.metainfo.xml.in:4
+msgid "GNOME Discourse"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_dd7b0c5ff0c21c2984f8fc1a05d01c33aee4fe9d.metainfo.xml.in:7
+msgid "A forum for GNOME users"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_dd7b0c5ff0c21c2984f8fc1a05d01c33aee4fe9d.metainfo.xml.in:9
+msgid "GNOME Project and Community related discussions."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_dd7b0c5ff0c21c2984f8fc1a05d01c33aee4fe9d.metainfo.xml.in:13
+msgid "The GNOME Project"
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_e41134be0ce95da0832878faa90cf3473b1b52d7.metainfo.xml.in:4
+msgid "Squoosh"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_e41134be0ce95da0832878faa90cf3473b1b52d7.metainfo.xml.in:7
+msgid ""
+"An image compression web app that reduces image sizes through numerous "
+"formats"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_e41134be0ce95da0832878faa90cf3473b1b52d7.metainfo.xml.in:9
+msgid ""
+"Squoosh is the ultimate image optimizer that allows you to compress and "
+"compare images with different codecs in your browser."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_e41134be0ce95da0832878faa90cf3473b1b52d7.metainfo.xml.in:14
+msgid "Surma"
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_e4a9b47d9eb50af9865829c5088501e66affabd0.metainfo.xml.in:4
+msgid "Strudel REPL"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_e4a9b47d9eb50af9865829c5088501e66affabd0.metainfo.xml.in:7
+msgid "Experimental port of tidalcycles to Javascript"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_e4a9b47d9eb50af9865829c5088501e66affabd0.metainfo.xml.in:9
+msgid ""
+"Strudel is a music live coding environment for the browser, porting the "
+"TidalCycles pattern language to JavaScript."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_e4a9b47d9eb50af9865829c5088501e66affabd0.metainfo.xml.in:14
+msgid "Felix Roos"
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_e636aa5f2069f6e9c02deccc7b65f43da7985e32.metainfo.xml.in:4
+msgid "Pinafore for Mastodon"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_e636aa5f2069f6e9c02deccc7b65f43da7985e32.metainfo.xml.in:7
+msgid "An alternative web client for Mastodon"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_e636aa5f2069f6e9c02deccc7b65f43da7985e32.metainfo.xml.in:9
+msgid ""
+"Pinafore is an alternative web client for Mastodon that focuses on speed, "
+"simplicity, Multi-account Support, Offline Usability, Mobile Support, and "
+"User Privacy."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_e636aa5f2069f6e9c02deccc7b65f43da7985e32.metainfo.xml.in:15
+msgid "Nolan Lawson"
+msgstr ""
+
+#. (itstool) path: component/name
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_e730d810bf154c7818b460479ea7826140099a7a.metainfo.xml.in:4
+#: metainfo/org.gnome.Software.WebApp_e730d810bf154c7818b460479ea7826140099a7a.metainfo.xml.in:14
+msgid "Instagram"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_e730d810bf154c7818b460479ea7826140099a7a.metainfo.xml.in:7
+msgid ""
+"Give people the power to build community and bring the world closer together"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_e730d810bf154c7818b460479ea7826140099a7a.metainfo.xml.in:9
+msgid ""
+"A simple, fun &amp; creative way to capture, edit &amp; share photos, videos "
+"&amp; messages with friends &amp; family."
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_e7aada0261449b5239c5c458c48fe92717950d1a.metainfo.xml.in:4
+msgid "StackEdit"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_e7aada0261449b5239c5c458c48fe92717950d1a.metainfo.xml.in:7
+msgid "Free, open-source, full-featured Markdown editor"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_e7aada0261449b5239c5c458c48fe92717950d1a.metainfo.xml.in:9
+msgid ""
+"Full-featured, open-source Markdown editor based on PageDown, the Markdown "
+"library used by Stack Overflow and the other Stack Exchange sites."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_e7aada0261449b5239c5c458c48fe92717950d1a.metainfo.xml.in:14
+msgid "Dock5 Software Ltd."
+msgstr ""
+
+#. (itstool) path: component/name
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_ea52ad18346faac27072cd1654243dfb7c70ef14.metainfo.xml.in:4
+#: metainfo/org.gnome.Software.WebApp_ea52ad18346faac27072cd1654243dfb7c70ef14.metainfo.xml.in:14
+msgid "Excalidraw"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_ea52ad18346faac27072cd1654243dfb7c70ef14.metainfo.xml.in:7
+msgid "Collaborative whiteboarding made easy"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_ea52ad18346faac27072cd1654243dfb7c70ef14.metainfo.xml.in:9
+msgid ""
+"Excalidraw is a virtual collaborative whiteboard tool that lets you easily "
+"sketch diagrams that have a hand-drawn feel to them."
+msgstr ""
+
+#. (itstool) path: component/name
+#: metainfo/org.gnome.Software.WebApp_fef0e980f7d3cf3bbda271095c5041ea32c98343.metainfo.xml.in:4
+msgid "YouTube"
+msgstr ""
+
+#. (itstool) path: component/summary
+#: metainfo/org.gnome.Software.WebApp_fef0e980f7d3cf3bbda271095c5041ea32c98343.metainfo.xml.in:7
+msgid "Enjoy the videos and music you love and share your own!"
+msgstr ""
+
+#. (itstool) path: description/p
+#: metainfo/org.gnome.Software.WebApp_fef0e980f7d3cf3bbda271095c5041ea32c98343.metainfo.xml.in:9
+msgid ""
+"Enjoy the videos and music you love, upload original content, and share it "
+"all with friends, family, and the world on YouTube."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_fef0e980f7d3cf3bbda271095c5041ea32c98343.metainfo.xml.in:14
+msgid "Youtube"
+msgstr ""
