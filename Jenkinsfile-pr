@@ -1,0 +1,30 @@
+// -*- mode: Groovy; -*-
+// vim: filetype=groovy
+
+// Build and validate AppStream data.
+
+pipeline {
+    agent {
+        dockerfile {
+            filename 'Dockerfile'
+        }
+    }
+
+    options {
+        ansiColor('xterm')
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                sh 'make'
+            }
+        }
+
+        stage('Validate') {
+            steps {
+                sh 'make check'
+            }
+        }
+    }
+}
