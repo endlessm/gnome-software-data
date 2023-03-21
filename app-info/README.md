@@ -16,25 +16,30 @@ configuration, using the upstream functionality.
 
 ## How to add a Flathub app (or non-com.endless* app) in the ‘Featured’ category?
 
+* Install the `appstream-util`, `gettext`, `gir1.2-appstreamglib-1.0`,
+  `itstool` and `make` packages.
 * Add the app to [eos-extra.txt](./eos-extra.txt)
 * Run [generate-eos-extra-metainfo](./generate-eos-extra-metainfo)
-* Run [generate-eos-extra-appstream](./generate-eos-extra-appstream)
+* Run `make` to regenerate the [eos-extra.xml](./eos-extra.xml)
+  AppStream catalog
 * Commit the result and submit a pull request
 
 ## How to add a Progressive Web Application?
 
+* Install the `appstream-util`, `gettext`, `itstool`, `make`,
+  `python3-bs4` and `python3-requests` packages.
 * Run [pwa-metainfo-generator.py](./pwa-metainfo-generator.py) with the
-  website's URL. This will generate or update a metainfo XML file in the
-  [metainfo](./metainfo) directory.
+  website's URL. This will generate or update a metainfo XML template
+  file in the [metainfo](./metainfo) directory.
 * Edit the metainfo XML until it's in a publishable form. Run `git add
   metainfo` to include a new metainfo XML file.
 * If necessary, add screenshots in [s3/screenshots](../s3/screenshots)
   in a subdirectory named by with the generated app ID. Use
   `https://appstream.endlessos.org/` as the base URL. Run `git add
   ../s3/screenshots` to include any new screenshots.
-* Run [generate-eos-extra-appstream](./generate-eos-extra-appstream). If
-  there are any validation errors, correct them in the metainfo file and
-  run `./generate-eos-extra-appstream` again.
+* Run `make` to regenerate the [eos-extra.xml](./eos-extra.xml)
+  AppStream catalog. If there are any validation errors, correct them in
+  the metainfo file and run `make` again.
 * Record the website URL in the [eos-extra-pwa.txt](./eos-extra-pwa.txt)
   file.
 * Commit the result and submit a pull request.
