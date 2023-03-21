@@ -14,6 +14,14 @@
   <developer_name>Google</developer_name>
   <icon type="remote" width="192" height="192">https://ssl.gstatic.com/android-messages-web/images/2022.3/2x/messages_2022_round_96dp.png</icon>
   <icon type="remote" width="512" height="512">https://ssl.gstatic.com/android-messages-web/images/2022.3/1x/messages_2022_round_512dp.png</icon>
+  <screenshots>
+    <screenshot type="default">
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_bcfc6eb9c0ad7ed0b04cf9f69a30df35d44e0132/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_bcfc6eb9c0ad7ed0b04cf9f69a30df35d44e0132/screenshot2.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>Chat</category>
     <category>InstantMessaging</category>

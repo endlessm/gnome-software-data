@@ -13,6 +13,17 @@
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Pinterest</developer_name>
   <icon type="remote" width="192" height="192">https://s.pinimg.com/images/favicon_red_192.png</icon>
+  <screenshots>
+    <screenshot type="default">
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_6a26263aa32636b9fd0352fd6c8da5dca14ef1d7/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_6a26263aa32636b9fd0352fd6c8da5dca14ef1d7/screenshot2.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_6a26263aa32636b9fd0352fd6c8da5dca14ef1d7/screenshot3.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>Chat</category>
   </categories>

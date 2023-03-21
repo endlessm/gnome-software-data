@@ -20,6 +20,17 @@
   <icon type="remote" width="192" height="192">https://devdocs.io/images/webapp-icon-192.png</icon>
   <icon type="remote" width="256" height="256">https://devdocs.io/images/webapp-icon-256.png</icon>
   <icon type="remote" width="512" height="512">https://devdocs.io/images/webapp-icon-512.png</icon>
+  <screenshots>
+    <screenshot type="default">
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_962f69328d6450369f25a6fdb6bbd1764d11a3c8/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_962f69328d6450369f25a6fdb6bbd1764d11a3c8/screenshot2.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_962f69328d6450369f25a6fdb6bbd1764d11a3c8/screenshot3.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>Documentation</category>
     <category>Development</category>

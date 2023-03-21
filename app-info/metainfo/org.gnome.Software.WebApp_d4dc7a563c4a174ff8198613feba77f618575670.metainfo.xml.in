@@ -19,6 +19,14 @@
   <icon type="remote" width="128" height="128">https://s.w-x.co/twc_128x128.png</icon>
   <icon type="remote" width="144" height="144">https://s.w-x.co/twc_144x144.png</icon>
   <icon type="remote" width="192" height="192">https://s.w-x.co/twc_192x192.png</icon>
+  <screenshots>
+    <screenshot type="default">
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_d4dc7a563c4a174ff8198613feba77f618575670/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_d4dc7a563c4a174ff8198613feba77f618575670/screenshot2.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>News</category>
     <category>Weather</category>

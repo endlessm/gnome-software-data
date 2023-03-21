@@ -13,6 +13,17 @@
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Merriam-Webster Incorporated</developer_name>
   <icon type="remote" width="144" height="144">https://www.merriam-webster.com/android-chrome-144x144.png</icon>
+  <screenshots>
+    <screenshot type="default">
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_3a023ac6fc65c87ba5c88c1a1bb07edef7c6b8c4/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_3a023ac6fc65c87ba5c88c1a1bb07edef7c6b8c4/screenshot2.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_3a023ac6fc65c87ba5c88c1a1bb07edef7c6b8c4/screenshot3.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>Dictionary</category>
     <category>Games</category>

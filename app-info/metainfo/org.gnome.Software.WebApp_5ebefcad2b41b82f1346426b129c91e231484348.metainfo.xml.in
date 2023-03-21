@@ -12,6 +12,17 @@
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Scribd Inc.</developer_name>
+  <screenshots>
+    <screenshot type="default">
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5ebefcad2b41b82f1346426b129c91e231484348/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5ebefcad2b41b82f1346426b129c91e231484348/screenshot2.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5ebefcad2b41b82f1346426b129c91e231484348/screenshot3.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>Database</category>
     <category>Documentation</category>

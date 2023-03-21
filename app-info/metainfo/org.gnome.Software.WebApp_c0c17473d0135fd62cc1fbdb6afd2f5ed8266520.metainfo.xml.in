@@ -12,6 +12,20 @@
   <project_license>GPL-2.0-or-later</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Common Sense Media</developer_name>
+  <screenshots>
+    <screenshot type="default">
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_c0c17473d0135fd62cc1fbdb6afd2f5ed8266520/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_c0c17473d0135fd62cc1fbdb6afd2f5ed8266520/screenshot2.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_c0c17473d0135fd62cc1fbdb6afd2f5ed8266520/screenshot3.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_c0c17473d0135fd62cc1fbdb6afd2f5ed8266520/screenshot4.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>Education</category>
     <category>Literature</category>

@@ -14,6 +14,17 @@
   <developer_name>Doist Inc.</developer_name>
   <icon type="remote" width="192" height="192">https://todoist.com/static/android-chrome-192x192.png</icon>
   <icon type="remote" width="256" height="256">https://todoist.com/static/android-chrome-256x256.png</icon>
+  <screenshots>
+    <screenshot type="default">
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_bafc11e1d98eaadbe4dd47c9f27674df9018cfd1/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_bafc11e1d98eaadbe4dd47c9f27674df9018cfd1/screenshot2.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_bafc11e1d98eaadbe4dd47c9f27674df9018cfd1/screenshot3.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>Office</category>
   </categories>

@@ -12,6 +12,17 @@
   <metadata_license>FSFAP</metadata_license>
   <developer_name>The GNOME Project</developer_name>
   <icon type="remote" width="512" height="512">https://discourse-gnome-org-uploads.s3.dualstack.us-east-2.amazonaws.com/optimized/1X/d7f8fbabd4cd13f5fdbf7c73bd203723a2ef36ea_2_512x512.png</icon>
+  <screenshots>
+    <screenshot type="default">
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_dd7b0c5ff0c21c2984f8fc1a05d01c33aee4fe9d/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_dd7b0c5ff0c21c2984f8fc1a05d01c33aee4fe9d/screenshot2.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_dd7b0c5ff0c21c2984f8fc1a05d01c33aee4fe9d/screenshot3.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>Chat</category>
   </categories>

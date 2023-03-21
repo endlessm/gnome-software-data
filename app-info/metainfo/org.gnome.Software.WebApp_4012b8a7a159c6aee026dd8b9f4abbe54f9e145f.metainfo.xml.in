@@ -18,6 +18,11 @@
   <icon type="remote" width="96" height="96">https://apnews.com/branding/android-touch/ap-news-android-touchxhdpi_96.png</icon>
   <icon type="remote" width="144" height="144">https://apnews.com/branding/android-touch/ap-news-android-touchxxhdpi_144.png</icon>
   <icon type="remote" width="192" height="192">https://apnews.com/branding/android-touch/ap-news-android-touchxxxhdpi_192.png</icon>
+  <screenshots>
+    <screenshot type="default">
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_4012b8a7a159c6aee026dd8b9f4abbe54f9e145f/screenshot1.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>News</category>
     <category>Education</category>

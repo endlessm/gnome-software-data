@@ -14,6 +14,20 @@
   <developer_name>Felix Roos</developer_name>
   <icon type="remote" width="192" height="192">https://strudel.tidalcycles.org/icons/manifest-icon-192.maskable.png</icon>
   <icon type="remote" width="512" height="512">https://strudel.tidalcycles.org/icons/manifest-icon-512.maskable.png</icon>
+  <screenshots>
+    <screenshot type="default">
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_e4a9b47d9eb50af9865829c5088501e66affabd0/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_e4a9b47d9eb50af9865829c5088501e66affabd0/screenshot2.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_e4a9b47d9eb50af9865829c5088501e66affabd0/screenshot3.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_e4a9b47d9eb50af9865829c5088501e66affabd0/screenshot4.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>Music</category>
     <category>Audio</category>

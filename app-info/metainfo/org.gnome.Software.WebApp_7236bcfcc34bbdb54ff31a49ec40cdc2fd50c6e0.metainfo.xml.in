@@ -13,6 +13,20 @@
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Mayo Foundation for Medical Education and Research</developer_name>
+  <screenshots>
+    <screenshot type="default">
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_7236bcfcc34bbdb54ff31a49ec40cdc2fd50c6e0/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_7236bcfcc34bbdb54ff31a49ec40cdc2fd50c6e0/screenshot2.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_7236bcfcc34bbdb54ff31a49ec40cdc2fd50c6e0/screenshot3.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_7236bcfcc34bbdb54ff31a49ec40cdc2fd50c6e0/screenshot4.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>MedicalSoftware</category>
   </categories>
