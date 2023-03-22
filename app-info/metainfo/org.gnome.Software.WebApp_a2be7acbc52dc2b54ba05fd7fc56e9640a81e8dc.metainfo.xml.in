@@ -18,6 +18,20 @@
   <icon type="remote" width="96" height="96">https://www.gstatic.com/culturalinstitute/stella/android-chrome-96x96-v1.png</icon>
   <icon type="remote" width="144" height="144">https://www.gstatic.com/culturalinstitute/stella/android-chrome-144x144-v1.png</icon>
   <icon type="remote" width="192" height="192">https://www.gstatic.com/culturalinstitute/stella/android-chrome-192x192-v1.png</icon>
+  <screenshots>
+    <screenshot type="default">
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_a2be7acbc52dc2b54ba05fd7fc56e9640a81e8dc/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_a2be7acbc52dc2b54ba05fd7fc56e9640a81e8dc/screenshot2.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_a2be7acbc52dc2b54ba05fd7fc56e9640a81e8dc/screenshot3.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_a2be7acbc52dc2b54ba05fd7fc56e9640a81e8dc/screenshot4.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>Games</category>
     <category>Education</category>

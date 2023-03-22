@@ -14,6 +14,14 @@
   <developer_name>Facebook</developer_name>
   <icon type="remote" width="192" height="192">https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/hsAgIHTE80C.png</icon>
   <icon type="remote" width="512" height="512">https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/ugPlEBBcq8v.png</icon>
+  <screenshots>
+    <screenshot type="default">
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_108ec1825ce89b9f50be3f8e197ee4252f011be4/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_108ec1825ce89b9f50be3f8e197ee4252f011be4/screenshot2.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>Chat</category>
     <category>InstantMessaging</category>

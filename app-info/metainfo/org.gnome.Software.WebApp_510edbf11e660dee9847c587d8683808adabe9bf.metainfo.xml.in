@@ -15,6 +15,17 @@
   <metadata_license>FSFAP</metadata_license>
   <developer_name>JGraph Ltd</developer_name>
   <icon type="remote" width="512" height="512">https://app.diagrams.net/images/android-chrome-512x512.png</icon>
+  <screenshots>
+    <screenshot type="default">
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_510edbf11e660dee9847c587d8683808adabe9bf/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_510edbf11e660dee9847c587d8683808adabe9bf/screenshot2.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_510edbf11e660dee9847c587d8683808adabe9bf/screenshot3.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>FlowChart</category>
   </categories>

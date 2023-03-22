@@ -12,6 +12,14 @@
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>LinkedIn Corporation</developer_name>
+  <screenshots>
+    <screenshot type="default">
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_d0d41a78107e026898ac2478e41685f24e212ee9/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_d0d41a78107e026898ac2478e41685f24e212ee9/screenshot2.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>Profiling</category>
   </categories>

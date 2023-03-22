@@ -18,6 +18,17 @@
   <icon type="remote" width="192" height="192">https://stackedit.io/icon_192x192.eec0feaecc5bef1a499b3de11bde6b27.png</icon>
   <icon type="remote" width="128" height="128">https://stackedit.io/icon_128x128.43ad56ce3535a3ffe333a76a05c13267.png</icon>
   <icon type="remote" width="96" height="96">https://stackedit.io/icon_96x96.1d93fc90dc62ceec6c921786ddab3f69.png</icon>
+  <screenshots>
+    <screenshot type="default">
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_e7aada0261449b5239c5c458c48fe92717950d1a/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_e7aada0261449b5239c5c458c48fe92717950d1a/screenshot2.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_e7aada0261449b5239c5c458c48fe92717950d1a/screenshot3.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>Development</category>
     <category>TextEditor</category>

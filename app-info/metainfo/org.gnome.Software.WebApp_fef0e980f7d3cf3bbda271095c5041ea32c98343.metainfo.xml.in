@@ -14,6 +14,11 @@
   <developer_name>Youtube</developer_name>
   <icon type="remote" width="144" height="144">https://www.gstatic.com/youtube/img/branding/favicon/favicon_144x144.png</icon>
   <icon type="remote" width="192" height="192">https://www.gstatic.com/youtube/img/branding/favicon/favicon_192x192.png</icon>
+  <screenshots>
+    <screenshot type="default">
+      <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_fef0e980f7d3cf3bbda271095c5041ea32c98343/screenshot1.png</image>
+    </screenshot>
+  </screenshots>
   <categories>
     <category>Chat</category>
     <category>Video</category>
