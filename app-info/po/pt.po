@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-16 16:44-0600\n"
+"POT-Creation-Date: 2023-03-23 16:49+0000\n"
 "PO-Revision-Date: 2023-03-16 14:54-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -613,8 +613,10 @@ msgstr ""
 
 #. (itstool) path: component/developer_name
 #. (itstool) path: component/developer_name
+#. (itstool) path: component/developer_name
 #: metainfo/org.gnome.Software.WebApp_a2be7acbc52dc2b54ba05fd7fc56e9640a81e8dc.metainfo.xml.in:14
 #: metainfo/org.gnome.Software.WebApp_bcfc6eb9c0ad7ed0b04cf9f69a30df35d44e0132.metainfo.xml.in:14
+#: metainfo/org.gnome.Software.WebApp_fef0e980f7d3cf3bbda271095c5041ea32c98343.metainfo.xml.in:14
 msgid "Google"
 msgstr ""
 
@@ -936,9 +938,4 @@ msgstr ""
 msgid ""
 "Enjoy the videos and music you love, upload original content, and share it "
 "all with friends, family, and the world on YouTube."
-msgstr ""
-
-#. (itstool) path: component/developer_name
-#: metainfo/org.gnome.Software.WebApp_fef0e980f7d3cf3bbda271095c5041ea32c98343.metainfo.xml.in:14
-msgid "Youtube"
 msgstr ""
