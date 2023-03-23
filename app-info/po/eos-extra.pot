@@ -804,12 +804,12 @@ msgstr ""
 
 #. (itstool) path: component/name
 #: metainfo/org.gnome.Software.WebApp_e4a9b47d9eb50af9865829c5088501e66affabd0.metainfo.xml.in:4
-msgid "Strudel REPL"
+msgid "Strudel"
 msgstr ""
 
 #. (itstool) path: component/summary
 #: metainfo/org.gnome.Software.WebApp_e4a9b47d9eb50af9865829c5088501e66affabd0.metainfo.xml.in:7
-msgid "Experimental port of tidalcycles to Javascript"
+msgid "Music live coding environment"
 msgstr ""
 
 #. (itstool) path: description/p
