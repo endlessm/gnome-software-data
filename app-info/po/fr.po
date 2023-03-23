@@ -87,9 +87,7 @@ msgid "ilovepdf.com"
 msgstr ""
 
 #. (itstool) path: component/name
-#. (itstool) path: component/developer_name
 #: metainfo/org.gnome.Software.WebApp_108ec1825ce89b9f50be3f8e197ee4252f011be4.metainfo.xml.in:4
-#: metainfo/org.gnome.Software.WebApp_108ec1825ce89b9f50be3f8e197ee4252f011be4.metainfo.xml.in:14
 msgid "Facebook"
 msgstr ""
 
@@ -103,6 +101,13 @@ msgstr ""
 msgid ""
 "Log into Facebook to start sharing and connecting with your friends, family, "
 "and people you know."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_108ec1825ce89b9f50be3f8e197ee4252f011be4.metainfo.xml.in:14
+#: metainfo/org.gnome.Software.WebApp_e730d810bf154c7818b460479ea7826140099a7a.metainfo.xml.in:14
+msgid "Meta"
 msgstr ""
 
 #. (itstool) path: component/name
@@ -859,9 +864,7 @@ msgid "Nolan Lawson"
 msgstr ""
 
 #. (itstool) path: component/name
-#. (itstool) path: component/developer_name
 #: metainfo/org.gnome.Software.WebApp_e730d810bf154c7818b460479ea7826140099a7a.metainfo.xml.in:4
-#: metainfo/org.gnome.Software.WebApp_e730d810bf154c7818b460479ea7826140099a7a.metainfo.xml.in:14
 msgid "Instagram"
 msgstr ""
 

@@ -2044,7 +2044,7 @@
     </description>
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
-    <developer_name>Facebook</developer_name>
+    <developer_name>Meta</developer_name>
     <icon type="remote" width="192" height="192">https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/hsAgIHTE80C.png</icon>
     <icon type="remote" width="512" height="512">https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/ugPlEBBcq8v.png</icon>
     <screenshots>
@@ -3733,7 +3733,7 @@
     </description>
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
-    <developer_name>Instagram</developer_name>
+    <developer_name>Meta</developer_name>
     <icon type="remote" width="144" height="144">https://www.instagram.com/static/images/ico/xxhdpi_launcher.png/99cf3909d459.png</icon>
     <icon type="remote" width="192" height="192">https://www.instagram.com/static/images/ico/xxxhdpi_launcher.png/9fc4bab7565b.png</icon>
     <screenshots>
