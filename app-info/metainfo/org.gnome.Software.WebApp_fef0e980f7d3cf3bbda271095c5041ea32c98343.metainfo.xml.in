@@ -11,7 +11,7 @@
   </description>
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
-  <developer_name>Youtube</developer_name>
+  <developer_name>Google</developer_name>
   <icon type="remote" width="144" height="144">https://www.gstatic.com/youtube/img/branding/favicon/favicon_144x144.png</icon>
   <icon type="remote" width="192" height="192">https://www.gstatic.com/youtube/img/branding/favicon/favicon_192x192.png</icon>
   <screenshots>

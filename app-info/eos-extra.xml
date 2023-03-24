@@ -2044,7 +2044,7 @@
     </description>
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
-    <developer_name>Facebook</developer_name>
+    <developer_name>Meta</developer_name>
     <icon type="remote" width="192" height="192">https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/hsAgIHTE80C.png</icon>
     <icon type="remote" width="512" height="512">https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/ugPlEBBcq8v.png</icon>
     <screenshots>
@@ -3617,10 +3617,10 @@
   </component>
   <component type="web-application">
     <id>org.gnome.Software.WebApp_e4a9b47d9eb50af9865829c5088501e66affabd0.desktop</id>
-    <name>Strudel REPL</name>
+    <name>Strudel</name>
     <launchable type="url">https://strudel.tidalcycles.org/</launchable>
     <url type="homepage">https://strudel.tidalcycles.org/</url>
-    <summary>Experimental port of tidalcycles to Javascript</summary>
+    <summary>Music live coding environment</summary>
     <description>
       <p>Strudel is a music live coding environment for the browser,
       porting the TidalCycles pattern language to JavaScript.</p>
@@ -3733,7 +3733,7 @@
     </description>
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
-    <developer_name>Instagram</developer_name>
+    <developer_name>Meta</developer_name>
     <icon type="remote" width="144" height="144">https://www.instagram.com/static/images/ico/xxhdpi_launcher.png/99cf3909d459.png</icon>
     <icon type="remote" width="192" height="192">https://www.instagram.com/static/images/ico/xxxhdpi_launcher.png/9fc4bab7565b.png</icon>
     <screenshots>
@@ -3883,7 +3883,7 @@
     </description>
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
-    <developer_name>Youtube</developer_name>
+    <developer_name>Google</developer_name>
     <icon type="remote" width="144" height="144">https://www.gstatic.com/youtube/img/branding/favicon/favicon_144x144.png</icon>
     <icon type="remote" width="192" height="192">https://www.gstatic.com/youtube/img/branding/favicon/favicon_192x192.png</icon>
     <screenshots>

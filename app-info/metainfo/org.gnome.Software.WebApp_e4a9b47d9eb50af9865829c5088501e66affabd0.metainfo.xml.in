@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <component type="web-application">
   <id>org.gnome.Software.WebApp_e4a9b47d9eb50af9865829c5088501e66affabd0.desktop</id>
-  <name>Strudel REPL</name>
+  <name>Strudel</name>
   <launchable type="url">https://strudel.tidalcycles.org/</launchable>
   <url type="homepage">https://strudel.tidalcycles.org/</url>
-  <summary>Experimental port of tidalcycles to Javascript</summary>
+  <summary>Music live coding environment</summary>
   <description>
     <p>Strudel is a music live coding environment for the browser,
       porting the TidalCycles pattern language to JavaScript.</p>

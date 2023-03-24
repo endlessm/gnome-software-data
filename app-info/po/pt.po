@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-16 16:44-0600\n"
+"POT-Creation-Date: 2023-03-23 16:49+0000\n"
 "PO-Revision-Date: 2023-03-16 14:54-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -87,9 +87,7 @@ msgid "ilovepdf.com"
 msgstr ""
 
 #. (itstool) path: component/name
-#. (itstool) path: component/developer_name
 #: metainfo/org.gnome.Software.WebApp_108ec1825ce89b9f50be3f8e197ee4252f011be4.metainfo.xml.in:4
-#: metainfo/org.gnome.Software.WebApp_108ec1825ce89b9f50be3f8e197ee4252f011be4.metainfo.xml.in:14
 msgid "Facebook"
 msgstr ""
 
@@ -103,6 +101,13 @@ msgstr ""
 msgid ""
 "Log into Facebook to start sharing and connecting with your friends, family, "
 "and people you know."
+msgstr ""
+
+#. (itstool) path: component/developer_name
+#. (itstool) path: component/developer_name
+#: metainfo/org.gnome.Software.WebApp_108ec1825ce89b9f50be3f8e197ee4252f011be4.metainfo.xml.in:14
+#: metainfo/org.gnome.Software.WebApp_e730d810bf154c7818b460479ea7826140099a7a.metainfo.xml.in:14
+msgid "Meta"
 msgstr ""
 
 #. (itstool) path: component/name
@@ -608,8 +613,10 @@ msgstr ""
 
 #. (itstool) path: component/developer_name
 #. (itstool) path: component/developer_name
+#. (itstool) path: component/developer_name
 #: metainfo/org.gnome.Software.WebApp_a2be7acbc52dc2b54ba05fd7fc56e9640a81e8dc.metainfo.xml.in:14
 #: metainfo/org.gnome.Software.WebApp_bcfc6eb9c0ad7ed0b04cf9f69a30df35d44e0132.metainfo.xml.in:14
+#: metainfo/org.gnome.Software.WebApp_fef0e980f7d3cf3bbda271095c5041ea32c98343.metainfo.xml.in:14
 msgid "Google"
 msgstr ""
 
@@ -814,12 +821,12 @@ msgstr ""
 
 #. (itstool) path: component/name
 #: metainfo/org.gnome.Software.WebApp_e4a9b47d9eb50af9865829c5088501e66affabd0.metainfo.xml.in:4
-msgid "Strudel REPL"
+msgid "Strudel"
 msgstr ""
 
 #. (itstool) path: component/summary
 #: metainfo/org.gnome.Software.WebApp_e4a9b47d9eb50af9865829c5088501e66affabd0.metainfo.xml.in:7
-msgid "Experimental port of tidalcycles to Javascript"
+msgid "Music live coding environment"
 msgstr ""
 
 #. (itstool) path: description/p
@@ -858,9 +865,7 @@ msgid "Nolan Lawson"
 msgstr ""
 
 #. (itstool) path: component/name
-#. (itstool) path: component/developer_name
 #: metainfo/org.gnome.Software.WebApp_e730d810bf154c7818b460479ea7826140099a7a.metainfo.xml.in:4
-#: metainfo/org.gnome.Software.WebApp_e730d810bf154c7818b460479ea7826140099a7a.metainfo.xml.in:14
 msgid "Instagram"
 msgstr ""
 
@@ -933,9 +938,4 @@ msgstr ""
 msgid ""
 "Enjoy the videos and music you love, upload original content, and share it "
 "all with friends, family, and the world on YouTube."
-msgstr ""
-
-#. (itstool) path: component/developer_name
-#: metainfo/org.gnome.Software.WebApp_fef0e980f7d3cf3bbda271095c5041ea32c98343.metainfo.xml.in:14
-msgid "Youtube"
 msgstr ""
