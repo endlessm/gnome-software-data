@@ -12,6 +12,10 @@
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>edXOnline</developer_name>
+  <icon type="remote" width="16" height="16">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5731e1d8d25eb73039eae10c5a4d04e1080056d1/edx_icon-1.png</icon>
+  <icon type="remote" width="32" height="32">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5731e1d8d25eb73039eae10c5a4d04e1080056d1/edx_icon-2.png</icon>
+  <icon type="remote" width="48" height="48">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5731e1d8d25eb73039eae10c5a4d04e1080056d1/edx_icon-3.png</icon>
+  <icon type="remote" width="256" height="256">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5731e1d8d25eb73039eae10c5a4d04e1080056d1/edx_icon-4.png</icon>
   <screenshots>
     <screenshot type="default">
       <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5731e1d8d25eb73039eae10c5a4d04e1080056d1/screenshot1.png</image>

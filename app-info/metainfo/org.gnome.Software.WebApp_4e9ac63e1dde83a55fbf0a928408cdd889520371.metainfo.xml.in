@@ -13,6 +13,10 @@
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Quora</developer_name>
+  <icon type="remote" width="16" height="16">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_4e9ac63e1dde83a55fbf0a928408cdd889520371/quora_icon-1.png</icon>
+  <icon type="remote" width="32" height="32">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_4e9ac63e1dde83a55fbf0a928408cdd889520371/quora_icon-2.png</icon>
+  <icon type="remote" width="48" height="48">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_4e9ac63e1dde83a55fbf0a928408cdd889520371/quora_icon-3.png</icon>
+  <icon type="remote" width="256" height="256">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_4e9ac63e1dde83a55fbf0a928408cdd889520371/quora_icon-4.png</icon>
   <screenshots>
     <screenshot type="default">
       <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_4e9ac63e1dde83a55fbf0a928408cdd889520371/screenshot1.png</image>

@@ -12,6 +12,7 @@
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Massachusetts Institute of Technology</developer_name>
+  <icon type="remote" width="256" height="256">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_6ac52eb35b1436618af76b3a612fcba55624b0c0/MIT_OCW_icon.png</icon>
   <screenshots>
     <screenshot type="default">
       <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_6ac52eb35b1436618af76b3a612fcba55624b0c0/screenshot1.png</image>

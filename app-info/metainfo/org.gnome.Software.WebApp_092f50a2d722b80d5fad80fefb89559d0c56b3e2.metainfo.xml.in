@@ -12,6 +12,7 @@
   <project_license>GPL-2.0-or-later</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Internet Archive</developer_name>
+  <icon type="remote" width="32" height="32">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_092f50a2d722b80d5fad80fefb89559d0c56b3e2/archive_icon.png</icon>
   <screenshots>
     <screenshot type="default">
       <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_092f50a2d722b80d5fad80fefb89559d0c56b3e2/screenshot1.png</image>

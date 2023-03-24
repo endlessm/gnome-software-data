@@ -12,6 +12,10 @@
   <project_license>GPL-2.0-or-later</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Common Sense Media</developer_name>
+  <icon type="remote" width="16" height="16">https://www.commonsensemedia.org/themes/custom/common_sense/images/favicons/favicon-16x16.png</icon>
+  <icon type="remote" width="32" height="32">https://www.commonsensemedia.org/themes/custom/common_sense/images/favicons/favicon-32x32.png</icon>
+  <icon type="remote" width="96" height="96">https://www.commonsensemedia.org/themes/custom/common_sense/images/favicons/favicon-92x92.png</icon>
+  <icon type="remote" width="192" height="192">https://www.commonsensemedia.org/themes/custom/common_sense/images/favicons/favicon-192x192.png</icon>
   <screenshots>
     <screenshot type="default">
       <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_c0c17473d0135fd62cc1fbdb6afd2f5ed8266520/screenshot1.png</image>

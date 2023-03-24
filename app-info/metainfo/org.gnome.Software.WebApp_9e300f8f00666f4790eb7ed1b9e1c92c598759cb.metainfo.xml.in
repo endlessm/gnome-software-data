@@ -11,6 +11,7 @@
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>BBC</developer_name>
+  <icon type="remote" width="180" height="180">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_9e300f8f00666f4790eb7ed1b9e1c92c598759cb/bbc_icon.png</icon>
   <screenshots>
     <screenshot type="default">
       <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_9e300f8f00666f4790eb7ed1b9e1c92c598759cb/screenshot1.png</image>
