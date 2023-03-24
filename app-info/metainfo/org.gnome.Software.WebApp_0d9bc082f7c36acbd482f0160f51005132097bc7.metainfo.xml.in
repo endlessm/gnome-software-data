@@ -12,6 +12,7 @@
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>ilovepdf.com</developer_name>
+  <icon type="remote" width="32" height="32">https://www.ilovepdf.com/img/favicons-pdf/favicon-32x32.png</icon>
   <screenshots>
     <screenshot type="default">
       <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_0d9bc082f7c36acbd482f0160f51005132097bc7/screenshot1.png</image>

@@ -12,6 +12,7 @@
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Goodreads Inc.</developer_name>
+  <icon type="remote" width="225" height="225">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_37e47f93165bdcbf0eaaeed30bc0529e2778b4e3/goodreads_icon.png</icon>
   <screenshots>
     <screenshot type="default">
       <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_37e47f93165bdcbf0eaaeed30bc0529e2778b4e3/screenshot1.png</image>
