@@ -1949,6 +1949,7 @@
     <project_license>GPL-2.0-or-later</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>Internet Archive</developer_name>
+    <icon type="remote" width="32" height="32">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_092f50a2d722b80d5fad80fefb89559d0c56b3e2/archive_icon.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_092f50a2d722b80d5fad80fefb89559d0c56b3e2/screenshot1.png</image>
@@ -1993,6 +1994,7 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>ilovepdf.com</developer_name>
+    <icon type="remote" width="32" height="32">https://www.ilovepdf.com/img/favicons-pdf/favicon-32x32.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_0d9bc082f7c36acbd482f0160f51005132097bc7/screenshot1.png</image>
@@ -2089,6 +2091,9 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>instructables</developer_name>
+    <icon type="remote" width="48" height="48">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_187dd1fd448e1ed1e76dce3c267ab3013b322920/instructables_icon-1.png</icon>
+    <icon type="remote" width="32" height="32">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_187dd1fd448e1ed1e76dce3c267ab3013b322920/instructables_icon-2.png</icon>
+    <icon type="remote" width="16" height="16">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_187dd1fd448e1ed1e76dce3c267ab3013b322920/instructables_icon-3.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_187dd1fd448e1ed1e76dce3c267ab3013b322920/screenshot1.png</image>
@@ -2141,6 +2146,7 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>Goodreads Inc.</developer_name>
+    <icon type="remote" width="225" height="225">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_37e47f93165bdcbf0eaaeed30bc0529e2778b4e3/goodreads_icon.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_37e47f93165bdcbf0eaaeed30bc0529e2778b4e3/screenshot1.png</image>
@@ -2333,6 +2339,10 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>Quora</developer_name>
+    <icon type="remote" width="16" height="16">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_4e9ac63e1dde83a55fbf0a928408cdd889520371/quora_icon-1.png</icon>
+    <icon type="remote" width="32" height="32">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_4e9ac63e1dde83a55fbf0a928408cdd889520371/quora_icon-2.png</icon>
+    <icon type="remote" width="48" height="48">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_4e9ac63e1dde83a55fbf0a928408cdd889520371/quora_icon-3.png</icon>
+    <icon type="remote" width="256" height="256">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_4e9ac63e1dde83a55fbf0a928408cdd889520371/quora_icon-4.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_4e9ac63e1dde83a55fbf0a928408cdd889520371/screenshot1.png</image>
@@ -2378,6 +2388,9 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>Apple Inc.</developer_name>
+    <icon type="remote" width="16" height="16">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_506b15e469a34ac26f7b3235568af3c0cc5b3164/icloud_icon-1.png</icon>
+    <icon type="remote" width="32" height="32">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_506b15e469a34ac26f7b3235568af3c0cc5b3164/icloud_icon-2.png</icon>
+    <icon type="remote" width="64" height="64">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_506b15e469a34ac26f7b3235568af3c0cc5b3164/icloud_icon-3.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_506b15e469a34ac26f7b3235568af3c0cc5b3164/screenshot1.png</image>
@@ -2466,6 +2479,7 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>PayPal Inc.</developer_name>
+    <icon type="remote" width="512" height="512">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_52b732dd06d99298b6e9bfccc17e25e0ac8b2bcb/paypal_icon.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_52b732dd06d99298b6e9bfccc17e25e0ac8b2bcb/screenshot1.png</image>
@@ -2509,6 +2523,10 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>edXOnline</developer_name>
+    <icon type="remote" width="16" height="16">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5731e1d8d25eb73039eae10c5a4d04e1080056d1/edx_icon-1.png</icon>
+    <icon type="remote" width="32" height="32">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5731e1d8d25eb73039eae10c5a4d04e1080056d1/edx_icon-2.png</icon>
+    <icon type="remote" width="48" height="48">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5731e1d8d25eb73039eae10c5a4d04e1080056d1/edx_icon-3.png</icon>
+    <icon type="remote" width="256" height="256">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5731e1d8d25eb73039eae10c5a4d04e1080056d1/edx_icon-4.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5731e1d8d25eb73039eae10c5a4d04e1080056d1/screenshot1.png</image>
@@ -2725,6 +2743,11 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>Scribd Inc.</developer_name>
+    <icon type="remote" width="16" height="16">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5ebefcad2b41b82f1346426b129c91e231484348/scribd_icon-1.png</icon>
+    <icon type="remote" width="24" height="24">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5ebefcad2b41b82f1346426b129c91e231484348/scribd_icon-2.png</icon>
+    <icon type="remote" width="32" height="32">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5ebefcad2b41b82f1346426b129c91e231484348/scribd_icon-3.png</icon>
+    <icon type="remote" width="48" height="48">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5ebefcad2b41b82f1346426b129c91e231484348/scribd_icon-4.png</icon>
+    <icon type="remote" width="64" height="64">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5ebefcad2b41b82f1346426b129c91e231484348/scribd_icon-5.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_5ebefcad2b41b82f1346426b129c91e231484348/screenshot1.png</image>
@@ -2822,6 +2845,7 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>Massachusetts Institute of Technology</developer_name>
+    <icon type="remote" width="256" height="256">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_6ac52eb35b1436618af76b3a612fcba55624b0c0/MIT_OCW_icon.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_6ac52eb35b1436618af76b3a612fcba55624b0c0/screenshot1.png</image>
@@ -2874,6 +2898,7 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>Mayo Foundation for Medical Education and Research</developer_name>
+    <icon type="remote" width="17" height="17">https://www.mayoclinic.org/-/media/web/gbs/shared/images/favicon.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_7236bcfcc34bbdb54ff31a49ec40cdc2fd50c6e0/screenshot1.png</image>
@@ -2924,6 +2949,8 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>Twitch Interactive</developer_name>
+    <icon type="remote" width="16" height="16">https://static.twitchcdn.net/assets/favicon-16-52e571ffea063af7a7f4.png</icon>
+    <icon type="remote" width="32" height="32">https://static.twitchcdn.net/assets/favicon-32-e29e246c157142c94346.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_75090da4c7300bfa0a6563cf6029a1c77f11c44c/screenshot1.png</image>
@@ -2981,6 +3008,7 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>Healthline Media</developer_name>
+    <icon type="remote" width="256" height="256">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_86e2349cc64991cad7c6262274e06fd635da1a77/healthline_icon.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_86e2349cc64991cad7c6262274e06fd635da1a77/screenshot1.png</image>
@@ -3072,6 +3100,7 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>BBC</developer_name>
+    <icon type="remote" width="180" height="180">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_9e300f8f00666f4790eb7ed1b9e1c92c598759cb/bbc_icon.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_9e300f8f00666f4790eb7ed1b9e1c92c598759cb/screenshot1.png</image>
@@ -3193,6 +3222,9 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>Investopedia</developer_name>
+    <icon type="remote" width="16" height="16">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_aaa1593b8cfa7b64fdbafa029938b699f260dc99/investopedia_icon-1.png</icon>
+    <icon type="remote" width="32" height="32">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_aaa1593b8cfa7b64fdbafa029938b699f260dc99/investopedia_icon-2.png</icon>
+    <icon type="remote" width="48" height="48">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_aaa1593b8cfa7b64fdbafa029938b699f260dc99/investopedia_icon-3.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_aaa1593b8cfa7b64fdbafa029938b699f260dc99/screenshot1.png</image>
@@ -3332,6 +3364,10 @@
     <project_license>GPL-2.0-or-later</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>Common Sense Media</developer_name>
+    <icon type="remote" width="16" height="16">https://www.commonsensemedia.org/themes/custom/common_sense/images/favicons/favicon-16x16.png</icon>
+    <icon type="remote" width="32" height="32">https://www.commonsensemedia.org/themes/custom/common_sense/images/favicons/favicon-32x32.png</icon>
+    <icon type="remote" width="96" height="96">https://www.commonsensemedia.org/themes/custom/common_sense/images/favicons/favicon-92x92.png</icon>
+    <icon type="remote" width="192" height="192">https://www.commonsensemedia.org/themes/custom/common_sense/images/favicons/favicon-192x192.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_c0c17473d0135fd62cc1fbdb6afd2f5ed8266520/screenshot1.png</image>
@@ -3385,6 +3421,10 @@
     <project_license>GPL-2.0-or-later</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>Common Sense Media</developer_name>
+    <icon type="remote" width="16" height="16">https://www.commonsensemedia.org/themes/custom/common_sense/images/favicons/favicon-16x16.png</icon>
+    <icon type="remote" width="32" height="32">https://www.commonsensemedia.org/themes/custom/common_sense/images/favicons/favicon-32x32.png</icon>
+    <icon type="remote" width="96" height="96">https://www.commonsensemedia.org/themes/custom/common_sense/images/favicons/favicon-92x92.png</icon>
+    <icon type="remote" width="192" height="192">https://www.commonsensemedia.org/themes/custom/common_sense/images/favicons/favicon-192x192.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_cd9b0ce3ffbd48367f65c0b6a6c86ba67c242efa/screenshot1.png</image>
@@ -3440,6 +3480,7 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>LinkedIn Corporation</developer_name>
+    <icon type="remote" width="200" height="200">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_d0d41a78107e026898ac2478e41685f24e212ee9/linked_in_icon.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_d0d41a78107e026898ac2478e41685f24e212ee9/screenshot1.png</image>
