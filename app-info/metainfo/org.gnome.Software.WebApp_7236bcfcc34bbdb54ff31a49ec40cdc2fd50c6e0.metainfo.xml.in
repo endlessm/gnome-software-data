@@ -13,7 +13,7 @@
   <project_license>LicenseRef-proprietary</project_license>
   <metadata_license>FSFAP</metadata_license>
   <developer_name>Mayo Foundation for Medical Education and Research</developer_name>
-  <icon type="remote" width="17" height="17">https://www.mayoclinic.org/-/media/web/gbs/shared/images/favicon.png</icon>
+  <icon type="remote" width="152" height="152">https://www.mayoclinic.org/-/media/web/gbs/shared/images/apple-touch-icon-152x152.png</icon>
   <screenshots>
     <screenshot type="default">
       <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_7236bcfcc34bbdb54ff31a49ec40cdc2fd50c6e0/screenshot1.png</image>
