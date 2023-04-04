@@ -1949,7 +1949,7 @@
     <project_license>GPL-2.0-or-later</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>Internet Archive</developer_name>
-    <icon type="remote" width="32" height="32">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_092f50a2d722b80d5fad80fefb89559d0c56b3e2/archive_icon.png</icon>
+    <icon type="remote" width="1200" height="1166">https://archive.org/download/internet-archive-logo-and-wordmark.svg_202205/Internet_Archive_logo_and_wordmark.svg.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_092f50a2d722b80d5fad80fefb89559d0c56b3e2/screenshot1.png</image>
@@ -1994,7 +1994,7 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>ilovepdf.com</developer_name>
-    <icon type="remote" width="32" height="32">https://www.ilovepdf.com/img/favicons-pdf/favicon-32x32.png</icon>
+    <icon type="remote" width="114" height="114">https://www.ilovepdf.com/img/app-icon.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_0d9bc082f7c36acbd482f0160f51005132097bc7/screenshot1.png</image>
@@ -2091,9 +2091,7 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>instructables</developer_name>
-    <icon type="remote" width="48" height="48">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_187dd1fd448e1ed1e76dce3c267ab3013b322920/instructables_icon-1.png</icon>
-    <icon type="remote" width="32" height="32">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_187dd1fd448e1ed1e76dce3c267ab3013b322920/instructables_icon-2.png</icon>
-    <icon type="remote" width="16" height="16">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_187dd1fd448e1ed1e76dce3c267ab3013b322920/instructables_icon-3.png</icon>
+    <icon type="remote" width="180" height="180">https://www.instructables.com/assets/img/siteassets/apple-touch-icon.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_187dd1fd448e1ed1e76dce3c267ab3013b322920/screenshot1.png</image>
@@ -2898,7 +2896,7 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>Mayo Foundation for Medical Education and Research</developer_name>
-    <icon type="remote" width="17" height="17">https://www.mayoclinic.org/-/media/web/gbs/shared/images/favicon.png</icon>
+    <icon type="remote" width="152" height="152">https://www.mayoclinic.org/-/media/web/gbs/shared/images/apple-touch-icon-152x152.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_7236bcfcc34bbdb54ff31a49ec40cdc2fd50c6e0/screenshot1.png</image>
@@ -2951,6 +2949,7 @@
     <developer_name>Twitch Interactive</developer_name>
     <icon type="remote" width="16" height="16">https://static.twitchcdn.net/assets/favicon-16-52e571ffea063af7a7f4.png</icon>
     <icon type="remote" width="32" height="32">https://static.twitchcdn.net/assets/favicon-32-e29e246c157142c94346.png</icon>
+    <icon type="remote" width="64" height="75">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_75090da4c7300bfa0a6563cf6029a1c77f11c44c/TwitchGlitchPurple64.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_75090da4c7300bfa0a6563cf6029a1c77f11c44c/screenshot1.png</image>
@@ -3222,9 +3221,12 @@
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
     <developer_name>Investopedia</developer_name>
-    <icon type="remote" width="16" height="16">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_aaa1593b8cfa7b64fdbafa029938b699f260dc99/investopedia_icon-1.png</icon>
-    <icon type="remote" width="32" height="32">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_aaa1593b8cfa7b64fdbafa029938b699f260dc99/investopedia_icon-2.png</icon>
-    <icon type="remote" width="48" height="48">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_aaa1593b8cfa7b64fdbafa029938b699f260dc99/investopedia_icon-3.png</icon>
+    <icon type="remote" width="57" height="57">https://www.investopedia.com/apple-touch-icon-57x57.png</icon>
+    <icon type="remote" width="60" height="60">https://www.investopedia.com/apple-touch-icon-60x60.png</icon>
+    <icon type="remote" width="76" height="76">https://www.investopedia.com/apple-touch-icon-76x76.png</icon>
+    <icon type="remote" width="120" height="120">https://www.investopedia.com/apple-touch-icon-120x120.png</icon>
+    <icon type="remote" width="152" height="152">https://www.investopedia.com/apple-touch-icon-152x152.png</icon>
+    <icon type="remote" width="180" height="180">https://www.investopedia.com/apple-touch-icon-180x180.png</icon>
     <screenshots>
       <screenshot type="default">
         <image width="900" height="900">https://appstream.endlessos.org/screenshots/org.gnome.Software.WebApp_aaa1593b8cfa7b64fdbafa029938b699f260dc99/screenshot1.png</image>
