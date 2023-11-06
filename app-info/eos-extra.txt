@@ -122,6 +122,7 @@ org.ardour.Ardour
 org.audacityteam.Audacity
 org.blender.Blender
 org.chromium.Chromium
+org.endlessos.Key
 org.gimp.GIMP
 org.gnome.Builder
 org.gnome.gitlab.somas.Apostrophe
