@@ -8,8 +8,12 @@
     <value key="GnomeSoftware::FeatureTile">True</value>
   </custom>
   <categories>
+    <category>2DGraphics</category>
     <category>Art</category>
     <category>Education</category>
+    <category>Game</category>
+    <category>Graphics</category>
+    <category>KidsGame</category>
     <category>Featured</category>
   </categories>
   <bundle type="flatpak">app/org.tuxpaint.Tuxpaint/x86_64/stable</bundle>
