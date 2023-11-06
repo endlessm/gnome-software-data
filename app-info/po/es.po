@@ -607,7 +607,7 @@ msgid ""
 "and archives who have partnered with the Google Cultural Institute to bring "
 "the world's treasures online."
 msgstr ""
-"Google Arts & Culture incluye contenido de más de 2000 museos y archivos "
+"Google Arts &amp; Culture incluye contenido de más de 2000 museos y archivos "
 "destacados que han colaborado con Google Cultural Institute para conseguir "
 "que los tesoros del mundo estén disponibles online."
 

@@ -98,12 +98,10 @@ com.endlessnetwork.shortfilms
 com.endlessnetwork.tankwarriors
 com.endlessnetwork.whitehouse
 com.github.birros.WebArchives
-com.github.fushinari.Wordbook
 com.gitlab.azymohliad.Qwertone
 com.google.AndroidStudio
 com.google.Chrome
 com.hack_computer.Clubhouse
-com.microsoft.Teams
 com.skype.Client
 com.slack.Slack
 com.spotify.Client
@@ -113,6 +111,7 @@ com.tux4kids.tuxtype
 com.unity.UnityHub
 com.valvesoftware.Steam
 com.visualstudio.code
+dev.mufeed.Wordbook
 edu.mit.Scratch
 io.github.Figma_Linux.figma_linux
 io.lmms.LMMS
@@ -123,6 +122,7 @@ org.ardour.Ardour
 org.audacityteam.Audacity
 org.blender.Blender
 org.chromium.Chromium
+org.endlessos.Key
 org.gimp.GIMP
 org.gnome.Builder
 org.gnome.gitlab.somas.Apostrophe
