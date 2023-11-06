@@ -3143,6 +3143,9 @@
     <description>
       <p>Google Arts &amp; Culture features content from over 2000 leading museums and archives who
       have partnered with the Google Cultural Institute to bring the world's treasures online.</p>
+      <p xml:lang="es">Google Arts &amp; Culture incluye contenido de más de 2000 museos y archivos destacados que han colaborado con Google Cultural Institute para conseguir que los tesoros del mundo estén disponibles online.</p>
+      <p xml:lang="fr">Google Arts &amp; Culture présente le contenu de plus de 2 000 grands musées et centres d'archives qui ont collaboré avec l'Institut culturel de Google afin de mettre les trésors du monde en ligne.</p>
+      <p xml:lang="pt">O Google Arts &amp; Culture exibe conteúdo de mais de dois mil museus e acervos importantes que fizeram parceria com o Google Cultural Institute para disponibilizar os tesouros do mundo na Internet.</p>
     </description>
     <project_license>LicenseRef-proprietary</project_license>
     <metadata_license>FSFAP</metadata_license>
