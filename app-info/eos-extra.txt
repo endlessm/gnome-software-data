@@ -98,7 +98,6 @@ com.endlessnetwork.shortfilms
 com.endlessnetwork.tankwarriors
 com.endlessnetwork.whitehouse
 com.github.birros.WebArchives
-com.github.fushinari.Wordbook
 com.gitlab.azymohliad.Qwertone
 com.google.AndroidStudio
 com.google.Chrome
@@ -113,6 +112,7 @@ com.tux4kids.tuxtype
 com.unity.UnityHub
 com.valvesoftware.Steam
 com.visualstudio.code
+dev.mufeed.Wordbook
 edu.mit.Scratch
 io.github.Figma_Linux.figma_linux
 io.lmms.LMMS
