@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="web-application">
+  <id>org.gnome.Software.WebApp_b925933f0df67e33fb65ab5764fac1d199bf2b7e.desktop</id>
+  <name>Fastmail</name>
+  <launchable type="url">https://app.fastmail.com/</launchable>
+  <url type="homepage">https://app.fastmail.com/</url>
+  <summary>Fast, private email that’s just for you.</summary>
+  <description>
+    <p>Offering trustworthy service, outstanding technology, and a personable approach — Fastmail is email on your side.</p>
+  </description>
+  <project_license>LicenseRef-proprietary</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <developer_name>Fastmail Pty. Ltd.</developer_name>
+  <icon type="remote" width="180" height="180">https://app.fastmail.com/static/favicons/FM-App-Icon-180.png</icon>
+  <icon type="remote" width="192" height="192">https://app.fastmail.com/static/favicons/FM-App-Icon-192.png</icon>
+  <icon type="remote" width="512" height="512">https://app.fastmail.com/static/favicons/FM-App-Icon-512.png</icon>
+  <!-- One or more images displaying the web app interface. See
+       https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-screenshots
+       for details. -->
+  <!-- No screenshots found. Update the placeholders below. -->
+  <screenshots>
+    <screenshot type="default">
+      <image width="1600" height="900">https://example.com/screenshot1.jpg</image>
+      <caption>Screenshot 1</caption>
+    </screenshot>
+    <screenshot>
+      <image width="1600" height="900">https://example.com/screenshot2.jpg</image>
+      <caption>Screenshot 2</caption>
+    </screenshot>
+  </screenshots>
+  <categories>
+    <category>Email</category>
+    <category>Calendar</category>
+    <category>ContactManagement</category>
+    <category>Office</category>
+  </categories>
+  <!-- One or more keywords describing the web app. See
+       https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-keywords
+       for details. -->
+  <!-- No keywords found in page. Update the placeholders below. -->
+  <keywords>
+    <keyword>placeholder1</keyword>
+    <keyword>placeholder2</keyword>
+  </keywords>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-chat">intense</content_attribute>
+    <content_attribute id="money-purchasing">intense</content_attribute>
+  </content_rating>
+  <recommends>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+    <display_length compare="ge">small</display_length>
+  </recommends>
+</component>
