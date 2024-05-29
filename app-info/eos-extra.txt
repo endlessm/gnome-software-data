@@ -101,7 +101,6 @@ com.github.birros.WebArchives
 com.gitlab.azymohliad.Qwertone
 com.google.AndroidStudio
 com.google.Chrome
-com.hack_computer.Clubhouse
 com.skype.Client
 com.slack.Slack
 com.spotify.Client
